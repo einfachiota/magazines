@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Smarter Plastikmüll mit Deposy - Hallo Welt!</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_einleitung/index.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/index.html"><strong aria-hidden="true">2.</strong> Was ist IOTA?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_was_ist_iota/011_die_entstehung_des_tangles.html"><strong aria-hidden="true">2.1.</strong> Die Entstehung des Tangles</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/012_eine_deutsche_stiftung.html"><strong aria-hidden="true">2.2.</strong> Eine deutsche Stiftung</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/013_mitarbeiter_aus_der_ganzen_welt.html"><strong aria-hidden="true">2.3.</strong> Mitarbeiter aus der ganzen Welt</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/014_der_cosystemdevelopment_fund.html"><strong aria-hidden="true">2.4.</strong> Der Ecosystem Development Fund</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/015_iota_linksammlung.html"><strong aria-hidden="true">2.5.</strong> IOTA Linksammlung</a></li></ol></li><li class="chapter-item expanded "><a href="../02_was_ist_einfachiota/index.html"><strong aria-hidden="true">3.</strong> Was ist einfachIOTA?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02_was_ist_einfachiota/021_unsere_mission.html"><strong aria-hidden="true">3.1.</strong> Unsere Mission</a></li><li class="chapter-item expanded "><a href="../02_was_ist_einfachiota/022_wir_stellen_uns_vor.html"><strong aria-hidden="true">3.2.</strong> Wir stellen uns vor</a></li><li class="chapter-item expanded "><a href="../02_was_ist_einfachiota/023_einfachIOTA_linksammlung.html"><strong aria-hidden="true">3.3.</strong> einfachIOTA Linksammlung</a></li></ol></li><li class="chapter-item expanded "><a href="../03_rueckblick/index.html"><strong aria-hidden="true">4.</strong> Rückblick</a></li><li class="chapter-item expanded "><a href="../04_aktuelles/index.html"><strong aria-hidden="true">5.</strong> Aktuelles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04_aktuelles/041_was_gibts_neues.html"><strong aria-hidden="true">5.1.</strong> Was gibts Neues? </a></li></ol></li><li class="chapter-item expanded "><a href="../05_menschen/index.html"><strong aria-hidden="true">6.</strong> Menschen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_menschen/051_5x5_fragen.html"><strong aria-hidden="true">6.1.</strong> 5x5 Fragen</a></li><li class="chapter-item expanded "><a href="../05_menschen/052_spotlight.html"><strong aria-hidden="true">6.2.</strong> Spotlight</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/index.html"><strong aria-hidden="true">7.</strong> Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_zukuenftige_events.html"><strong aria-hidden="true">7.1.</strong> Zukünftige Events</a></li><li class="chapter-item expanded "><a href="../06_events/062_muenchen_meetup.html"><strong aria-hidden="true">7.2.</strong> München Meetup</a></li></ol></li><li class="chapter-item expanded "><a href="../07_projects/index.html"><strong aria-hidden="true">8.</strong> Projekte</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../07_projects/071_alle_projekte_der_woche.html"><strong aria-hidden="true">8.1.</strong> Alle Projekte er Woche</a></li><li class="chapter-item expanded "><a href="../07_projects/072_deposy.html"><strong aria-hidden="true">8.2.</strong> Deposy</a></li></ol></li><li class="chapter-item expanded "><a href="../08_erklaerecke/index.html"><strong aria-hidden="true">9.</strong> Erklärecke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08_erklaerecke/081_was_ist_der_coordicide.html"><strong aria-hidden="true">9.1.</strong> Was ist der Coordicide?</a></li><li class="chapter-item expanded "><a href="../08_erklaerecke/082_was_ist_mam.html"><strong aria-hidden="true">9.2.</strong> Was ist MAM?</a></li><li class="chapter-item expanded "><a href="../08_erklaerecke/083_was_ist_das_ternaere_system.html"><strong aria-hidden="true">9.3.</strong> Was ist das Ternäre System?</a></li><li class="chapter-item expanded "><a href="../08_erklaerecke/084_was_ist_proof_of_work.html"><strong aria-hidden="true">9.4.</strong> Was ist Proof of Work?</a></li></ol></li><li class="chapter-item expanded "><a href="../09_bastelecke/index.html"><strong aria-hidden="true">10.</strong> Bastelecke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../09_bastelecke/091_IOTA_apps_in_unter_5_minuten_entwickeln.html"><strong aria-hidden="true">10.1.</strong> IOTA Apps in unter 5 Minuten entwickeln</a></li><li class="chapter-item expanded "><a href="../09_bastelecke/092_wardware_wallet_mit_ESP32.html"><strong aria-hidden="true">10.2.</strong> Hardware Wallet mit ESP32</a></li></ol></li><li class="chapter-item expanded "><a href="../10_partnerartikel/index.html"><strong aria-hidden="true">11.</strong> Partnerartikel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../10_partnerartikel/101_lidbot.html"><strong aria-hidden="true">11.1.</strong> Lidbot</a></li><li class="chapter-item expanded "><a href="../10_partnerartikel/102_accessec.html"><strong aria-hidden="true">11.2.</strong> Accessec</a></li><li class="chapter-item expanded "><a href="../10_partnerartikel/103_smarter_plastikmüll_mit_Deposy.html" class="active"><strong aria-hidden="true">11.3.</strong> Smarter Plastikmüll mit Deposy</a></li><li class="chapter-item expanded "><a href="../10_partnerartikel/104_IOTA_team_karlsruhe.html"><strong aria-hidden="true">11.4.</strong> IOTA Team Karlsruhe</a></li></ol></li><li class="chapter-item expanded "><a href="../11_danke/index.html"><strong aria-hidden="true">12.</strong> Schlusswort</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Hallo Welt!</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#smarter-plastikmüll-mit-deposy" id="smarter-plastikmüll-mit-deposy">Smarter Plastikmüll mit Deposy</a></h1>
+<p>Deposy ist ein innovatives Pfandsystem und ein neuer Weg, mit Müll umzugehen. Modernste Technologie macht einen effektiveren Umwelt- und Klimaschutz möglich. Das Deposy System ist im globalen Betrieb wie auch im kleinen Maßstab sozialverträglich.</p>
+<p>Wir befinden uns im Zeitalter des Klimawandels. Die großen globalen Probleme müssen schnell angegangen werden, um das Schlimmste zu verhindern. Zu den großen Problemen gehören unter anderem die globale CO2-Emissionsbelastung und die Flut an Plastikmüll. Das Thema einer nachhaltigen Gesellschaft wird immer dringlicher. Viele Staaten, Städte, Unternehmen aber auch Privatpersonen fühlen sich schon jetzt dazu verpflichtet.</p>
+<p>Natürlich ist es auch so, dass viele von denjenigen, die in einer
+Gesellschaft des Wohlstands leben, diese Errungenschaften nicht aufgeben wollen. Aber es ist zweifellos ein Umdenken erforderlich. Aus meiner Sicht besteht kein Zweifel daran, dass neue Technologien eingesetzt werden müssen, um zum einen die Dinge zu ändern und zum anderen einen Teil des Wohlstandes zu wahren. Das ist auch der Grund warum wir uns, als BIOTA e.V. (i.G.) mit einem neuartigen Pfandsystem auf Basis von IOTA und der Tangle Technologie beschäftigen.</p>
+<h2><a class="header" href="#volkswirtschaftliche-kosten-von-plastikmüll-steigen-ständig" id="volkswirtschaftliche-kosten-von-plastikmüll-steigen-ständig">Volkswirtschaftliche Kosten von Plastikmüll steigen ständig</a></h2>
+<p>Mit dem neuartigen Pfandsystem Deposy (deposit system) möchten wir direkt mehrere Dinge angehen. Nämlich zum einen zu einer Verringerung des Plastikmülls beitragen und gleichzeitig CO2 einsparen. Bevor ich das System beschreibe, möchte ich ein paar wichtige Zahlen und Fakten liefern. Laut einer Studie der Unternehmensberatung McKinsey gelangen mehr als 30 Prozent aller Plastikverpackungen nicht in einen geordneten Recycling- Kreislauf, sondern werden zu Lasten der Natur anderweitig entsorgt. Die dadurch entstehenden volkswirtschaftlichen Kosten schätzen die Experten auf 40 Milliarden Dollar pro Jahr. Mikroplastikpartikel, die bei der Zersetzung von Plastikmüll entstehen, werden von Menschen und Tieren über die Nahrung und Atemluft aufgenommen. Nach Ansicht von Experten birgt dies erhöhte gesundheitliche Risiken.</p>
+<p>In Zeiten, in denen größte Anstrengungen unternommen werden, um auf allen Ebenen schädliche Klimagase zu vermeiden, leistet das Kunststoffrecycling einen wichtigen Beitrag für mehr Klimaschutz. Pro kg Plastik-Recycling können in etwa, in Abhängigkeit von der Plastiksorte, 2 kg CO2 eingespart werden. Aber ohne gute Mülltrennung und Sortierung, kein Recycling. Denn alles, was im Hausmüll landet, wird in Müllverbrennungsanlagen verfeuert. Landet allerdings etwas anders als Verpackungsmüll im Gelben Sack oder der Gelben Tonne, erschwert das die Sortierung und damit das gesamte Recycling. Die Sortieranlagen sind auf Verpackungen spezialisiert, alles andere wird aussortiert und verbrannt. Das führt leider allzu oft zu erheblichem Verlust von gut recyclebarem Kunststoff.</p>
+<h2><a class="header" href="#plastikmüll-bekämpfung-und-co2-einsparung-mit-iota" id="plastikmüll-bekämpfung-und-co2-einsparung-mit-iota">Plastikmüll Bekämpfung und CO2-Einsparung mit IOTA</a></h2>
+<p>Das alles ist für uns, als BIOTA e.V., Grund genug das innovative Projekt Deposy ins Leben zu rufen. Dieses Projekt verfolgt den Ansatz durch ein speziell entwickeltes Pfandsystem einen sortenreinen Plastikmüll zu erhalten und außerdem den Menschen einen Anreiz zum Sammeln und Sortieren zu geben. Das von uns entwickelte System basiert auf den für diesen Zweck gänzlich passenden
+Eigenschaften von IOTA, einer Distributed Ledger Technologie. IOTA ist eine junge Kryptowährung, die einen schnellen, sicheren und kostenlosen Transfer von Daten und Finanzen ermöglicht. Ein herkömmliches System, welches über Banken abgewickelt würde, könnte den Ansprüchen an das System nicht gerecht werden.
+Kryptowährungen sind durch das energieaufwendige Mining, also der Generierung von neuen Einheiten, in den letzten Monaten stärker unter Beschuss geraten. Experten schätzen, dass das Mining von Kryptowährungen wie Bitcoin, Ethereum, Litecoin und Monero vom 1. Januar 2016 bis zum 30. Juni 2018 folgende Durchschnitt an Energie verbrauchte, um jeweils einen US-Dollar zu generieren:
+• Bitcoin: 17 MJ
+• Ethereum: 7 MJ 
+• Litecoin: 7 MJS 
+• Monero 14 MJ</p>
+<p>Bei IOTA ist das anders, denn für diese innovative Technologie ist kein Mining erforderlich. Natürlich verbrauchen die IOTA- Knoten und -Transaktionen auch Rechenleistung und erzeugen somit Stromverbrauch, aber dieser ist im Vergleich zu dem, der durch die traditionelle Blockchain-Technologie verursacht wird, vernachlässigbar gering.
+Das ist ein weiterer Grund, warum wir bei Deposy die IOTA/Tangle Technologie verwenden. Wir möchten von Anfang an mit diesem System auf Nachhaltigkeit setzen.</p>
+<h2><a class="header" href="#resultate-durch-anreize" id="resultate-durch-anreize">Resultate durch Anreize</a></h2>
+<p>Die Grundvoraussetzung für eine erfolgreiche Implementierung von IOTA ist die Skalierbarkeit ohne exponentiell steigende Kosten, die Transparenz des Systems, sowie die dezentrale, sichere Steuerung der Prozesse. Es können Mikrozahlungen zusammen mit einem Datenaustausch durchgeführt werden. Weiterhin ermöglicht dieses System auch einen Einsatz abseits von sonst für Pfandsysteme notwendige Einrichtungen, wie z.B. Einkaufsläden. Denkt man in einem globalen Maßstab, so kann diese Eigenschaft enorm wichtig sein. Es gibt mehrere Dinge wodurch das Deposy System hervorsticht:
+Die Bevölkerung bekommt für das Sammeln, Sortieren und der Abgabe von Plastikmüll einen finanziellen Anreiz. Es wird mehr zurückgezahlt als Pfand bezahlt wurde. Die Anwendung ist einfach. Es basiert auf IOTA, einer modernen Distributed-Ledger Technologie und könnte weltweit zum Einsatz gebracht werden. Der Sammler bekommt das Pfand entweder auf sein IOTA Wallet, oder dank einer Kooperation auch in seiner Landeswährung, z.B. Euro auf sein Konto ausgezahlt. Das maschinelle Sortieren von Plastikmüll ist heute noch aufwändig und braucht darüber hinaus auch viel Energie. Des Weiteren benötigt ein recycelter Kunststoff weitaus weniger Energie, als die komplette Neuherstellung. Somit hilft das Pfandsystem dabei, CO2 Emissionen zu reduzieren und die Klimaziele zu erreichen. Der Industrie erleichtert dieses System die Zielerreichung beim Recycling, weil der vorgeschaltete Schritt der teuren maschinellen Sortierung entfällt.</p>
+<h2><a class="header" href="#produktidentität-macht-plastik-smart" id="produktidentität-macht-plastik-smart">Produktidentität macht Plastik smart</a></h2>
+<p>Wie schon beschrieben nutzt Deposy die Eigenschaften der Kryptowährung IOTA in Kombination mit dem Tangle. IOTA wird für Zahlungen verwendet, da Transaktionsgebühren vermieden werden und die Übertragung und Validierung der Produktdaten erfolgt durch den Tangle. Dies verleiht der Kunststoffverpackung eine unveränderliche Identität. Bei der Umsetzung des Deposy-Projekts sind uns folgende Aspekte wichtig:</p>
+<p>•Umweltschutz
+•Sicherheit
+•Produktidentität
+•Vertrauen</p>
+<p>Es gibt einige Beispiel für Barcode-basierte Pfandsystem, wie z.B. das deutsche PET Pfandsystem für Mehrwegflaschen. Durch Pfandsystem Betrug mit kopierten Etiketten betrug der Schaden nach Expertenmeinung seit 2014 mehr als 100 Millionen Euro. Eine große Summe. Dies wollen wir mit Deposy verhindern. In unserem System erhält das Plastikteil eine Identität durch einen QR-Code. Diese Identität ist eindeutig und wird bei Rückgabe des Pfands entwertet, so dass ein QR-Code in jedem Fall nur einmal verwendet werden kann. Dies kann Vertrauen bei den Plastik Herstellern und Teilnehmern des Systems schaffen. Wofür kann eine Produkt Identität sonst noch gut sein? Für uns bedeutet diese Deposy- Produktidentität, dass wichtige Merkmale des Produkts während des gesamten Lebenszyklus auf dem Tangle sicher aufbewahrt werden. Grundsätzlich kann es sich um viele Informationen handeln. Für unser System sind zunächst die Produkteigenschaften und der CO2-Fußabdruck von Kunststoff wichtig. Die Produkteigenschaften stellen die sortenreine Sortierung im Automaten sicher. Mit diesen Eigenschaften kann der Recycler hinterher die Zusammensetzung der einzelnen Kunststoffabfälle genau erfassen. In Zukunft kann aber auch der CO2-Fußabdruck wichtig werden, um die eingesparte CO2-Menge zu erfassen. Viele weitere Informationen können in nachfolgenden Entwicklungen im Tangle abgelegt werden, wenn das gewünscht wird.</p>
+<p>In den letzten Wochen haben wir viele Diskussionen mit Interessenvertretern der Branche und Unternehmen geführt. Aktuell haben wir Förderanträge zur Umsetzung dieses Systems geschrieben und Forschungseinrichtungen werden das Projekt wissenschaftlich begleiten. Aktuell gibt es bereits einige Angebote für Teststände. Wenn alles gut läuft, hoffen wir innerhalb der nächsten 6 Monaten ein Testsystem in Betrieb zu nehmen.</p>
+<p>Markus Gebhardt
+Vorstandsvorsitzender BIOTA e.V.</p>
+<ul>
+<li>Email: info@deposy.org</li>
+<li>Website: https://www.deposy.org/</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../10_partnerartikel/102_accessec.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../10_partnerartikel/104_IOTA_team_karlsruhe.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../10_partnerartikel/102_accessec.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../10_partnerartikel/104_IOTA_team_karlsruhe.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

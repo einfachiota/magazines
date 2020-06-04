@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Genesis of the Tangle - Hello World</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../01_focus/index.html"><strong aria-hidden="true">2.</strong> IOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_focus/011_the_genesis_of_the_tangle.html" class="active"><strong aria-hidden="true">2.1.</strong> The Genesis of the Tangle</a></li><li class="chapter-item expanded "><a href="../01_focus/012_a_german_foundation.html"><strong aria-hidden="true">2.2.</strong> A German Foundation</a></li><li class="chapter-item expanded "><a href="../01_focus/013_staff_from_all_over_the_world.html"><strong aria-hidden="true">2.3.</strong> Staff From All Over the World</a></li><li class="chapter-item expanded "><a href="../01_focus/014_the_ecosystem_development_fund.html"><strong aria-hidden="true">2.4.</strong> The Ecosystem Development Fund</a></li><li class="chapter-item expanded "><a href="../01_focus/015_iota_links.html"><strong aria-hidden="true">2.5.</strong> IOTA Links</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Hello World</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-genesis-of-the-tangle" id="the-genesis-of-the-tangle">The Genesis of the Tangle</a></h1>
+<div class="introdution">
+Do you know the difference between a blockchain and the Tangle? This article explains why we need the Tangle for the Internet of Things (IoT), and for many other things as well.
+</div>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<p>The Tangle is the basic technology on which we intend to ground the economy and data transfer of the Internet of Things. It is a protocol that allows us to exchange values and data free of charge within a distributed system. But why can‘t we just use a cryptocurrency like Bitcoin for this? In order to understand this, we need to look at the projects and their basis in detail. Let‘s go back to the start.</p>
+<h2><a class="header" href="#in-the-beginning-there-was-blockchain" id="in-the-beginning-there-was-blockchain">In the Beginning There Was Blockchain</a></h2>
+<p>In 2008, the fist blockchain – Bitcoin – was born. A software developer still unknown to date pulished the soure code as well as a statement paper titled Bitcoin: A Peer-to-Peer Electronic Cash System under the pseudonym Satoshi Nakamoto. The term peer-to-peer means that devices communicate with each other directly and without any additional interfaces. Bitcoin made it possible for the first time to exchange values in a decentralized way, without any central authority, and it quickly became known as digital money. For the first time, it was possible to send and receive money without having to open an account with a bank or on a website. The Bitcoin concept soon became a success and was also used as the basis for further projects and ideas. You could download Bitcoin‘s open-source code, make some changes and thus easily create and operate a new blockchain. Many developers have made use of this, leading to countless copies of the Bitcoin blockchain being published, which in most cases differ from Bitcoin only very slightly. Each blockchain has its own units which are traded in online markets much like shares.
+The values created within a blockchain are called tokens. The programmers define in the beginning how many tokens exist on a blockchain and at what point new tokens can be created. New bitcoins are created with each new block, but the number of tokens created decreases step by step until the maximum number of 21 million bitcoins has been reached. Transfering bitcoins is secure and anonymous up to a certain level, but it is not free of charge. Transcation costs serve as an incentive to add ever new blocks to the blockchain after generating the previous bitcoin. This validation process is carried out by so-called miners which generate random numbers using vast amounts of computing power. These random numbers are part of the cryptographic puzzles, which are solved roughly every ten minutes by a miner from the network. The miner to first find a possible solution writes the next block with the new transcations and receives the newly generated bitcoins as well as all transaction fees for the transactions contained in the block. This has spurred a race for more computing power among miners. Who has more computing power can generate random numbers more quickly and thus enhances their chances to score the reward for the next block. This race has led to the Bitcoin miner network becoming restricted to big computer centers, which has in turn made Bitcoin less decentralized.</p>
+<p>The enormous computing power that is necessary to find a valid random number has another important drawback – very high energy consumption. One single transaction consumes roughly as much energy as an average US household in 21 days. This carbon footrpint is comparable with the one of the entire country of Denmark, and this is just for calculations that stand similar chances to success as scratch cards. In short: a lot of waste and just one winner.</p>
+<p>So, the transactions checked for their validity by the miners are added to the blockchain in blocks. But what happens if many transactions are to be processed, that is, if very many people want to make payments with bitcoins? For a better understanding, let‘s have a closer look at such a block. Blocks are restricted to a certain size. This means that only a limited number of transactions fits into one block. Since new blocks are only added every ten minutes, some transactions literally have to wait for the next block. If there are very many transactions, some of them may get incorporated into the blockchain with a huge delay – or never. We call this the bottleneck of the blockchain. The image below illustrates this. We can see that in the case of a large number of transactions, only part of them can actually be incorporated into the blockchain. Since miners get the sum of all transaction fees in the block as an incentive, they obviously choose the transactions with the highest fees. As a consequence, the transactions with the lowest fees automatically get pushed back in the queue. This entails that we need to pay a high fee if we want to make sure that a transaction is processed and incorporated into the blockchain.</p>
+<p>&lt; TODO: blockhain svg&gt;
+The bottleneck of a blockchain</p>
+<h2><a class="header" href="#then-there-was-swap" id="then-there-was-swap">Then There Was Swap</a></h2>
+<p>Bitcoins, just like many other cryptocurrencies, can be exchanged for currencies like euros or dollars in swaps. This gives the tokens a certain value. Because transaction costs for bitcoin are also paid in bitcoins, transaction costs increase according to the token‘s value. For example, if the number of bitcoins that we have to pay as the fee for a certain transaction was worth one euro and then bitcoin‘s exchange rate doubled, we would still pay the same number of bitcoins for the transaction, but it would cost twice the amount in euros. During the 2017 high, the general interest in bitcoin transactions increased rapidly, which meant that people had to pay higher and higher fees to secure a place on the blockchain. When the bitcoin reached its peak price of approximately 20,000 US dollars per BTC, the transaction cost rose to 60 US dollars. However, even at a low exchange rate the transaction fees are just too much for us to pay our coffees or after-work beers in bitcoins.</p>
+<h2><a class="header" href="#the-blockchain-is-not-scalable" id="the-blockchain-is-not-scalable">The Blockchain Is Not Scalable!</a></h2>
+<p>Many software developers have realized that blockchain technology has scalability problems and are searching for new solutions. IOTA founders Sergey Ivancheglo, Serguei Popov, Dominik Schiener and David Sønstebø have taken on the challenge. They wanted to find a new approach and developed a system without scalability and
+cost issues, a system that can be used to exchange values and data, open or encrypted, free of any charge and in a decentralized manner. The team built their system on a directed acyclic graph, which is a mathematical construction. There were neither blocks nor miners here. The transactions and the users took center stage. The Tangle was born and was described in detail in a white paper by mathematics professor Serguei Popov. During the following year, the first IOTA reference implemantation, IRI for short, was carried out in the Java programming language. The basic rule is simple: if someone wants to send a transaction, they must validate two previous transactions that are randomly chosen. This way, we avoid the blockchain‘s bottleneck and arrive at a scalable system. We do not need immense computing power any longer, and at the same time, the system becomes quicker the more it is used. The Tangle is thus something like a multitrack transaction chain. We can describe how the Tangle and blockchains function with the analogy of a two-story department store. The entrance is on the ground floor, whereas the tills and the exit are on the first floor. The blockchain department store offers its clients a lift that takes them upstairs. This lift arrives every ten minutes, and there is a corruptible ticket machine that lets whoever pays the most enter first. At least clients get up to the first floor very comforatbly – as long as they can keep up with the ticket prices. Whenever there are many clients, the whole thing gets uncomfortable quite quickly. Compared to this scenario, the Tangle department store would have a simple staircase. Clients can use it free of charge, and everybody can climb the stairs on their own without having to wait. The scalability in case of a visitor rush would be limited by the breadth of the staircase. This is true for the Tangle as well, as its capacity is eventually limited by the internet bandwidth.</p>
+<p>The image below illustrates the basic structure of the Tangle. Every transaction references two other transactions. The blue transactions are regarded as definitely confirmed already, while the gray ones have been referenced only recently. The white blocks are called tips. Tips are unconfirmed transactions that still need to be referenced by new transactions. Currently, transactions are not regarded as confirmed until they have been referenced directly or indirectly by the Coordinator. This Coordinator is what currently gives rise to most criticism against IOTA with regard to decentralization, because the Coordinator centralizes the Tangle in a certain way. </p>
+<p>&lt; TODO: tangle svg&gt;
+IOTA Tangle</p>
+<p>However, the Coordinator can only confirm transactions. Neither can it evade consensus rules nor can it create new tokens, freeze or abstract them. The Coordinator‘s source code is publicly available, as are the plans and prototypes to decentralize it. The removal of the Coordinator goes by the project name of the Coordicide and
+is the IOTA Foundation‘s top-priority project. </p>
+<h2><a class="header" href="#iota--more-than-a-cryptocurrency" id="iota--more-than-a-cryptocurrency">IOTA – More Than a Cryptocurrency</a></h2>
+<p>IOTA tokens, much like bitcoins, are traded in exchanges and have a certain value. However, our vision clearly transcends a mere currency. IOTA wants to become the open standard of the Internet of Things, a standard for the exchange of values and data in the future. The Tangle will make it possible for cars to pay for charging, tolls and parking autonomously. Drones delivering packages will receive their destination data and updates from the Tangle, all the while being sure that these data come from a reliable source. Because there are no transaction fees, so-called micropayments are possible, that is, payments worth less than one cent. These can be used, for example, to buy data and energy in tiny quantities. New business models that go by the motto “pay what you use“ become feasible in all sorts of areas. The Tangle is more than just a cryptocurrency. It paves the way for the next industrial revolution. It provides the protocol that enables people and machines to exchange data and values securely and free of charge.</p>
+<h2><a class="header" href="#data-in-the-focus" id="data-in-the-focus">Data in the Focus</a></h2>
+<p>Data are regarded as precious goods already today. In the future, we will collect and store more and more data. The number of devices connected to the internet and thus the mass of stored data is continuously increasing. But what is the value of these data? A huge part of today‘s data are only privately avaiable or stored in enormous data silos which are exclusively avaiable to a few companies. With IOTA, these data can be made available for everyone. The creators of the data can decide whether they would like to make the data freely available or offer them for sale on a market. Completely new business models can grow out of this. Consolidating large amounts of data enables us, for example, to prevent traffic accidents or errors in production processes.</p>
+<p>The Tangle also allows us to send transactions with data packages. These transactions do not need to contain IOTA tokens and can be created and sent by anybody. So even the smallest devices can continuously send sensor data to the Tangle. Technologies that build on the IOTA protocol, such as MAM (masked authenticated messaging) make it possible to store data on the Tangle in encrypted and interlinked form. Interlinked transactions allow us to open so- called data channels and publish ever new data through them. A time stamp is applied to these data which is unchangeable. Only who has the according authorization can add new transactions to the channel. An example for this would be a temperature or carbon sensor that publishes the results of new measurements through a channel. This way, complete data sets can be offered on markets for sale or subscription. Buyers get admission to a channel and can then use the data sets belonging to this channel.</p>
+<h2><a class="header" href="#not-yet-fully-decentralized-but-soon" id="not-yet-fully-decentralized-but-soon">Not Yet Fully Decentralized. But Soon!</a></h2>
+<p>To date, the Tangle has been monitored by the so-called Coordinator. The Coordinator sets the clock for the Tangle‘s synchronization of the full nodes. Full nodes are the servers on which the IOTA reference implementation is carried out. Because of the Coordinator, the Tangle is currently still centralized. However, the databases themselves, which are located on the full nodes of the network participants, are scattered all over the world and are thus already decentral. The IOTA Foundation is currently working on shutting down the Coordinator and thus removing the last centralized part from the Tangle. You can find further information on the Coordicide in the article What Is the Coordicide? on page 58.</p>
+<h2><a class="header" href="#values-check" id="values-check">Values Check</a></h2>
+<ul>
+<li>Free of Charge </li>
+<li>Scalability</li>
+<li>Data Integrity</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../01_focus/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../01_focus/012_a_german_foundation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../01_focus/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../01_focus/012_a_german_foundation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

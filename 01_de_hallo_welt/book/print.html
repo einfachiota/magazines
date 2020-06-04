@@ -1,0 +1,961 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Hallo Welt!</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="00_einleitung/index.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="01_was_ist_iota/index.html"><strong aria-hidden="true">2.</strong> Was ist IOTA?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01_was_ist_iota/011_die_entstehung_des_tangles.html"><strong aria-hidden="true">2.1.</strong> Die Entstehung des Tangles</a></li><li class="chapter-item expanded "><a href="01_was_ist_iota/012_eine_deutsche_stiftung.html"><strong aria-hidden="true">2.2.</strong> Eine deutsche Stiftung</a></li><li class="chapter-item expanded "><a href="01_was_ist_iota/013_mitarbeiter_aus_der_ganzen_welt.html"><strong aria-hidden="true">2.3.</strong> Mitarbeiter aus der ganzen Welt</a></li><li class="chapter-item expanded "><a href="01_was_ist_iota/014_der_cosystemdevelopment_fund.html"><strong aria-hidden="true">2.4.</strong> Der Ecosystem Development Fund</a></li><li class="chapter-item expanded "><a href="01_was_ist_iota/015_iota_linksammlung.html"><strong aria-hidden="true">2.5.</strong> IOTA Linksammlung</a></li></ol></li><li class="chapter-item expanded "><a href="02_was_ist_einfachiota/index.html"><strong aria-hidden="true">3.</strong> Was ist einfachIOTA?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="02_was_ist_einfachiota/021_unsere_mission.html"><strong aria-hidden="true">3.1.</strong> Unsere Mission</a></li><li class="chapter-item expanded "><a href="02_was_ist_einfachiota/022_wir_stellen_uns_vor.html"><strong aria-hidden="true">3.2.</strong> Wir stellen uns vor</a></li><li class="chapter-item expanded "><a href="02_was_ist_einfachiota/023_einfachIOTA_linksammlung.html"><strong aria-hidden="true">3.3.</strong> einfachIOTA Linksammlung</a></li></ol></li><li class="chapter-item expanded "><a href="03_rueckblick/index.html"><strong aria-hidden="true">4.</strong> Rückblick</a></li><li class="chapter-item expanded "><a href="04_aktuelles/index.html"><strong aria-hidden="true">5.</strong> Aktuelles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="04_aktuelles/041_was_gibts_neues.html"><strong aria-hidden="true">5.1.</strong> Was gibts Neues? </a></li></ol></li><li class="chapter-item expanded "><a href="05_menschen/index.html"><strong aria-hidden="true">6.</strong> Menschen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05_menschen/051_5x5_fragen.html"><strong aria-hidden="true">6.1.</strong> 5x5 Fragen</a></li><li class="chapter-item expanded "><a href="05_menschen/052_spotlight.html"><strong aria-hidden="true">6.2.</strong> Spotlight</a></li></ol></li><li class="chapter-item expanded "><a href="06_events/index.html"><strong aria-hidden="true">7.</strong> Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="06_events/061_zukuenftige_events.html"><strong aria-hidden="true">7.1.</strong> Zukünftige Events</a></li><li class="chapter-item expanded "><a href="06_events/062_muenchen_meetup.html"><strong aria-hidden="true">7.2.</strong> München Meetup</a></li></ol></li><li class="chapter-item expanded "><a href="07_projects/index.html"><strong aria-hidden="true">8.</strong> Projekte</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="07_projects/071_alle_projekte_der_woche.html"><strong aria-hidden="true">8.1.</strong> Alle Projekte er Woche</a></li><li class="chapter-item expanded "><a href="07_projects/072_deposy.html"><strong aria-hidden="true">8.2.</strong> Deposy</a></li></ol></li><li class="chapter-item expanded "><a href="08_erklaerecke/index.html"><strong aria-hidden="true">9.</strong> Erklärecke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="08_erklaerecke/081_was_ist_der_coordicide.html"><strong aria-hidden="true">9.1.</strong> Was ist der Coordicide?</a></li><li class="chapter-item expanded "><a href="08_erklaerecke/082_was_ist_mam.html"><strong aria-hidden="true">9.2.</strong> Was ist MAM?</a></li><li class="chapter-item expanded "><a href="08_erklaerecke/083_was_ist_das_ternaere_system.html"><strong aria-hidden="true">9.3.</strong> Was ist das Ternäre System?</a></li><li class="chapter-item expanded "><a href="08_erklaerecke/084_was_ist_proof_of_work.html"><strong aria-hidden="true">9.4.</strong> Was ist Proof of Work?</a></li></ol></li><li class="chapter-item expanded "><a href="09_bastelecke/index.html"><strong aria-hidden="true">10.</strong> Bastelecke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="09_bastelecke/091_IOTA_apps_in_unter_5_minuten_entwickeln.html"><strong aria-hidden="true">10.1.</strong> IOTA Apps in unter 5 Minuten entwickeln</a></li><li class="chapter-item expanded "><a href="09_bastelecke/092_wardware_wallet_mit_ESP32.html"><strong aria-hidden="true">10.2.</strong> Hardware Wallet mit ESP32</a></li></ol></li><li class="chapter-item expanded "><a href="10_partnerartikel/index.html"><strong aria-hidden="true">11.</strong> Partnerartikel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="10_partnerartikel/101_lidbot.html"><strong aria-hidden="true">11.1.</strong> Lidbot</a></li><li class="chapter-item expanded "><a href="10_partnerartikel/102_accessec.html"><strong aria-hidden="true">11.2.</strong> Accessec</a></li><li class="chapter-item expanded "><a href="10_partnerartikel/103_smarter_plastikmüll_mit_Deposy.html"><strong aria-hidden="true">11.3.</strong> Smarter Plastikmüll mit Deposy</a></li><li class="chapter-item expanded "><a href="10_partnerartikel/104_IOTA_team_karlsruhe.html"><strong aria-hidden="true">11.4.</strong> IOTA Team Karlsruhe</a></li></ol></li><li class="chapter-item expanded "><a href="11_danke/index.html"><strong aria-hidden="true">12.</strong> Schlusswort</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Hallo Welt!</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><a href="00_einleitung/">WILLKOMMEN ZUR ERSTEN AUFLAGE</a></p>
+<h1><a class="header" href="#hallo-welt" id="hallo-welt">Hallo Welt</a></h1>
+<p>Was steckt hinter der IOTA Stiftung und dem Tangle? Welchen Beitrag leistet die Community? Wozu ist die Technologie im Stande?</p>
+<p>Du hältst die erste Ausgabe des einfachIOTA Magazins in den Händen, vielen Dank! Wir erklären IOTA jetzt einfach auf Papier und im Netz. Gemeinsam mit zahlreichen Unterstützern aus dem IOTA Ökosystem und von der IOTA Stiftung konnten wir innerhalb kürzester Zeit dieses Magazin zum Leben erwecken. Nach dem Motto Hallo Welt möchten wir Dich zu einer Reise durch das IOTA Universum einladen. Diese Auflage ist in zweierlei Hinsicht eine Besonderheit für uns. Zum einen ist sie unser Debüt Magazin und zum anderen die Jahresausgabe 2019.
+Als Debüt Ausgabe legen wir besonderen Wert darauf, die IOTA Stiftung und den Tangle genau unter die Lupe zu nehmen und einsteigerfreundlich in die Grundlagen einzuführen. Was IOTA besonders auszeichnet sind starke Werte, die wir in jedem Abschnitt unseres Schwerpunkts erläutern. Direkt im Anschluss stellen wir das einfachIOTA Team und unsere Mission vor.
+Als Jahresausgabe 2019 haben wir den Anspruch die wichtigsten Menschen, Projekte und Veranstaltungen des Jahres zu präsentieren. In Kapitel 3 zeigen wir Dir, die Entwicklung und die Schlüsselereignisse der letzten Jahre auf einer Roadmap. Aktuelle Neuigkeiten zur IOTA Stiftung werden in Kapitel 4 vorgestellt. In Kapitel 5 dreht sich alles um die Menschen hinter den Projekten. Unter dem Titel 5x5 haben wir fünf Menschen aus dem Ökosystem fünf Fragen gestellt. Im Spotlight Ein Tag im Leben von... haben wir den IOTA Mitgründer Dominik Schiener interviewt. In Kapitel 6 präsentieren wir euch vergangene und anstehende Veranstaltungen. Wir berichten über die wichtigsten IOTA Meetups des Jahres und welche Events Du auf keinen Fall verpassen solltest. Mit unserer Berichtsreihe Projekt der Woche haben wir bereits viele Projekte auf unserer Website vorgestellt. Im Kapitel 7 findest Du sie noch einmal alle in der Übersicht, sowie das von der Community gewählte Projekt des Jahres im Spotlight. In Kapitel 8 wird es etwas technischer. Wir führen in die Grundlagen von technischen Themen
+wie dem Coordicide, Masked Authenticated Messaging und Proof of Work ein. Kapitel 9 stellt, für die Bastler unter euch, verschiedene Hardware Projekte ins Rampenlicht. Darunter zum Beispiel eine Anleitung zum kostengünstigen Hardware Wallet. Zu guter Letzt haben wir noch einige Gastbeiträge für Dich.
+Wir sind unglaublich stolz auf das Team, die zahlreichen Helfer aus der IOTA Community und jeden Einzelnen, der das Magazin im Vorverkauf bestellt hat. Ohne euch würde es dieses Magazin nicht geben. Vielen Dank! Für Feedback und Fragen stehen wir Dir jederzeit auf unserem Discord Server zur Verfügung. Wir hoffen Deine Leselust geweckt zu haben und wünschen Dir viel Spaß und Freude beim Weiterlesen!</p>
+<p>Sebastian Heußer
+Chefredakteur, einfachIOTA </p>
+<p>Sven Reiser
+Creative Director, einfachIOTA</p>
+<p><a href="01_was_ist_iota/">IOTA</a></p>
+<h1><a class="header" href="#was-ist-iota" id="was-ist-iota">Was ist IOTA?</a></h1>
+<p>Kaum jemandem ist der große Hype um Bitcoin und Blockchain in den letzen Jahren entgangen. Doch was hat sich in dieser Zeit tatsächlich verändert? Kryptowährungen haben sich noch immer nicht etabliert, da hohe Wartezeiten und Transaktionsgebühren auf der Tagesordnung stehen. Durch zusätzliche Skalierbarkeitsprobleme und einen exorbitant hohen Energieverbrauch wächst die Zahl der Skeptiker stetig an. Im Hintergrund dieser Geschehnisse hat es sich die deutsche IOTA Stiftung zur Aufgabe gemacht, genau diese Probleme zu lösen und ein Netzwerk zu erschaffen, in dem unzählige Geräte Werte und Daten frei austauschen können. Die Grundlage bildet die hauseigene Technlogie, der Tangle, eine Weiterentwicklung der Blockchain. Diese ermöglicht Werte und Datenaustausch ohne Transaktionskosten und mit einem wesentlich geringeren Stromverbrauch. Somit ist es möglich, den Kaffee, das Brötchen, oder sogar Beträge unter einem Cent zu bezahlen. In diesem Schwerpunkt erfährst du wie der Tangle erfunden wurde und bekommst zahlreiche Einblicke in die Welt von IOTA.</p>
+<p>TEXT SEBASTAN HEUSSER</p>
+<p><a href="01_was_ist_iota/">IOTA</a></p>
+<h1><a class="header" href="#die-entstehung-des-tangles" id="die-entstehung-des-tangles">Die Entstehung des Tangles</a></h1>
+<div class="introdution">
+Kennst Du den Unterschied zwischen einer Blockchain und dem Tangle? Dieser Artikel erklärt Dir die Einzelheiten und zeigt, warum wir den Tangle für das Internet der Dinge und vieles andere brauchen.
+</div>
+<p>TEXT SEBASTAN HEUSSER</p>
+<p>Der Tangle ist die grundlegende Technologie, auf der die Ökonomie und der Datenaustausch des Internet der Dinge aufbauen soll. Ein Protokoll, mit dem man Werte und Daten in einem verteilten System gebührenfrei austauschen kann. Aber warum kann man dafür nicht einfach eine Kryptowährung wie Bitcoin nutzen? Um das zu verstehen, muss man sich die Projekte und deren Grundlage im Detail anschauen. Wir reisen also zurück zu den Anfängen.</p>
+<h2><a class="header" href="#am-anfang-war-die-blockchain" id="am-anfang-war-die-blockchain">Am Anfang war die Blockchain</a></h2>
+<p>m Jahr 2008 wurde die erste Blockchain - der Bitcoin - geboren. Ein bis heute unbekannter Entwickler veröffentlichte unter dem Synonym Satoshi Nakamoto den Quellcode und ein Grundsatzdokument mit dem Titel Bitcoin: Ein elektronisches “Peer-to-Peer” Bezahlsystem. Der Begriff Peer-to-Peer bedeutet, dass Geräte direkt und ohne Umwege miteinander kommunizieren. Der Bitcoin ermöglichte erstmals einen dezentralen Werteaustausch ohne zentrale Autorität und wurde schnell als digitales Geld bekannt. Zum ersten Mal konnte man Geld versenden und empfangen, ohne vorher auf einer Bank oder Webseite ein Konto eröffnen zu müssen. Schnell wurde das Konzept von Bitcoin zum Erfolg und als Grundlage für viele weitere Projekte und Ideen genutzt. Man konnte den offenen Quellcode von Bitcoin herunterladen, bearbeiten und somit ganz einfach eine neue Blockchain erstellen und in Betrieb nehmen. Viele Entwickler haben das genutzt, sodass unzählige Kopien der Bitcoin Blockchain mit meist nur minimalen Änderungen veröffentlicht wurden. Jede Blockchain hat dabei eine eigene Werteinheit und diese werden ähnlich wie Aktien auf Online-Börsen gehandelt.</p>
+<p>Die erzeugten Werte innerhalb einer Blockchain nennt man Token. Wie viele Token auf einer Blockchain existieren und wann neue Token erzeugt werden können, wird von den Programmierern am Anfang definiert. Die Token auf der Bitcoin Blockchain nennt man üblicherweise Bitcoin. Neue Bitcoins werden mit jedem neuen Block erschaffen, allerdings reduziert sich die erschaffene Menge Stück für Stück bis die maximale Anzahl, von 21 Millionen Bitcoins, erreicht wurde. Das Versenden von Bitcoins ist zwar sicher und bis zu einem gewissen Grad anonym, aber nicht kostenlos. Transaktionsgebühren bieten einen Anreiz, damit auch nach dem Generieren des letzten Bitcoins immer noch neue Blöcke an die Blockchain angehängt werden. Dieses Validieren übernehmen beim Bitcoin die sogenannten Miner, die mit sehr viel Rechenleistung zufällige Zahlen generieren. Diese zufällige Zahl ist Teil eines Rechenpuzzles, das etwa alle 10 Minuten von einem Miner aus dem Netzwerk gelöst wird. Der Miner, der zuerst ein passendes Ergebnis gefunden hat, schreibt den nächsten Block mit den neuen Transaktionen und bekommt die neu erzeugten Bitcoins, sowie alle Gebühren der enthaltenen Transaktionen. Dies löste einen Wettkampf der Miner nach mehr Rechenleistung aus. Wer mehr Rechenleistung hat, kann schneller zufällige Zahlen generieren und erhöht somit seine Chancen die Belohnung für den Block zu kassieren. Dieses Rennen führte dazu, dass sich das Netzwerk der Bitcoin-Miner immer mehr auf große Rechenzentren beschränkte und Bitcoin damit wieder weniger dezentral wurde. Die enorme Rechenleistung, welche für die Suche nach einer gültigen Zufallszahl gebraucht wird, hat aber noch einen anderen Preis - einen sehr hohen Stromverbrauch. Eine einzelne Transaktion verbraucht in etwa so viel Energie wie ein
+durchschnittlicher US Haushalt in 21 Tagen. Der CO2-Fußabdruck ist vergleichbar mit dem von Dänemark und das hauptsächlich für Berechnungen, die uns an Rubbellose erinnern. Viel Müll und einer gewinnt.
+Die von Minern auf ihre Gültigkeit geprüften Transaktionen, werden also bündelweise an die Blockchain angehängt. Was aber passiert nun, wenn viele Transaktionen abgewickelt werden sollen, sprich sehr viele Leute mit Bitcoins bezahlen wollen? Um das zu verstehen, schauen wir uns einen solchen Block nochmal genauer an. Blöcke sind auf eine gewisse Größe beschränkt, was bedeutet, dass nur eine bestimmte Anzahl an Transaktionen in einen Block passt. Da das Anhängen neuer Blöcke auf zehn Minuten getaktet ist, müssen einige Transaktionen buchstäblich auf den nächsten Block warten. Wenn es sehr viele Transaktionen gibt, kann es aber auch vorkommen, dass einige davon erst sehr spät oder sogar niemals in der Blockchain aufgenommen werden. Hier spricht man vom Bottleneck - neudeutsch für Flaschenhals - der Blockchain. Folgende Grafik verdeutlicht die Funktionsweise eines solchen Flaschenhalses:</p>
+<p>TODO: SVG [Der Flaschenhals einer Blockchain]
+Der Flaschenhals einer Blockchain</p>
+<p>Hierbei wird deutlich, dass bei einer hohen Anzahl an zu verarbeitenden Transaktionen nur ein Teil auch wirklich in die Blockchain aufgenommen werden kann. Durch ein zusätzliches Anreizsystem, dass Miner die Summe aller Transaktionsgebühren im Block bekommen, wählen diese natürlich die Transaktionen mit den höchsten Gebühren aus. Folglich rücken die Transaktionen mit den geringsten Gebühren automatisch in der Warteschlange immer weiter nach hinten. Hieraus ergibt sich die Notwendigkeit, für die Verarbeitung der Transaktion eine hohe Gebühr zu zahlen, damit diese auch sicher in die Blockchain aufgenommen wird.</p>
+<h2><a class="header" href="#dann-kamen-die-tauschbörsen" id="dann-kamen-die-tauschbörsen">Dann kamen die Tauschbörsen</a></h2>
+<p>Bitcoin, wie auch viele andere Kryptowährungen, können auf Tauschbörsen gegen Zahlungsmittel wie Euro oder Dollar getauscht werden. Somit erhalten diese Token einen gewissen Wert. Da die Transaktionskosten bei Bitcoin auch mit Bitcoin bezahlt werden, steigen die Transaktionskosten entsprechend dem Wert der Token. Ein Beispiel: Würde nun die Anzahl der Bitcoins, die man bei einer Transaktion als Gebühr zahlt, einem Euro entsprechen und der Kurs des Bitcoin würde sich verdoppeln, so zahlt man zwar immer noch die gleiche Anzahl an Bitcoins, in Euro zahlt man aber dann doppelt so viel an Transaktionsgebühr. Bei dem Kurshoch 2017 stieg das generelle Interesse an Bitcoin-Transaktionen stark an, sodass für Gebühren immer mehr gezahlt wurde, um einen Platz in der Blockchain zu ergattern. Beim Höchstpreis von ca. 20.000 US-Dollar pro BTC betrug die Transaktionsgebühr schließlich etwa 60 US-Dollar. Doch selbst mit einem niedrigen Kurs sind die Transaktionsgebühren einfach zu hoch, um damit beispielsweise einen Kaffee oder das Feierabend-Bier zu bezahlen.</p>
+<h2><a class="header" href="#die-blockchain-skaliert-nicht" id="die-blockchain-skaliert-nicht">Die Blockchain skaliert nicht!</a></h2>
+<p>Viele Entwickler haben das Skalierungsproblem der Blockchain erkannt und suchen nach neuen Lösungswegen. Die IOTA Gründer Sergey Ivancheglo, Serguei Popov, Dominik Schiener und David Sønstebø haben sich diesem Problem angenommen. Sie suchten nach einem neuen Ansatz und entwickelten ein System ohne Skalierungs- und Kostenprobleme. Ein System, mit dem Werte und Daten, offen oder verschlüsselt, vor allem aber kostenlos und dezentral ausgetauscht werden können. Als Grundgerüst setzt das Team auf einen gerichteten azyklischen Graphen, einem mathematischen Konstrukt. Hier gibt es weder Blöcke noch Miner. Im Mittelpunkt steht die Transaktion und der Benutzer. Der Tangle war geboren und wurde in einem Whitepaper durch den Mathematik-Professor Serguei Popov ausführlich beschrieben. Im Jahr darauf wurde die erste IOTA Referenz Implementierung, kurz IRI, in der Programmiersprache Java umgesetzt. Die Grundregel ist einfach: Wenn jemand eine Transaktion versenden möchte, muss er zuvor zwei andere zufällig gewählte Transaktionen validieren. Somit umgeht man das Flaschenhals-Problem der Blockchain und hat ein skalierbares System. Es wird keine hohe Rechenleistung mehr gebraucht und gleichzeitig wird das System schneller, je mehr es genutzt wird. Der Tangle ist also so etwas wie eine mehrspurige Transaktions-Kette. Bildlich beschreiben kann man die Funktionsweise des Tangle und der Blockchain mit einem zweistöckigen Kaufhaus vergleichen. Der Eingang befindet sich im Erdgeschoss, die Kasse und der Ausgang im Obergeschoss. Das Blockchain Kaufhaus bietet seinen Kunden einen Aufzug, der sie nach oben befördert. Dieser kommt alle 10 Minuten und es gibt einen bestechlichen Fahrscheinautomaten, der denjenigen mit dem höchsten Gebot den Vortritt lässt. Immerhin kommt man so sehr gemütlich nach oben - es sei denn, man kann mit den Eintrittspreisen nicht mithalten. Wenn viele Kunden kommen, kann das Ganze schnell ungemütlich werden. Im Vergleich wäre der Tangle ein Kaufhaus mit einer einfachen Treppe. Diese ist kostenlos begehbar und jeder kann die Stufen zum Ausgang selbst hinaufsteigen, ohne warten zu müssen. Die Grenzen der Skalierbarkeit bei einem Besucheransturm ist die Breite der Treppe. So auch beim Tangle, dessen Kapazität am Ende durch die Bandbreite beschränkt wird.</p>
+<p>TODO: SVG IOTA TANGLE
+IOTA Tangle</p>
+<p>Obige Illustration veranschaulicht die Grundstruktur des Tangle. Jede Transaktion referenziert zwei andere Transaktionen. Die blauen Transaktionen gelten bereits als sicher bestätigt, die grauen wurden erst vor Kurzem referenziert. Die weißen Blöcke nennt man Tips. Tips sind noch unbestätigte Transaktionen, die noch von neuen Transaktionen referenziert werden müssen. Derzeit gelten Transaktionen nur dann als sicher bestätigt, wenn sie direkt oder indirekt vom Koordinator referenziert wurden. Der Koordinator ist aktuell wohl IOTAs größter Kritikpunkt beim Thema Dezentralität, da dieser den Tangle in gewisser Weise zentralisiert. Der Koordinator kann allerdings nur Transaktionen bestätigen. Er kann weder Konsens-Regeln umgehen, noch kann er Token neu erschaffen, einfrieren oder entwenden. Sein Quellcode ist öffentlich einsehbar, ebenso wie die Pläne und Prototypen, um den Koordinator zu dezentralisieren. Die Abschaffung des Koordinators trägt den Projektnamen Coordicide, der “Tod des Koordinators”, und hat bei der IOTA Stiftung höchste Priorität.</p>
+<h2><a class="header" href="#iota-mehr-als-eine-kryptowährung" id="iota-mehr-als-eine-kryptowährung">IOTA, mehr als eine Kryptowährung</a></h2>
+<p>IOTA Token werden, genau wie Bitcoins, an Börsen gehandelt und haben einen bestimmten Wert. Allerdings geht die Vision weit über ein reines Zahlungsmittel hinaus. IOTA will zu dem offenen Standard des Internet der Dinge werden. Ein Standard für den Werte- und Datenaustausch der Zukunft. Mit dem Tangle wird es möglich sein, dass Autos autonom die Ladestation, Schranke oder den Parkplatz bezahlen. Drohnen, die Pakete ausliefern, werden ihre Zieldaten und Updates aus dem Tangle beziehen und sie können sicher sein, dass diese Daten von einer vertrauenswürdigen Quelle kommen. Dadurch, dass keine Gebühren anfallen, sind sogenannte Mikrozahlungen möglich, also Zahlungen, die weniger als 1 Cent Wert sind. Damit kann man zum Beispiel Daten und Energie in Kleinstmengen kaufen. Neue Geschäftsmodelle nach dem “Bezahl was du nutzt” Modell sind in allen erdenklichen Bereichen möglich. Der Tangle ist mehr als nur eine Kryptowährung, er bildet die Grundlage für die nächste industrielle Revolution. Er stellt das Protokoll bereit, mit dem Menschen und Maschinen kostenfrei und sicher Daten und Werte austauschen können.</p>
+<h2><a class="header" href="#daten-im-mittelpunkt" id="daten-im-mittelpunkt">Daten im Mittelpunkt</a></h2>
+<p>Daten gelten schon heute als ein wertvolles Gut. In Zukunft werden wir immer mehr Daten erfassen und speichern. Die Anzahl der mit dem dem Internet verbundenen Geräte und die Menge an gespeicherten Daten steigt kontinuierlich an. Doch worin liegt der Wert dieser Daten? Ein riesiger Teil der Daten ist heute ausschließlich privat verfügbar und gespeichert in riesigen Datensilos, exklusiv für einige wenige Unternehmen nutzbar. Mit IOTA kann die Zugänglichkeit dieser Daten für jedermann möglich gemacht werden. Die Erzeuger der Daten können selbst entscheiden, ob sie die Daten frei zur Verfügung stellen, oder auf Marktplätzen zum Verkauf anbieten. Damit entstehen völlig neue Geschäftsmodelle. Die Zusammenführung großer Datenmengen ermöglicht zum Beispiel, dass Fehler in Produktionsabläufen oder Unfälle im Straßenverkehr präventiv verhindert werden können.
+Mit Hilfe des Tangles ist es auch möglich, Transaktionen mit Datenpaketen zu senden. Diese Transaktionen müssen keine IOTA Token enthalten und können von jedem erstellt und versendet werden. Somit können selbst kleinste Geräte stetig Sensordaten an den Tangle senden. Auf dem IOTA-Protokoll aufbauende Technologien wie MAM (Masked Authenticated Messaging) machen es möglich, Daten verschlüsselt und verkettet im Tangle zu speichern. Verkettete Transaktionen erlauben es, sogenannte Datenkanäle zu eröffnen und darin immer wieder neue Daten zu veröffentlichen. Diese Daten werden mit einem Zeitstempel versehen und sind nicht mehr änderbar. Nur derjenige, der über die entsprechende Berechtigung verfügt, kann neue Transaktionen an den Kanal anhängen. Ein Beispiel wäre ein Temperatur- oder ein CO2-Sensor, der das Ergebnis neuer Messungen in einem Kanal veröffentlicht. Damit können ganze Datensätze auf Marktplätzen zum Verkauf
+oder Abonnement angeboten werden. Käufer erhalten Zugang zu diesen Kanälen und können die zum Kanal gehörigen Datensätze verwenden.</p>
+<h2><a class="header" href="#nicht-ganz-dezentral-aber-bald" id="nicht-ganz-dezentral-aber-bald">Nicht ganz dezentral, aber bald!</a></h2>
+<p>Der Tangle wird derzeit durch den sogenannten Koordinator überwacht. Er gibt dem Tangle den Takt für die Synchronisierung der Fullnodes vor. Fullnodes sind die Server auf denen die IOTA Referenz Implementierung betrieben wird. Durch den Koordinator ist der Tangle aktuell noch zentralisiert. Allerdings sind die Datenbanken selbst, welche sich auf den Fullnodes der Netzwerkteilnehmer befinden, auf der ganzen Welt verstreut und damit bereits jetzt dezentral verteilt. Die IOTA Stiftung arbeitet derzeit daran, den Koordinator abzuschalten und somit den letzten zentralen Teil des Tangles zu entfernen. Weitere Informationen über den Coordicide kannst du im Artikel Was ist der Coordicide? auf Seite 58 nachlesen.</p>
+<h3><a class="header" href="#wertecheck" id="wertecheck">Wertecheck</a></h3>
+<ul>
+<li>Gebührenfrei</li>
+<li>Skalierbarkeit</li>
+<li>Datenintegrität</li>
+</ul>
+<p><a href="01_was_ist_iota/">IOTA</a></p>
+<h1><a class="header" href="#eine-deutsche-stiftung" id="eine-deutsche-stiftung">Eine deutsche Stiftung</a></h1>
+<div class="introdution">
+Die IOTA Stiftung ist die erste deutsche und gemeinnützige Stiftung in der Kryptowelt. 
+</div>
+<p>TEXT SEBASTAN HEUSSER</p>
+<p>Am 3. November 2017 wurde die IOTA Stiftung, nach über einem Jahr sorgfältiger Vorarbeiten des Teams, durch die Unterschrift des Staatssekretärs für Justiz offiziell in Berlin eingetragen. Somit ist die IOTA Stiftung die erste vollständig regulierte gemeinnützige Stiftung in der Kryptowelt mit Sitz in Deutschland. Geführt wird die IOTA Stiftung von den Gründern und dem Stiftungsvorstand bestehend aus David Sønstebø, Dominik Schiener und Sergei Popov.
+Darüber hinaus gibt es zahlreiche Allianzen mit Unternehmen, Start-ups, Forschungseinrichtungen und anderen gemeinnützigen Organisationen. Der Kern der Stiftung sind die Entwickler, Forscher, Berater und Geschäftsentwickler, die das IOTA-Protokoll entwickeln und dessen Akzeptanz vorantreiben.</p>
+<h2><a class="header" href="#breit-aufgestellt" id="breit-aufgestellt">Breit aufgestellt</a></h2>
+<p>Das IOTA-Protokoll ist extrem vielseitig einsetzbar und reicht von der Industrie 4.0 und dem Internet der Dinge bis hin zum Web 3.0 und der Zukunft des Datenaustauschs. Jede dieser Domänen birgt andere Möglichkeiten und Hindernisse, die unterschiedlichste Fachkenntnisse erfordern. Die IOTA Stiftung vergrößert konstant ihr Team mit Experten aus aller Welt, die in interdisziplinären Arbeitsgruppen gemeinsam mit Unternehmen und Forschungseinrichtungen, an zahlreichen Projekten arbeiten.</p>
+<h2><a class="header" href="#eine-gemeinnützige-stiftung" id="eine-gemeinnützige-stiftung">Eine gemeinnützige Stiftung</a></h2>
+<p>Um die IOTA Stiftung zu gründen hat die IOTA Community 5 Prozent aller IOTA Tokens gespendet, insgesamt waren das etwa 140 Ti. Bei einem Kurs von 0,25€ pro Mi sind das etwa 35 Millionen Euro. Das Geld wird primär für die Finanzierung des Teams und Weiterentwicklung der Technologie eingesetzt.
+Zukünftig möchte sich die IOTA Stiftung selbst finanzieren. Hierzu gibt es viele Möglichkeiten, zum Beispiel durch beratende Tätigkeit in Unternehmen, den Verkauf von Bildungszertifikaten oder der Teilnahme an öffentlichen Ausschreibungen, um somit das langfristige Überleben der Stiftung zu gewährleisten.</p>
+<h2><a class="header" href="#ziele-und-aufgaben" id="ziele-und-aufgaben">Ziele und Aufgaben</a></h2>
+<p>Das oberste Ziel der IOTA Stiftung ist die Entwicklung und Standardisierung des IOTA Kern Protokolls. Dazu gehört natürlich auch die Bereitstellung von Tools und Dokumentationen für Entwickler. Des Weiteren nimmt die IOTA Stiftung eine aktive Rolle bei Konferenzen und Hackathons ein, die etwas mit den Themen Internet der Dinge, Digitalisierung und Industrie 4.0 zu tun haben.
+Außerdem veröffentlicht die IOTA Stiftung auf mehreren Kanälen fast täglich neue Inhalte, darunter ein Podcast rund um Zukunftsthemen mit interessanten Interviewpartnern, Videos mit anschaulichen Anwendungsbeispielen und sogar Livestreams, in denen Entwickler den Umgang mit dem Tangle und neuen Tools zeigen.</p>
+<h2><a class="header" href="#wertecheck-1" id="wertecheck-1">Wertecheck</a></h2>
+<ul>
+<li>Gemeinnützigkeit</li>
+<li>Regulierung</li>
+<li>Transparenz</li>
+</ul>
+<p><a href="01_was_ist_iota/">IOTA</a></p>
+<h1><a class="header" href="#mitarbeiter-aus-der-ganzen-welt" id="mitarbeiter-aus-der-ganzen-welt">Mitarbeiter aus der ganzen Welt</a></h1>
+<div class="introdution">
+Mit über 100 Mitarbeitern aus mehr als 23 Ländern ist die IOTA Stiftung weltweit aktiv
+</div>
+<p>TEXT SEBASTAN HEUSSER</p>
+<p>Die IOTA Stiftung ist in den letzten Jahren rasant gewachsen. Seit ihrer Gründung 2015 hat sie nun schon mehr als 100 Mitarbeiter eingestellt. Das Ziel der ersten Jahre war es, eine stabile Organisationsstruktur zu schaffen. Es ist eine Herausforderung keines gleichen ein so schnelles Wachstum, eines auf der ganzen Welt verstreuten Teams, zu meistern. Wie meistert IOTA diese Herausforderung im Konkreten?</p>
+<h2><a class="header" href="#sumsum" id="sumsum">SumSum</a></h2>
+<p>Um tatsächlich an einem Strang zu ziehen ist es entscheidend, dass das Team persönliche Beziehungen eingeht und sich privat kennenlernt. Dazu gibt es jeden Sommer den SummerSummit - kurz SumSum. Hier werden gemeinsam Erfolge gefeiert, Neuigkeiten vorgestellt und über Ideen diskutiert. Die SumSum bietet die perfekte Möglichkeit, die Person hinter einem Online Benutzernamen kennen zu lernen. Das Titelbild dieses Artikels zeigt das IOTA Team auf der SumSum 2019.</p>
+<h2><a class="header" href="#iota-hubs" id="iota-hubs">IOTA Hubs</a></h2>
+<p>Mit einem Team aus über 23 Ländern findet natürlich ein großer Teil der Kommunikation ausschließlich über das Internet statt. Um dem Team eine engere Zusammenarbeit zu ermöglichen gibt es immer mehr verteilte Büros, sogenannte IOTA Hubs. Zur Zeit gibt es eines in Berlin, Tel Aviv, Oslo und Taipeh. Hier kann das Team gemeinsam arbeiten und hat Räumlichkeiten, um sich mit wichtigen Partnern zu treffen.</p>
+<p>Auf dem Bild kannst Du das Team aus Tel Aviv sehen, welches von Alon Elmaliah (ganz rechts im Bild) geleitet wird. Tel Aviv ist ein etabliertes Technologiezentrum, das immer wieder unter den Top 10 der Startup-Berichte auftaucht. In Tel Aviv sind viele Start-ups und Unternehmen zu Hause. Auch große Softwareunternehmen wie pple, Microsoft, Google, Amazon oder Intel sind in Israel ansässig. Die größten Sektoren in der israelischen Technologieszene sind die Cybersicherheit und Biotechnologie. Diese vier Hubs sind nur der Anfang und wir dürfen gespannt bleiben wann und wo das nächste Hub seine Tore öffnet.</p>
+<h2><a class="header" href="#starkes-entwicklerteam" id="starkes-entwicklerteam">Starkes Entwicklerteam</a></h2>
+<p>Das Team hinter dem Tangle, den Tools und den Bibliotheken besteht aus vielen erfahrenen Entwicklern. Die Tatsache, dass die Entwickler auf der ganzen Welt verstreut sind und in verschiedenen Zeitzonen leben, ermöglicht eine Weiterentwicklung rund um die Uhr. Somit gibt es stündlich aktualisierten Open Source Code. Auch die Community partizipiert hier in zweierlei Hinsicht, als Entwickler und Tester. Die Community besteht aus etwa 70.000 Menschen, von denen viele mit kritischem Blick auf jede Codeänderung schauen und somit aktiv am Entwicklungsprozess teilnehmen.
+Es gibt außerdem einen Rat ausgewählter Community Mitglieder für die aktuelle Full Node Software, der Erkenntnisse und Erfahrungen der Community an die IOTA Entwickler heranträgt.
+Bibliotheken, um mit dem Tangle zu arbeiten, gibt es nun in fast jeder Programmiersprache. Viele verschiedene Tools wurden entwickelt, wie zum Beispiel ein Programm, um eine IOTA Full Node mit einem Mausklick zu installieren.
+All das ist Resultat enger Zusammenarbeit zwischen IOTA Entwicklern und der Community. Hierzu wurden eigene Chat Kanäle geöffnet, um den Austausch von Ideen und das Lösen von Problemen schneller abwickeln zu können. Die Community hat es geschafft, einen eigenen Bereich bei der beliebten Entwicklerplattform stackoverflow zu bekommen. Stackoverflow hilft Entwicklern dabei, gemeinsam Lösungen für akute technische Probleme zu finden.</p>
+<h2><a class="header" href="#akademischer-forschungsrat" id="akademischer-forschungsrat">Akademischer Forschungsrat</a></h2>
+<p>Im Jahr 2018 gab die IOTA Stiftung einen akademischen Forschungsrat bekannt. Sie haben ein beeindruckendes Forschungsteam aufgebaut, welches aus weltweit führenden Professoren, Doktoranden und Wissenschaftlern besteht. Der Rat wird eng mit den Forschungsabteilungen zusammenarbeiten, um die strategische Ausrichtung der Technologie festzulegen und der IOTA Forschung einen akademischen Rahmen zu geben. Im September 2019 ist Professor Jon Crowcroft, einer der international anerkanntesten Forscher für verteiltes Rechnen, beigetreten.</p>
+<h2><a class="header" href="#wertecheck-2" id="wertecheck-2">Wertecheck</a></h2>
+<ul>
+<li>Vielfalt</li>
+<li>Remote-Kultur</li>
+</ul>
+<p><a href="01_was_ist_iota/">IOTA</a></p>
+<h1><a class="header" href="#der-ecosystem-development-fund" id="der-ecosystem-development-fund">Der Ecosystem Development Fund</a></h1>
+<div class="introdution">
+Förderprogramm zur Unterstützung von IOTA relevanten Projekten.
+</div>
+<p>TEXT FELIX REICHARD</p>
+<p>Viele Menschen haben gute Ideen und auch das Wissen und die Fähigkeiten diese Ideen umzusetzen. Doch gerade gemeinnützige Projekte haben oft Schwierigkeiten eine passende Finanzierung zu finden. Um Ideen Realität werden zu lassen, braucht man in aller Regel Geld. Genau aus diesem Grund wurde von der IOTA Stiftung Anfang 2018 der IOTA Ecosystem Development Fund (kurz EDF) gegründet. Dieser soll die finanzielle Lücke zwischen Idee und tatsächlicher Umsetzung schließen.</p>
+<h2><a class="header" href="#warum-ein-fonds" id="warum-ein-fonds">Warum ein Fonds?</a></h2>
+<p>IOTA ist eine noch recht junge Technologie. Um diese voranzutreiben, braucht es Pioniere, die auf IOTA basierende Projekte entwickeln. Sowohl Proof of Concepts (PoC) als auch Produkte die darüber hinausgehen. Es gibt viele Firmen, die bereits eigene Lösungen auf dem IOTA Tangle aufbauen. Doch viele Projekte entstehen privat durch Entwickler aus der Community, die Spaß an Neuem haben. Sie möchten die Technologie voranbringen und die sich bietenden Möglichkeiten für eigene Geschäftsideen nutzen. Glücklicherweise ist die IOTA Community voll von diesen schlauen Köpfen. Teilweise sind diese Projekte aber so groß, dass die Ausgaben den privaten Rahmen, der oft recht jungen Entwickler, sprengen. Damit diese Ideen nicht einfach aufgegeben werden, hat die IOTA Stiftung einen Fonds ins Leben gerufen. Entwickler können hier ihr Projekt vorstellen und sich für eine finanzielle Unterstützung bewerben.
+Ein Gremium, bestehend aus Mitgliedern der IOTA Stiftung, entscheidet dann über die Wichtigkeit des Projektes und ob es langfristig Sinn macht, dieses finanziell zu unterstützen. In erster Linie werden natürlich Projekte bevorzugt, die das volle Potential der Technologie verdeutlichen. Aber auch Awareness Kampagnen, wie der Youtube Kanal „Everything Tangle“ werden unterstützt. Dieser
+wurde mit 8.000 US-Dollar finanziert, um weitere Videos von hoher Qualität und in diversen Sprachen umzusetzen. Denn nicht nur die Technologie muss reifen - auch die Bekanntheit und das Verständnis für IOTA muss gefördert werden.
+Da IOTAs Tangle auf eine gänzlich neue Art funktioniert und mit der altbekannten Blockchain nicht mehr viel gemein hat, bedarf es auf diesem Gebiet einiger Aufklärung.</p>
+<h2><a class="header" href="#von-der-community-für-die-community" id="von-der-community-für-die-community">Von der Community, für die Community</a></h2>
+<p>Das Geld, das im EDF zur Verfügung steht, sind größtenteils Spenden von Community Mitgliedern, die frühzeitig in IOTA investiert haben und so einen hohen Return of Investment (ROI) erhalten haben. Einen Teil dieser Einnahmen wollten diese Menschen mit der Community teilen und somit das Projekt IOTA unterstützen. Durch diese überaus großzügigen Spenden kam eine Summe von rund 20 Ti (Tera-IOTA) zustande. Eine enorm große Summe, die eine Unterstützung des Ecosystems für viele Jahre garantiert - selbst bei niedrigen Kursen.</p>
+<h2><a class="header" href="#der-ablauf" id="der-ablauf">Der Ablauf</a></h2>
+<p>Möchte ein Entwickler finanzielle Unterstützung erhalten, muss er einen Antrag stellen. Damit eine Unterstützung bewilligt wird, müssen gewisse Voraussetzungen erfüllt sein. Unter anderem sollte das Projekt für jeden quelloffen einsehbar sein (Open Source), von Community Mitgliedern initiiert und natürlich IOTA relevant sein. Dass ein Projekt auch kommerzielle Zwecke verfolgt, ist kein Ausschlusskriterium - es muss aber in jedem Fall eine Bereicherung für IOTA und das dahinter liegende Protokoll sein. Sobald das Projekt diesen Prozess erfolgreich absolviert hat, bekommt der Begünstigte seine beantragte Summe schrittweise ausgezahlt. Im Vorfeld müssen darfür gewisse Meilensteine definiert werden, zu denen eine Auszahlung erfolgt. Die Auszahlung erfolgt übrigens - wie könnte es auch anders sein - in IOTA. Es wurden bereits zahlreiche Projekte bewilligt, die dank des EDFs in die Realität umgesetzt werden konnten. Eines der ersten war das „Smart Flood Protection“ Projekt. Ein Proof of Concept, das mit $26.500 US-Dollar unterstützt wurde.</p>
+<h2><a class="header" href="#crypto-core-fpga" id="crypto-core-fpga">Crypto Core FPGA</a></h2>
+<p>Eines der in der IOTA Community bekanntesten Projekte, das vom EDF Komitee bewilligt wurde, ist der „Crypto Core FPGA“ vom Community-Mitglied MicroEngineer. Der Crypto Core FPGA soll es eingebetteten Systemen ermöglichen, die IOTA-Basisfunktionen sicher, effizient und vor allem schnell durchzuführen. Er macht Adressgenerierung, POW (proof of work), Seed-Management und vieles mehr über eine API zugänglich. Somit wird eine einfache Integration der IOTA-Technologie in bestehende oder neu zu entwickelnde Systeme ermöglicht. 59.110 US-Dollar wurden hierfür vom EDF zur Verfügung gestellt.</p>
+<p>Microengineer über den EDF
+„Ich finde den EDF großartig, da dieser es Entwicklern ermöglicht, sich vollständig und ohne finanziellen Druck, auf ihr Projekt zu fokussieren. Ohne eine Initiative wie den EDF wäre eine Umsetzung vieler komplexer Projekte sonst nicht möglich. Auch die Zusammenarbeit mit dem Team des Ecosystem Development Fund, Mark Schmidt, Dave de Fijter und allen anderen Beteiligten, möchte ich auf diesem Weg loben.“</p>
+<h2><a class="header" href="#xdk2mam" id="xdk2mam">XDK2MAM</a></h2>
+<p>Wer sich mit IoT, Daten und Konzepten in diesen Bereichen beschäftigt, für den wird der Bosch XDK sicher nicht ganz unbekannt sein. Beim XDK handelt es sich um eine all-in-one Entwicklerplattform, deren Hardware und zur Verfügung gestellte Software speziell auf Anwendungen im IoT-Bereich (Internet of Things) ausgelegt ist.
+Eine große Anzahl an Sensoren, u.a. für Temperatur, Luftfeuchtigkeit, Helligkeit, Bewegung, sowie eingebaute WLAN- und Bluetooth-Module, machen dieses kleine Gerät zu einem idealen Tool für verschiedenste Anwendungsgebiete.
+Da IOTA den Hauptfokus auf das Internet der Dinge legt, ist es naheliegend, diese Hardwarekomponente mit dem IOTA Tangle zu verknüpfen. Dieser Schnittstelle haben sich Daniel De Michele und Alejandro Elustondo angenommen. Mit ihrem Projekt XDK2MAM wollen sie ein Tool zur Verfügung stellen, das jedem eine einfache Verknüpfung des Bosch XDK mit dem IOTA Tangle ermöglichen soll. XDK2MAM ist bereits Partner des Bosch XDK Ecosystems, sowie des IOTA Data Marketplace.
+Das Hauptziel ist es eines Tages Daten, die von einzelnen Sensoren kommen, automatisch und ohne weitere Zwischenschritte auf dem Tangle zu veröffentlichen. Dies wäre ein großer Schritt für jeden, der verschiedenste Daten z.B. auf dem IOTA Data Marketplace anbieten möchte. Gefördert wurde das Projekt von Daniel De Michele und Alejandro Elustondo mit $85.150 US-Dollar aus dem EDF.
+Daniel De Michele sagt dazu
+„Heute ist XDK2MAM ein Open-Source-Code Hub mit Anleitungen, Videotutorials und aller notwendigen Software, um den XDK110 nach Ihrer bevorzugten Methode sofort einsatzbereit zu machen. Wir brauchen nicht zu sagen, dass all dies ohne die EDF-Mittel nicht geschehen wäre.“</p>
+<h2><a class="header" href="#iota-industrial-lab-aachen-iila" id="iota-industrial-lab-aachen-iila">IOTA Industrial Lab Aachen (IILA)</a></h2>
+<p>Eines der einflussreichsten Projekte ist das IOTA Industrial Lab Aachen (IILA). Diese Initiative wurde bislang größtenteils von der Universität RWTH Aachen finanziert und bietet Studenten und Repräsentanten verschiedenster Industriezweige die Möglichkeit, an Themen wie künstlicher Intelligenz, M2M-Kommunikation, Machine Economy und natürlich der IOTA Technologie zu forschen.
+Die $50.000 US-Dollar, die vom EDF zur Verfügung gestellt werden, dienen größtenteils der Erstellung und Weiterentwicklung von Proof of Concepts für den Industrial Internet of Things (IIoT) Supply Chain Bereich.
+Konkret geht es darum, Daten aus Präzisionsschneideanlagen fälschungssicher, verschlüsselt und in Echtzeit im IOTA Tangle abzulegen. Dadurch wird ein sogenannter “digitaler Zwilling” geschaffen, über den Prozessdaten fälschungssicher nachprüfbar sind.
+Daniel Trauth, Chief Engineer der WZL RWTH Aachen und Gründer des Industrial IOTA Lab Aachen, hat mit seinem Team schon für einige Aufmerksamkeit in diesem Bereich gesorgt und auch in vielen Vorträgen und Präsentationen die Vorteile von IOTA den Vertretern unterschiedlichster Branchen vor Augen geführt.
+Daniel Trauth über den EDF
+„Der EDF der IOTA Stiftung hat uns, das Industrial IOTA Lab Aachen des WZL der RWTH Aachen, zu Pionieren der industriellen Implementierung eines Machine Economy Use Cases gemacht. Auch wenn es seitdem stiller um uns geworden ist, so perfektionieren wir noch immer den durch den EDF ermöglichten Use Case und werden schon bald Neuigkeiten verkünden können. Der EDF ist perfekt, um abseits bürokratischer Fördergeber schnell einen Use Case aufzubauen und Kritiker zu überzeugen.“</p>
+<h2><a class="header" href="#transparenz" id="transparenz">Transparenz</a></h2>
+<p>Transparenz spielt für die IOTA Foundation in allen Bereichen eine große Rolle. So natürlich auch beim Ecosystem Development Fund. Auf fund.iota.org kann jederzeit der aktuelle Stand der verbleibenden Summe eingesehen werden.
+Die Seite transparency.iota.org zeigt detailliert auf, welche Projekte bereits bewilligt wurden und welche Summen diese bereits erhalten haben. All diese Informationen sind auf dem IOTA Tangle abgelegt.
+Mark Schmidt über Transparenz
+„Der Ecosystem Development Fund wurde durch die Spenden der Community ins Leben gerufen.
+Es liegt uns sehr am Herzen, den daraus entstehenden Fortschritt mit der Community zu teilen und bis ins kleinste Detail transparent mit allen zusammenhängenden Auszahlungen und Grant-Dokumenten zu sein.“</p>
+<h2><a class="header" href="#fazit" id="fazit">Fazit</a></h2>
+<p>Der Ecosystem Development Fund ist eine brillante Initiative. Entwickler und andere Parteien, die den Fortschritt von IOTA fördern, haben so eine Möglichkeit, ihre Ideen und Visionen Realität werden zu lassen. Ohne ein solches Förderprogramm würden vermutlich viele Projekte nie das Licht der Welt erblicken.
+Durch den EDF und das dazugehörige IOTA Ecosystem hat sich ein Ökosystem aus Entwicklern, Visionären und Pionieren entwickelt, das den Fortschritt der IOTA Technologie in einer bisher unvorstellbaren Art und Weise vorantreibt.</p>
+<h2><a class="header" href="#wertecheck-3" id="wertecheck-3">Wertecheck</a></h2>
+<ul>
+<li>Gemeinschaft </li>
+<li>Förderung</li>
+</ul>
+<p><a href="01_was_ist_iota/">IOTA</a></p>
+<h1><a class="header" href="#iota-linksammlung" id="iota-linksammlung">IOTA Linksammlung</a></h1>
+<p>Du willst noch mehr erfahren? Hier findest Du alle wichtigen Links der IOTA Stiftung.</p>
+<ul>
+<li><a href="01_was_ist_iota/www.iota.org">Offizielle Webseite</a></li>
+<li><a href="https://trinity.iota.org">Trinity Wallet</a></li>
+<li><a href="https://blog.iota.org">News</a></li>
+<li><a href="https://ecosystem.iota.org">Ecosystem</a></li>
+<li><a href="https://fund.iota.org">Ecosystem Development Fund</a></li>
+<li><a href="https://data.iota.org">Daten Marktplatz</a></li>
+<li><a href="https://industry.iota.org">Industrie Marktplatz</a></li>
+<li><a href="https://qubic.iota.org">Qubic</a></li>
+<li><a href="https://automation.iota.org">The Automation Series Podcast</a></li>
+<li><a href="https://coordicide.iota.org">Coordicide</a></li>
+<li><a href="https://training.iota.org">Developer Course</a></li>
+<li><a href="https://docs.iota.org">Dokumentation</a></li>
+<li><a href="https://coordicide.iota.org">Coordicide</a></li>
+</ul>
+<h1><a class="header" href="#was-ist-einfachiota" id="was-ist-einfachiota">Was ist einfachIOTA?</a></h1>
+<div class="introdution">
+EinfachIOTA ist nicht nur eine Webseite, die IOTA einfach erklärt. Dahinter steht ein gemeinnütziger Verein, eine große Community und ein starkes Team.
+</div>
+<p>TEXT SEBASTAN HEUSSER</p>
+<h1><a class="header" href="#unsere-mission" id="unsere-mission">Unsere Mission</a></h1>
+<div class="introdution">
+Unsere Aufgabe ist es, deutschsprachigen Inhalte rund um IOTA bereitzustellen und in einfacher Sprache zu erklären.
+</div>
+<p>TEXT SEBASTAN HEUSSER</p>
+<p>Fast alle Publikationen, Dokumentationen sowie Neuigkeiten aus der IOTA Stiftung und aus der Community werden in englischer Sprache verfasst. Unser Autorenteam sammelt, übersetzt und veröffentlicht diese Beiträge auf unserer Webseite und bietet somit einen Sammelpunkt für wichtige Informationen in deutscher Sprache. Auf einfachIOTA.de findest Du auch einige, vom Autorenteam verfasste, Artikel zu Projekten und Events aus dem IOTA Ökosystem. Wir führen spannende Interviews und erstellen sogar eigene Videos.</p>
+<h2><a class="header" href="#projekte-der-woche" id="projekte-der-woche">Projekte der Woche</a></h2>
+<p>Wir halten stets Ausschau nach spannenden Projekten, die in irgendeiner Form etwas mit IOTA zu tun haben. Mit dem Format Projekt der Woche wird ein solches Projekt unter die Lupe genommen und darüber berichtet. Ein Interview mit dem Gründerteam bringt oft neue Einblicke in das Projekt und in die Vision. Wir möchten mit dieser Reihe den Projekten mehr Aufmerksamkeit geben, aber auch einen neuen Raum zum Netzwerken bieten, denn viele der Projekte müssen die gleichen Probleme lösen. Wir bieten den Teams und Unternehmen einen Raum, um genau solche Probleme zu erkennen und gemeinsam und nachhaltig zu beheben. Projekte bekommen bei uns einen Kanal, in dem sie über Probleme berichten können, aber auch Neuigkeiten und Erfahrungen teilen können.</p>
+<h2><a class="header" href="#iota-meetups" id="iota-meetups">IOTA Meetups</a></h2>
+<p>Überall auf der Welt werden IOTA Meetups veranstaltet. Wir unterstützen diese Meetups beim Marketing, Planung, bei der Veranstaltung selbst und natürlich auch bei der Nachbereitung. Wir versuchen auch Vorort zu berichten, wie zum Beispiel mit einen Livestream, oder nehmen Videomaterial auf, das von unserem Media Team zu einem tollen Video verarbeitet wird. Auf Wunsch bringen wir auch unseren Ausstellungsstand mit. Dieser zeigt verschiedene IOTA Anwendungsbeispiele und enthält Informationen zu spannenden Projekten aus dem IOTA Ökosystem.</p>
+<h2><a class="header" href="#workshop-und-tutorials" id="workshop-und-tutorials">Workshop und Tutorials</a></h2>
+<p>Viele Menschen möchten mit dem Programmieren anfangen. Meist ist da aber nicht nur die technische Hürde, sondern auch eine sprachliche. Daher bieten wir Workshops und Tutorials für Programmieranfänger und IOTA Einsteiger, bis hin zum Experten. Schritt für Schritt Anleitungen und Tools zum Arbeiten mit dem Tangle werden von der Community, für die Community, bereitgestellt und stets verbessert.</p>
+<h2><a class="header" href="#videos-und-news-zum-anhören" id="videos-und-news-zum-anhören">Videos und News zum Anhören</a></h2>
+<p>Manche News, werden von unserem VoiceNews Team vorgelesen und aufgezeichnet, damit Du Dir das Wichtigste auch auf dem Weg zur Arbeit anhören kannst. Neuerdings haben wir auch einen eigenen YouTube Kanal, auf dem wir die Videos zu den Meetups, Präsentationen und andere Unterhaltung, wie einfachCozmo veröffentlichen. Cozmo ist ein kleiner intelligenter Roboter, der IOTA sehr mag und spielerisch Dinge erklärt. Schau doch mal vorbei.</p>
+<h2><a class="header" href="#wir-bringen-antworten" id="wir-bringen-antworten">Wir bringen Antworten</a></h2>
+<p>Du hast Fragen zu IOTA? Das einfachIOTA Discord bietet dir die Möglichkeit diese Fragen zu stellen. Das einfachIOTA Team oder die Community wird Dir bestimmt weiterhelfen können. Mit unserer Artikelreihe “Was ist...?” beantworten wir die am häufigsten gestellten Fragen in einem Artikel und Video.</p>
+<h1><a class="header" href="#wir-stellen-uns-vor" id="wir-stellen-uns-vor">Wir stellen uns vor</a></h1>
+<div class="introdution">
+Wir haben unsere „Projekt der Woche“ Fragen dieses Mal für uns selbst beantwortet.
+Hier erfährst du, was einfachIOTA ist und wer dahinter steckt.
+</div>
+<p>TEXT SEBASTAN HEUSSER</p>
+<p>Normalerweise stellen wir diese Fragen nur den Teams, welche
+hinter Projekten aus dem IOTA Ökosystem stammen. Da wir aber auch ein Projekt aus dem IOTA Ökosystem sind, haben wir dieses Mal die Fragen selbst beantwortet.</p>
+<h2><a class="header" href="#beschreibe-das-projekt-kurz-und-einfach" id="beschreibe-das-projekt-kurz-und-einfach">Beschreibe das Projekt kurz und einfach.</a></h2>
+<p>Unsere Aufgabe ist es, deutschsprachigen Inhalt rund um IOTA bereitzustellen und IOTA in einfacher Sprache zu erklären. Wir verfolgen die Ziele der IOTA Foundation und stellen viele Inhalte aus dem IOTA Ökosystem in deutscher Sprache bereit</p>
+<h2><a class="header" href="#wie-ist-die-idee-dazu-entstanden" id="wie-ist-die-idee-dazu-entstanden">Wie ist die Idee dazu entstanden?</a></h2>
+<p>Es gab damals einfach keine Webseite, die IOTA in leichter Sprache und auf Deutsch erklärt hat.</p>
+<h2><a class="header" href="#an-welche-zielgruppe-ist-das-projekt-gerichtet" id="an-welche-zielgruppe-ist-das-projekt-gerichtet">An welche Zielgruppe ist das Projekt gerichtet?</a></h2>
+<p>Wir möchten Neulingen helfen, die IOTA Technologien besser zu verstehen und IOTA Enthusiasten neue, spannende Beiträge liefern.</p>
+<h2><a class="header" href="#auf-welche-vision-stützt-sich-das-projekt" id="auf-welche-vision-stützt-sich-das-projekt">Auf welche Vision stützt sich das Projekt?</a></h2>
+<p>Komplizierte Dinge verständlich zu machen und eine Möglichkeit des Wissensaustauschs zu bieten. Die Vision ist eine große und hilfsbereite Community.</p>
+<h2><a class="header" href="#hat-das-projekt-konkrete-ziele-wenn-ja-welche" id="hat-das-projekt-konkrete-ziele-wenn-ja-welche">Hat das Projekt konkrete Ziele? Wenn ja, welche?</a></h2>
+<p>Wir übersetzen jeden Blogeintrag so schnell wie möglich und stellen ihn der Community zur Verfügung. Das Ganze möchten wir nun auch intensiver für Projekte tun. Dadurch soll der Austausch von Neuigkeiten und Wissen von erfahrenen Teams und der Community angeregt werden.</p>
+<h2><a class="header" href="#wo-werden-iota-technologien-eingesetzt" id="wo-werden-iota-technologien-eingesetzt">Wo werden IOTA Technologien eingesetzt?</a></h2>
+<p>Wir betreiben eine Webseite mit einem Content Management System und haben nur kleine Anwendungsfälle für IOTA. Aber wir haben ein paar Beispielprojekte mit IOTA testweise laufen. Wir zählen zum Beispiel unsere Besucher auf der Webseite mit Hilfe des Tangles. Das ist komplett anonym, denn jeder Besucher sendet eine Transaktion ohne jeglichen Inhalt aus dem Browser auf eine bestimmte Adresse. Wir lesen nun einfach aus, wie viele Transaktionen auf dieser Adresse vorhanden sind und haben somit die gesamte Besucheranzahl. Durch den Zeitstempel der Transaktionen können wir auch sehen, wann ein Besucher die Seite geöffnet hat.</p>
+<h2><a class="header" href="#welche-iota-technologien-werden-benutzt" id="welche-iota-technologien-werden-benutzt">Welche IOTA Technologien werden benutzt?</a></h2>
+<p>Für den Besucherzähler haben wir die Javascript Bibliothek benutzt. In unseren Artikeln, Tutorials und Workshops gehen wir aber auf viele andere Bibliotheken und Technologien ein. Wir haben zum Beispiel ein Tutorial, in dem wir einen ESP32 zu einem Hardwarewallet umgewandelt haben. Das Ganze wurde mit der Programmiersprache C und der zugehörigen Bibliothek umgesetzt. Das Tutorial kann man einfach Schritt für Schritt nachmachen.</p>
+<h2><a class="header" href="#welche-hard--und-software-wird-sonst-noch" id="welche-hard--und-software-wird-sonst-noch">Welche Hard- und Software wird sonst noch</a></h2>
+<p>verwendet?
+Für die Anbindung an den Tangle benutzen wir die Nodes von TangleBay.org, einem Community getriebenen Node Load Balancer, der aus sehr vielen Nodes besteht. Für unsere Artikel benutzen wir die Software “Ghost”. Das ist eine sehr gute Open-Source Software zum Schreiben von Artikeln. Die Webseite ist mit Vue.js gebaut und bringt den Vorteil einer Progressive Web App mit, das heißt, sie kann auf dem Startbildschirm Deines Handys abgespeichert werden.</p>
+<h2><a class="header" href="#wurden-andere-dlts-abgewägt" id="wurden-andere-dlts-abgewägt">Wurden andere DLTs abgewägt?</a></h2>
+<p>Haha, einfachBitcoin gab es schon. Nein Spaß beiseite! Wir haben uns mit den anderen Technologien stark auseinandergesetzt und gemerkt, dass die Blockchain an sich sehr große Schwachstellen hat. Wir haben fast alle bei Bitcoin angefangen, sind dann zu Ethereum gekommen und schließlich bei IOTA gelandet und bis heute davon überzeugt.</p>
+<h2><a class="header" href="#was-ist-der-hauptgrund-für-die-wahl-von-iota" id="was-ist-der-hauptgrund-für-die-wahl-von-iota">Was ist der Hauptgrund, für die Wahl von IOTA?</a></h2>
+<p>Die mögliche Skalierbarkeit während keinerlei Transaktionskosten anfallen, sowie die Möglichkeit, nur Daten senden zu können sind die technischen Aspekte die uns überzeugt haben. Der einfache Einstieg in die Entwicklung und eine große, lösungsorientierte und sehr hilfsbereite Community sind weitere Gründe dafür.</p>
+<h2><a class="header" href="#wer-ist-der-projektverantwortliche-und-wer-gehört-zum-team" id="wer-ist-der-projektverantwortliche-und-wer-gehört-zum-team">Wer ist der Projektverantwortliche und wer gehört zum Team?</a></h2>
+<p>Projektverantwortlicher ist aktuell Sebastian, auch bekannt unter dem Spitznamen Huhn. Er ist im November letzten Jahres als Autor dem Team beigetreten und kümmert sich jetzt um die Planung und Ausführung von Artikeln und Projekten. Das Team besteht heute aus 14 Mitgliedern. Steffen, aka NO8ODY der sich um die Infrastruktur hinter einfachIOTA kümmert. Volker, aka vrom ist unser Social Media Manager, der schneller twittert als sein Schatten. Thoralf hilft bei Fragen wenn es ums Entwickeln geht und packt auch gerne selbst mal mit an. Tobi, aka RonQen ist Autor und vertritt einfachIOTA auch auf den Meetup Bühnen. Zu den Autoren gehören auch Kai (Kaineahnung), Mario (impi), Patrik (pstrump), Ze$Ty und playnight. Das schöne Design kommt von unseren Designern Sven (r3p0x) und Richard (rck). Seit neustem haben wir drei weitere Mitglieder, die sich stark auf die Community fokussieren werden. Darunter sind Kryptonaut, IoTAngle und PIOTA.</p>
+<h2><a class="header" href="#welche-kenntnisse-und-erfahrungen-habt-ihr" id="welche-kenntnisse-und-erfahrungen-habt-ihr">Welche Kenntnisse und Erfahrungen habt ihr?</a></h2>
+<p>Wir sind ein bunt zusammengewürfeltes Team, wobei die meisten schon eher technische Kenntnisse haben. Das Team verfolgt schon länger das Geschehen und berichtet stets darüber. So haben wir alleine dieses Jahr schon über 100 Artikel der IOTA Stiftung übersetzt und über viele Projekte und Meetups im Detail berichtet.</p>
+<h2><a class="header" href="#was-hat-euch-motiviert-das-projekt-voranzubringen" id="was-hat-euch-motiviert-das-projekt-voranzubringen">Was hat euch motiviert, das Projekt voranzubringen?</a></h2>
+<p>Es ist immer wieder erstaunlich, wie viel man lernt, wenn man versucht Dinge anderen zu erklären. Da wir selbst alles verstehen und mitbekommen wollen, war einfachIOTA nur der Sammelpunkt unserer Informationen und ein Ort, in dem wir uns besprechen konnten. Das Ganze kam dann in der Community gut an und wir haben einfach immer weitergemacht.</p>
+<h2><a class="header" href="#was-motiviert-euch-dazu-das-projekt-fortzuführen" id="was-motiviert-euch-dazu-das-projekt-fortzuführen">Was motiviert euch dazu, das Projekt fortzuführen?</a></h2>
+<p>Es macht sehr viel Spaß, über die verschiedenen Projekte zu berichten und neue Formate auszuprobieren. Die Community gibt uns tolles Feedback und somit können wir unsere Inhalte verbessern. Mit einfachIOTA bekommen wir alles mit, was rund um IOTA passiert, und das ist einfach sehr aufregend!</p>
+<h2><a class="header" href="#kann-die-community-euch-helfen-wenn-ja-wie" id="kann-die-community-euch-helfen-wenn-ja-wie">Kann die Community euch helfen? Wenn ja, wie?</a></h2>
+<p>Ja natürlich! Das kommt immer darauf an, was man machen möchte. Wir sind offen für neue Ideen, können aber auch bei unseren eigenen Ideen an fast jeder Stelle Unterstützung gebrauchen. Egal ob beim Artikel schreiben oder korrigieren, Videos drehen oder bearbeiten, etwas designen, programmieren, recherchieren oder einfach nur Fragen auf dem Discord Chat Server stellen, bzw. beantworten. Es gibt so viel zu tun und es wird immer mehr.</p>
+<quote>
+„Wir können nur eine kurze Zeit in die Zukunft blicken, aber
+wir können dort schon sehen, was getan werden muss.“
+- Alan Turing
+</quote>
+<h1><a class="header" href="#einfachiota-linksammlung" id="einfachiota-linksammlung">einfachIOTA Linksammlung</a></h1>
+<p>Du willst noch mehr erfahren? Hier findest Du alle wichtigen Links vom einfachIOTA e.V.
+Auf linkliste.einfachIOTA.de gibt es noch mehr.</p>
+<ul>
+<li><a href="02_was_ist_einfachiota/www.einfachIOTA.de">Offizielle Webseite</a></li>
+<li><a href="02_was_ist_einfachiota/community.einfachIOTA.de">Community</a></li>
+<li><a href="02_was_ist_einfachiota/blog.einfachIOTA.de">News</a></li>
+<li><a href="02_was_ist_einfachiota/magazin.einfachIOTA.de">Magazin</a></li>
+</ul>
+<h1><a class="header" href="#rückblick" id="rückblick">Rückblick</a></h1>
+<p>Rückblick 2015 bis Heute
+Wir blicken zurück zu den Anfängen</p>
+<p>Dieser Inhalt ist nur in der PDF Version oder im Print Magazin verfügbar.</p>
+<h1><a class="header" href="#aktuelles" id="aktuelles">Aktuelles</a></h1>
+<p>Bei so vielen Neuigkeiten, auf all den verschiendenen Kanälen, den Überblick zu behalten ist sicher auch für Dich eine echte Herausforderung. Deshalb haben wir hier die wichtigsten Neuigkeiten zusammengetragen.</p>
+<p>TEXT SVEN REISER</p>
+<h1><a class="header" href="#was-gibts-neues" id="was-gibts-neues">Was gibts Neues?</a></h1>
+<p>Die wichtigsten Neuigkeiten von der IOTA Foundation.</p>
+<p>TEXT SEBASTAN HEUSSER</p>
+<ol start="23">
+<li>Oktober 2019</li>
+</ol>
+<h2><a class="header" href="#auf-dem-weg-zu-offener-zusammenarbeit" id="auf-dem-weg-zu-offener-zusammenarbeit">Auf dem Weg zu offener Zusammenarbeit</a></h2>
+<p>FIWARE ist eine Open-Source-Initiative, die universelle Standards für das Kontextdatenmanagement definiert und die Entwicklung intelligenter Lösungen für verschiedene Bereiche wie Smart Citys, Smart Industry, Smart Agrifood und Smart Energie erleichtert. Die IOTA Stiftung kündigte eine vermehrte Zusammenarbeit mit der FIWARE Stiftung an, um die gemeinsamen Ziele schneller zu erreichen.</p>
+<ol start="23">
+<li>September 2019</li>
+</ol>
+<h2><a class="header" href="#iota-und-linux-foundation-arbeiten-gemeinsam-an-lfedge" id="iota-und-linux-foundation-arbeiten-gemeinsam-an-lfedge">IOTA und Linux Foundation arbeiten gemeinsam an LFEDGE</a></h2>
+<p>Das LF Edge-Framework wurde als führender Open-Source-Stack für IoT-, Edge- und Cloud-Interoperabilität anerkannt, es fehlt jedoch ein Schlüsselelement dieses Puzzles. Distributed Ledger Technology. Mit der offiziellen Kollaboration der IOTA und Linux Stifung soll dieses fehlende Teil ergänzt werden. Die Linux Foundation ist führend in der Open Source-Community, welche unter anderem den Kernel des Betriebssystem Linux vorantreibt.</p>
+<ol start="28">
+<li>Oktober 2019</li>
+</ol>
+<h2><a class="header" href="#partnerschaft-zwischen-iota-dell-technologies-und-linux-foundation" id="partnerschaft-zwischen-iota-dell-technologies-und-linux-foundation">Partnerschaft zwischen IOTA, Dell Technologies und Linux Foundation</a></h2>
+<p>Die IOTA Foundation kündigt eine neue offizielle Zusammenarbeit mit der Linux Foundation und Dell Technologies an einem Projekt unter dem Codenamen Avalon an. Das Projekt Alvarium ist ein Meilenstein für die Open Source-Entwicklung in Bezug auf verteilte Technologien, digitales Vertrauen, Datenschutz und Vertrauen in Daten.</p>
+<ol start="23">
+<li>Juli 2019</li>
+</ol>
+<h2><a class="header" href="#zusammenarbeit-mit-stmicroelectronics" id="zusammenarbeit-mit-stmicroelectronics">Zusammenarbeit mit STMicroelectronics</a></h2>
+<p>Die IOTA Stiftung arbeitet nun mit STMicroelectronics zusammen, einem weltweit führenden Halbleiterhersteller, um eine neue Ebene des Zugangs zur Internet of Things (IoT) zu schaffen. Die Partnerschaft wurde geschlossen, nachdem STMicroelectronics von sich aus eine IOTA Implementierung auf dem hauseigenen Mikrocontroller STM32 entwickelt haben. Diese Entwicklung unter dem Namen X-CUBE- IOTA1 wurde zum Eckpfeiler der Zusammenarbeit.</p>
+<ol>
+<li>Oktober 2019</li>
+</ol>
+<h2><a class="header" href="#partnerschaft-zwischen-iota-und-zühlke" id="partnerschaft-zwischen-iota-und-zühlke">Partnerschaft zwischen IOTA und Zühlke</a></h2>
+<p>IOTA kündigt die Partnerschaft mit Zühlke an. Das Ziel ist die Untersuchung neue Modelle für die Fertigung, die Kommunikation von Maschine zu Maschine und Echtzeitzahlungen.
+Zühlke Gruppe ist ein Dienstleister für Innovationsprojekte für Unternehmenskunden Produkte, Services und neue Geschäftsmodelle. Die Gruppe hat bisher insgesamt über 10’000 Software- und Produktentwicklungsprojekte erfolgreich realisiert.</p>
+<ol start="19">
+<li>September 2019</li>
+</ol>
+<h2><a class="header" href="#der-erste-dezentrale-industriemarktplatz" id="der-erste-dezentrale-industriemarktplatz">Der erste dezentrale Industriemarktplatz</a></h2>
+<p>Die IOTA Stiftung präsentierte nachdem Daten- und Telekommunikationsmarktplatz nun auch einen kostlosen, offnen und dezentralen Marktplatz für die Industrie. Der Marktplatz soll als Demonstration dienen und wird in Zukunft mit Partnern aus der Industrie weiterentwickelt. Der Industry Marketplace wird als hersteller- und branchenneutrale Plattform dienen und den Handel mit physischen und digitalen Waren und Dienstleistungen automatisieren.</p>
+<h1><a class="header" href="#menschen" id="menschen">Menschen</a></h1>
+<p>Es sind die Menschen, die die Welt verändern. Es sind die Menschen, die mit Optimismus und Mut in die Zukunft blicken und gemeinsam auf ein großes Ziel hinarbeiten. IOTA hat es geschafft, viele Tausende Enthusiasten und Philanthropen auf einen gemeinsamen Weg zu schicken und wir stellen Dir heute eine Handvoll dieser Menschen vor. In unserem 5x5 Format haben wir fünf Menschen aus dem Universum die gleichen fünf Fragen gestellt. Außerdem haben wir in dieser Ausgabe einen ganz besonderen Gast im Spotlight: Dominik Schiener, einer der Gründer der IOTA Foundation. Nach dem Motto Ein Tag im Leben von ... lernst Du Dominik heute mal ganz privat kennen.</p>
+<p>TEXT SVEN REISER</p>
+<h1><a class="header" href="#5x5-fragen" id="5x5-fragen">5x5 Fragen</a></h1>
+<p>Wir stellen vor: 5 Menschen aus dem IOTA Ecosystem</p>
+<h2><a class="header" href="#antonio-nardella" id="antonio-nardella">Antonio Nardella</a></h2>
+<p>@antonionardella
+Antonio arbeitet bei der IOTA Foundation als Community Manager, ist Technologie Berater, Meetup Organizer, Speaker und Leiter des Projektes #STODT.</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden" id="wie-hast-du-zu-iota-gefunden">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Ich muss gestehen, dass ich relativ spät auf IOTA gekommen bin. Durch einen Artikel in der Wirtschaftszeitung in Südtirol bin ich auf Dominik Schiener und IOTA aufmerksam geworden und von da aus ging die Recherche und das Basteln mit IOTA los.</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade" id="an-was-arbeitest-du-gerade">An was arbeitest du gerade?</a></h3>
+<p>Momentan arbeite ich an technischen „Meetup Packages“. Es handelt sich um eine Serie von Präsentationen, Hintergrund- informationen und Erklärungen um von Null aus mit lokalen und unabhängigen IOTA Community Meetups loszulegen.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten" id="wie-informierst-du-dich-über-neuigkeiten">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Im internen Slack der IOTA Foundation ;) Ausserhalb nutze ich Twitter, etliche Telegram Gruppen, Reddit, das offizielle Discord oder die IOTA Digest App von Rafael Rohden.</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota" id="was-vermisst-du-bei-iota">Was vermisst du bei IOTA?</a></h3>
+<p>Ich kann heute nicht sagen, dass ich etwas vermisse. Als Italiener würde ich manchmal sehr gerne bei jemandem ins Büro reinspazieren und zu einem gemeinsamen Kaffee einladen.</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota" id="was-begeistert-dich-am-meisten-an-iota">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Ich bin so sehr ermutigt von den Mitgliedern der IOTA Foundation, ihrer Vision und dem Einsatz, den sie jeden Tag in diese weltbewegende Technologie investieren.</p>
+<h3><a class="header" href="#janna-zielinski" id="janna-zielinski">Janna Zielinski</a></h3>
+<p>@jz_berlin
+Head of Strategic Projects, IOTA Foundation</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden-1" id="wie-hast-du-zu-iota-gefunden-1">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Vor meiner Tätigkeit bei IOTA war ich 3 Jahre als Strategie- und Digitalberaterin tätig. Im Zuge dessen lernte ich unsere Gründer von IOTA während eines Projekts Anfang 2018 kennen. Die Innovationsfähigkeit von Dominik und David sowie des damals bestehenden Teams haben mich von Anfang an begeistert.</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade-1" id="an-was-arbeitest-du-gerade-1">An was arbeitest du gerade?</a></h3>
+<p>Meine Tätigkeiten sind sehr vielseitig. Unter anderem akquiriere und betreue ich neue Industriepartner und Projekte, vertrete die Foundation auf externen Events, unterstütze die Adoption der Technologie durch die Hilfe bei der Evaluierung von Use und Business Cases und arbeite mit internen und externen Kollegen und Partnern an der Entwicklung neuer Daten- getriebener Geschäftsmodelle.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten-1" id="wie-informierst-du-dich-über-neuigkeiten-1">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Bei der IOTA Foundation managen wir den Informationsfluss vor allem über Slack und entsprechende themenorientierte Channels. Darüber hinaus folge ich IOTA bei Twitter und LinkedIn.</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota-1" id="was-vermisst-du-bei-iota-1">Was vermisst du bei IOTA?</a></h3>
+<p>Wir sind eine komplett dezentrale Organisation, die mit über 120 Kollegen aus mehr als 23 verschiedenen Ländern, einen innovativen Arbeitsplatz mit entsprechend flacher Organisation bietet. Dies führt jedoch auch teilweise zu erhöhten Abstimmungs- und Koordinationsaufwänden.</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota-1" id="was-begeistert-dich-am-meisten-an-iota-1">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Die Internationalität des Teams sowie die Möglichkeit mit unseren Partnern an disruptiven Geschäftsmodellen zu arbeiten sind für mich die größten Mehrwerte an meiner Tätigkeit für die Foundation.</p>
+<h3><a class="header" href="#arne-flick" id="arne-flick">Arne Flick</a></h3>
+<p>@rionord
+Arne ist ein digitaler Unternehmer, der mit repeatmobile GmbH und der IOT1 Academy verschiedene Digital Learning Companies mit Sitz in Berlin und Shanghai betreibt und mit der IF eine exklusive Partnerschaft für IOTA Kurse geschlossen hat.</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden-2" id="wie-hast-du-zu-iota-gefunden-2">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Ich organisierte 2016 einen Status Blockchain Event in Berlin für 30 chinesische Unternehmer und Regine Haschka-Helmer brachte Dom zu einem IOTA Vortrag vorbei. Danach war das Interesse für IOTA bei mir geweckt.</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade-2" id="an-was-arbeitest-du-gerade-2">An was arbeitest du gerade?</a></h3>
+<p>Wir arbeiten gerade am “IOTA Onboarding Kurs für Manager”, der am Xmas Event der IF vorgestellt werden soll. Dort werden wir vor allem Vorteile und Nutzen von IOTA samt Use-Cases vermitteln, ein wichtiger Kurs, der weltweites Interesse geweckt hat.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten-2" id="wie-informierst-du-dich-über-neuigkeiten-2">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Über die Discord und Telegram-Channel und Twitter aber auch über die tollen Kontakte zur Community und zur Foundation, die ich genießen darf. Auch in digitalen Zeiten ist der persönliche Kontakt essentiell für Neues.</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota-2" id="was-vermisst-du-bei-iota-2">Was vermisst du bei IOTA?</a></h3>
+<p>Ich glaube, wir könnten mehr einfachste Use-Cases in Umfeldern von Firmen gebrauchen, die zeigen, dass IOTA operativ sehr gut einsatzfähig ist. Und natürlich den Coordicide. ;)</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota-2" id="was-begeistert-dich-am-meisten-an-iota-2">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Wie sehr die Community zusammenhält und den Vibe, den sie hat. Das ist großartig und wirklich selten. Und natürlich das Potential einer Technologie, die alles in den Schatten stellen wird und nur wenige wussten es. ;)</p>
+<h2><a class="header" href="#hans-moog" id="hans-moog">Hans Moog</a></h2>
+<p>@hus_qy
+Hans ist Softwareentwickler und Researcher bei der IOTA Foundation und arbeitet an der Software, welche die Coordicide Lösung testet.</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden-3" id="wie-hast-du-zu-iota-gefunden-3">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Vor IOTA war ich einem Bereich tätig, der Kryptowährungen für automatisierte “micro-payments” benutzte. Mit steigender Popularität und steigenden Gebühren wurde Bitcoin irgendwann einfach zu teuer. Auf der Suche nach Alternativen, stieß ich auf IOTA und verliebte mich.</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade-3" id="an-was-arbeitest-du-gerade-3">An was arbeitest du gerade?</a></h3>
+<p>Momentan arbeite ich an goshimmer - einem modularen “IOTA node” der Forschungsabteilung, der versucht die Coordicide Konzepte (aber auch Themen wie sharding, colored coins, wiederverwendbare Adressen usw.) in die Praxis umzusetzen.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten-3" id="wie-informierst-du-dich-über-neuigkeiten-3">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Der Kryptobereich ist so schnelllebig, dass es irgendwann schwierig wird immer alles selbst im Blick zu haben. Wenn aber irgendwo jemand einen Durchbruch erzielt bekommt man das meist über persönliche Kontakte relativ schnell mit.</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota-3" id="was-vermisst-du-bei-iota-3">Was vermisst du bei IOTA?</a></h3>
+<p>Ich würde mir wünschen, dass IOTA etwas offener im Umgang mit Informationen wäre. Wir haben beispielsweise konkrete Konzepte bezüglich sharding, in der Hinterhand, die den Unterschied zwischen einem guten DLT und einem game changer ausmachen.</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota-3" id="was-begeistert-dich-am-meisten-an-iota-3">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Die Kombination aus Vision und Technologie! IOTA ist für mich die Verkörperung des Ideals einer perfekten Kryptowährung, die die richtigen Ideale mit der richtigen Technologie verbindet.</p>
+<h2><a class="header" href="#thomas-pototschnig" id="thomas-pototschnig">Thomas Pototschnig</a></h2>
+<p>@ThomasPototsch1
+Thomas ist Linux Systemadmistrator und bekannt durch seine IOTA Hardware, die er in der Freizeit herstellt.</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden-4" id="wie-hast-du-zu-iota-gefunden-4">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Ganz unspektakulär über eine Computer- zeitung. Das Konzept begeisterte mich direkt, da ich Blockchains und deren Skalierungsprobleme schon seit 2011 kenne. Deshalb habe ich übrigens nie in Bitcoin investiert, weil ich mir dachte: ”Das skaliert ja niemals!” - wer hätte schon ahnen können, dass sich die Probleme so lange hinauszögern lassen ;-)</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade-4" id="an-was-arbeitest-du-gerade-4">An was arbeitest du gerade?</a></h3>
+<p>Nachdem mein gefundetes Core Ecosystem-Projekt im August abgeschlossen wurde, geht es nun darum, einen praktischen Nutzen aus der Arbeit zu ziehen. Das wird in Form eines Raspberry-Pi HATs als Development-Board für das FPGA- Modul geschehen, wofür es auch schon erste Abnehmer aus der Industrie gibt.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten-4" id="wie-informierst-du-dich-über-neuigkeiten-4">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Ich lese fleißig im IOTA Discord und auf Twitter - das meiste Wichtige verpasse ich trotzdem. Big shout-out an vrom, der mich über Twitter - und gelegentlich per Privatnachricht - auf dem Laufenden hält :-)</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota-4" id="was-vermisst-du-bei-iota-4">Was vermisst du bei IOTA?</a></h3>
+<p>Dass es keine Informationen über Jinn gibt^^ Gerade als Hardware-Entwickler ist man doch sehr neugierig darauf.</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota-4" id="was-begeistert-dich-am-meisten-an-iota-4">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Die IOTA-Foundation, die ein sehr solides Fundament gelegt hat, was absolut wichtig für den Erfolg von IOTA ist. Und natürlich die Menschen hinter der IF.</p>
+<h1><a class="header" href="#spotlight" id="spotlight">Spotlight</a></h1>
+<p>EIN TAG IM LEBEN VON
+Dominik Schiener
+In unserem Spotlight haben wir Dominik Schiener interviewt.</p>
+<p>INTERVIEW SEBASTAN HEUSSER</p>
+<p>Dieser Inhalt ist nur in der PDF Version oder im Print Magazin verfügbar.</p>
+<h1><a class="header" href="#events" id="events">Events</a></h1>
+<p>Die meisten unter uns kennen sich nicht einmal bei echtem Namen, geschweige denn haben wir ein Gesicht vor Augen. Wir, die IOTA Community sind auf der ganzen Welt verteilt und haben alle unsere eigene Geschichte, wie wir zu IOTA gefunden haben. Aber wir alle sind, trotz unserer Unterschiedlichkeit, vereint durch die Vision. In diesem Kapitel präsentieren wir Dir eines der schönsten Meetups aus diesem Jahr mit zahlreichen Bildern. Außerdem möchten wir Dich herzlich einladen, eines der nächsten Meetups zu besuchen. Wir hoffen sehr, dass wir auch Dich bald kennenlernen dürfen!</p>
+<p>TEXT SVEN REISER</p>
+<h1><a class="header" href="#zukünftige-events" id="zukünftige-events">Zukünftige Events</a></h1>
+<p>Hier ein paar Veranstaltungen die in nächster Zukunft stattfinden. Einen vollständigen IOTA Eventkalender findet ihr auf: https://community.einfachIOTA.de</p>
+<h2><a class="header" href="#iota-meetup-karlsruhe-iota-meets-business" id="iota-meetup-karlsruhe-iota-meets-business">IOTA Meetup Karlsruhe IOTA meets Business</a></h2>
+<p>Im Mittelpunkt des Meetups stehen die IOTA-Technologie sowie konkrete Anwendungsfälle aus der Praxis. Das Meetup ist der ideale Ort um Kontakte zu knüpfen, Inspiration zu finden und einen Einblick in eine evtl. noch nicht bekannte IOTA Technologie zu gewinnen.
+FZI Forschungszentrum Informatik
+Haid-und-Neu-Straße 12, 76131 Karlsruhe Dienstag, 10. Dezember 2019</p>
+<h2><a class="header" href="#iota-sternstunden-2019-in-berlin---rückblick-auf-das-vergangene-jahr-und-ausblick-auf-2020" id="iota-sternstunden-2019-in-berlin---rückblick-auf-das-vergangene-jahr-und-ausblick-auf-2020">IOTA Sternstunden 2019 in Berlin - Rückblick auf das vergangene Jahr und Ausblick auf 2020</a></h2>
+<p>Langsam rückt das Jahresende näher und wir halten dies für einen guten Zeitpunkt auf das zurückzublicken, was wir 2019 alles erreicht haben - sowohl als Stiftung als auch als Ökosystem.
+Space Shack Coworking
+Akazienstr. 3a, 10823 Berlin Mittwoch, 11. Dezember 2019</p>
+<h2><a class="header" href="#twototangle-iota-meetup-in-bolzano-it" id="twototangle-iota-meetup-in-bolzano-it">#TwoToTangle IOTA Meetup in Bolzano (IT)</a></h2>
+<p>Komm vorbei, triff dich mit Freunden aus dem IOTA Ökosystem und unterhalte dich über IOTA. Das TwoToTangle Meetup gibt es schon seit 2018 und wird regelmäßig von dem Antonio Nardella, dem IOTA Ecosystem Manager, organisiert.
+DGTL Circus
+Max-Planck-Straße 33, 39100 Bozen Dienstag, 17. Dezember 2019</p>
+<h2><a class="header" href="#iota-münchen-stammtisch" id="iota-münchen-stammtisch">IOTA München Stammtisch</a></h2>
+<p>Der erste regelmäßig veranstaltete Stammtisch wurde in München geboren. Hier gibt es Bier, Neuigkeiten und auch Klatsch und Tratsch über IOTA. Komm vorbei und lass Dich inspirieren, um auch in Deiner Stadt einen Stammtisch zu veranstalten. Der Stammtisch ist meistens am ersten Montag im Monat. Ist Montag ein Feiertag, wird der Stammtisch am folgenden Dienstag abgehalten!
+Alter Wirt Thalkirchen
+Fraunbergstraße 8, 81379 München Dienstag: 7. Januar 2020</p>
+<h2><a class="header" href="#iota-meetup-würzburg---iota-und-machine-learning---1-iiot-meetup" id="iota-meetup-würzburg---iota-und-machine-learning---1-iiot-meetup">IOTA Meetup Würzburg - IOTA und Machine Learning - 1. IIoT Meetup</a></h2>
+<p>Maschinelles Lernen ist ein großes Thema bei IOTA. Daten, die im Tangle veröffentlicht wurden, werden von intelligenten Algorithmen verwendet, um aufschlussreiche Erkenntnisse zu gewinnen. Hier dreht sich ein Thema um Predictive Quality, also vorausschauende Qualitätsanalysen.
+EMnify
+Landsteinerstraße 4, 97074 Würzburg Donnerstag, 16. Januar 2020</p>
+<h2><a class="header" href="#iot-tech-expo-global-2020" id="iot-tech-expo-global-2020">IOT Tech Expo GLOBAL 2020</a></h2>
+<p>Die IoT Tech Expo bietet eine Plattform, auf der man die neuesten technologischen Fortschritte auf dem Markt entdecken kann. Aussteller haben die Möglichkeit, ihre neuesten Kreationen 12.000 Teilnehmern vorzustellen. Mehr als 500 Rednern und mehr als 300 Ausstellern sind vor Ort. Die IOTA Foundation wird auch da sein und ist Platin Sponsor dieses Events.
+OLYMPIA GRAND
+7239 Olympia Way, Hammersmith, London W14 8UX Dienstag, 10. Dezember 2019</p>
+<h2><a class="header" href="#hannover-messe-2020" id="hannover-messe-2020">Hannover Messe 2020</a></h2>
+<p>Die Hannover Messe ist eine Industriemesse mit internationaler Bedeutung. Sie findet jedes Frühjahr in Hannover (Niedersachsen) auf dem Messegelände Hannover statt. Es ist das größte Messegelände der Welt. Veranstalter ist die Deutsche Messe AG. Letztes Jahr sahen wir viele IOTA Usecases, unter anderem von Fujitsu, e-Cl@ss und vielen weiteren. Wir freuen uns schon darauf, darüber berichten zu dürfen.
+Messegelände Hannover
+Messegelände, 30521 Hannover 20. bis 24. April 2020</p>
+<h2><a class="header" href="#odyssey-hackathon" id="odyssey-hackathon">ODYSSEY Hackathon</a></h2>
+<p>Seit 2017 sind Tausende von Menschen aus der ganzen Welt nach Groningen in den Niederlanden gereist, um zur Mitgestaltung der neusten Ideen und Entwicklungen für unsere Gesellschaft beizutragen. Diese vielfältige globale Bewegung und Veranstaltung wurde als Odyssey bekannt. Beim letzten Odyssey Hackathon gab es von 99 Teams neun IOTA Teams. Wie viele werden es diesmal sein?
+Wird noch angekündigt 2. bis 6. April 2020</p>
+<h1><a class="header" href="#münchen-meetup" id="münchen-meetup">München Meetup</a></h1>
+<p>München, 12. September 2019.
+12 Vorträge, 13 Anwendungsbeispiele und mehr als 150 Besucher.</p>
+<h1><a class="header" href="#projekte" id="projekte">Projekte</a></h1>
+<p>Kennst Du den Moment der Euphorie, wenn es klick macht und du eine hervorragende Idee hast? Klar, wer kennt diesen Moment nicht! Aber eine Idee alleine bewirkt nichts. Wahren Einfluss nimmt die Idee, wenn Menschen ihr Köpfe, Hände und Herzen zusammenstecken und aus der Idee einen Diamanten schleifen, ein Projekt ist geboren. Im IOTA Universum schlummern Abertausende Ideen und Hunderte von Projekten werden aktiv von unserer Community vorangetrieben. Wir möchten Euch für Euren Fleiß und Eure Liebe danken. Mit Stolz präsentieren wir die insgesamt 30 Projekte der Woche, die sich im Laufe des Jahres angesammelt haben. Außerdem freuen wir uns, das von der Community gewählte Projekt des Jahres, Deposy vorzustellen.</p>
+<p>TEXT SVEN REISER</p>
+<h1><a class="header" href="#alle-projekte-er-woche" id="alle-projekte-er-woche">Alle Projekte er Woche</a></h1>
+<h2><a class="header" href="#powsrvio" id="powsrvio">powsrv.io</a></h2>
+<p>powsrv.io bietet einen Dienst um schnelles Proof of Work für IOTA Transaktionen auszulagern.</p>
+<h2><a class="header" href="#piri" id="piri">PIRI</a></h2>
+<p>Piri ist ein Proxy und Load Balancer für eine oder mehrere IOTA- Nodes.</p>
+<h2><a class="header" href="#qubic-lite" id="qubic-lite">Qubic Lite</a></h2>
+<p>Qubic Lite (auch QLite) ist eine vorläufige Implementierung des IOTA Qubic Protokolls.</p>
+<h2><a class="header" href="#iota-address-notifier" id="iota-address-notifier">IOTA Address Notifier</a></h2>
+<p>Der IOTA Address Notifier (I.A.N.) ist ein Bot, der Nutzer über neue Transaktionen auf einer IOTA-Adresse benachrichtigt.</p>
+<h2><a class="header" href="#iotipbot" id="iotipbot">ioTipBot</a></h2>
+<p>Mit dem ioTipBot kann jeder User sehr einfach IOTA-Token über verschiedene Chatplattformen versenden.</p>
+<h2><a class="header" href="#node-red-mam" id="node-red-mam">Node-Red-MAM</a></h2>
+<p>Node-Red ist eine freie Entwicklungsumgebung und visueller Editor für das „Internet der Dinge“.</p>
+<h2><a class="header" href="#iotapartners" id="iotapartners">IOTA.partners</a></h2>
+<p>iota.partners ist eine interaktive Anleitung zum Installieren einer IOTA Node auf einem Linuxserver.</p>
+<h2><a class="header" href="#two--iot-waste-management" id="two--iot-waste-management">TWO – IoT Waste Management</a></h2>
+<p>Zu den ersten Einsatzgebieten gehören öffentliche Gebäude wie zum Beispiel Einkaufszentren, Flughäfen und U-Bahn Stationen.</p>
+<h2><a class="header" href="#tanglenodesio" id="tanglenodesio">Tanglenodes.io</a></h2>
+<p>Der Webservice tanglenodes.io bietet die bisher komfortabelste Lösung, Nodes für das IOTA-Netzwerk – das Tangle – aufzusetzen.</p>
+<h2><a class="header" href="#publiciota" id="publiciota">publicIOTA</a></h2>
+<p>Als unabhängige Gruppe möchten wir die Möglichkeiten und Anwendungen von IOTA begleiten und positiv unterstützen.</p>
+<h2><a class="header" href="#thetangleorg" id="thetangleorg">TheTangle.org</a></h2>
+<p>Unser Ziel ist es, einen schnellen und jederzeit verfügbaren Dienst zum Durchsuchen des IOTA Tangles bereitzustellen.</p>
+<h2><a class="header" href="#untangle-care" id="untangle-care">Untangle Care</a></h2>
+<p>Grundsätzlich entwickeln wir im Projekt die benötigten open source Technologie, um IOTA im Gesundheitswesen einzusetzen.</p>
+<h2><a class="header" href="#tanglesheep" id="tanglesheep">TangleSheep</a></h2>
+<p>TangleSheep ist eine Webseite, auf der man Schafe mit IOTA füttern kann.</p>
+<h2><a class="header" href="#tangleid-biilabs" id="tangleid-biilabs">TangleID (BiiLabs)</a></h2>
+<p>TangleID ermöglicht Benutzern eine “self-sovereign”, also selbstsouveräne, nachprüfbare digitale Identität zu erstellen.</p>
+<h2><a class="header" href="#iota-controlled-agent" id="iota-controlled-agent">IOTA Controlled agenT</a></h2>
+<p>Der Iota Controlled agenT ist ein leichtgewichtiger IOTA-Node für das Internet der Dinge, der auf Schwarmlogik aufbaut.</p>
+<h2><a class="header" href="#iota-talk" id="iota-talk">IOTA-Talk</a></h2>
+<p>Iota-Talk is eine Website, auf der Informationen wie Neuigkeiten, Artikel oder Anleitungen finden kann.</p>
+<h2><a class="header" href="#the-tangle-bay" id="the-tangle-bay">The Tangle Bay</a></h2>
+<p>The Tangle Bay ist ein IOTA Community Projekt, wo man mit IOTA seinen Kaffee kaufen kann und das ganz ohne Transaktionskosten.</p>
+<h2><a class="header" href="#thinktangle" id="thinktangle">Thinktangle</a></h2>
+<p>Bei Thinktangle geht es darum, Ideen zu präsentieren und somit neue Ideen entstehen zu lassen.</p>
+<h2><a class="header" href="#iotalinkdirectory" id="iotalinkdirectory">IOTAlink.directory</a></h2>
+<p>IOTAlink.directory ist eine Webseite mit vielen nützlichen Links rund um das Thema IOTA und dessen Ökosystem.</p>
+<h2><a class="header" href="#iota-einsteiger-guide" id="iota-einsteiger-guide">IOTA Einsteiger Guide</a></h2>
+<p>Auf fast 100 Seiten gibts es geballtes IOTA Wissen von A bis Z in deutscher Sprache. Viel Spaß beim Lesen!</p>
+<h2><a class="header" href="#xdk2mam-1" id="xdk2mam-1">XDK2MAM</a></h2>
+<p>XDK2MAM befähigt den Bosch XDK110 Sensor Node, gesammelte Daten über MAM in den Tangle zu senden.</p>
+<h2><a class="header" href="#einfachiota-wiki" id="einfachiota-wiki">einfachIOTA Wiki</a></h2>
+<p>Das Wiki beinhaltet alle Informationen des ehemaligen IOTA Developer Documentation Portal in deutscher Sprache.</p>
+<h2><a class="header" href="#iota-coordinator-monitor" id="iota-coordinator-monitor">IOTA Coordinator Monitor</a></h2>
+<p>Das Projekt stellt viele nützliche Informationen über den IOTA Coordinator in Echtzeit mit grafischen Darstellungen bereit.</p>
+<h2><a class="header" href="#productid" id="productid">ProductID</a></h2>
+<p>ProductID ist eine Crypto Smart Card-basierte Lösung, um Produkte und Objekte sicher identifizieren zu können.</p>
+<h2><a class="header" href="#hello-iota" id="hello-iota">Hello IOTA</a></h2>
+<p>Die Seite Hello IOTA begrüßt ihre Besucher mit einem freundlichen “Hallo” und wunderschönen Bildern.</p>
+<h2><a class="header" href="#tangle-bay" id="tangle-bay">Tangle Bay</a></h2>
+<p>Tangle Bay ist eine Webseite, die der IOTA Community die Möglichkeit bietet, über die verschiedenste Themen zu diskutieren.</p>
+<h2><a class="header" href="#iota-seed-saver" id="iota-seed-saver">IOTA Seed Saver</a></h2>
+<p>Der IOTA Seed Saver ist grob gesagt eine Lochstahlplatte zur Speicherung eines Seeds, der selbst Feuer nichts anhaben kann.</p>
+<h2><a class="header" href="#deposy" id="deposy">Deposy</a></h2>
+<p>Deposy ist ein innovatives Pfandsystem und ein neuer Weg, mit Müll umzugehen.</p>
+<h2><a class="header" href="#cube-iota1-von-stmicroelectronics" id="cube-iota1-von-stmicroelectronics">CUBE-IOTA1 von STMicroelectronics</a></h2>
+<p>Einfache Anbindung zum Tangle in eingebettete Systeme, die auf dem häufig verwendeten Mikrocontroller STM32 basieren.</p>
+<h2><a class="header" href="#einfachiota" id="einfachiota">einfachIOTA</a></h2>
+<p>Unsere Aufgabe ist es, deutschsprachigen Inhalt rund um IOTA bereitzustellen und IOTA in einfacher Sprache zu erklären.</p>
+<h1><a class="header" href="#deposy-1" id="deposy-1">Deposy</a></h1>
+<p>Deposy ist ein innovatives Pfandsystem und ein neuer Weg, mit Müll umzugehen.</p>
+<h2><a class="header" href="#projekt-des-jahres" id="projekt-des-jahres">Projekt des Jahres</a></h2>
+<p>Das Projekt wurde von der Community zum Project des Jahres 2019 gewählt.</p>
+<h3><a class="header" href="#interview" id="interview">Interview</a></h3>
+<p>Wir haben mit dem Deposyteam ein Interview geführt, viel Spaß!</p>
+<h3><a class="header" href="#beschreibt-bitte-das-projekt-kurz-und" id="beschreibt-bitte-das-projekt-kurz-und">Beschreibt bitte das Projekt kurz und</a></h3>
+<p>einfach
+Mit Deposy wollen wir die Abfallverwertung neu definieren. Ziel ist es, die Verpackungen sortenrein zu sortieren. Um das realisieren zu können, wollen wir den Menschen einen finanziellen Anreiz geben, die Plastikverpackungen zurückzubringen oder aus der Umwelt zu sammeln.</p>
+<h3><a class="header" href="#wie-ist-die-idee-dazu-entstanden-1" id="wie-ist-die-idee-dazu-entstanden-1">Wie ist die Idee dazu entstanden?</a></h3>
+<p>Die Idee dazu hatte Markus Gebhardt, welcher im Sommerurlaub von der immensen Umweltverschmutzung an einem Strand schockiert war und sich dann Gedanken gemacht hat wie man die globale Müllflut etwas eindämmen könnte. Auf seinem Blog public IOTA hat er dann seine Idee niedergeschrieben und nach Unterstützern für das Projekt gesucht. So kam unser kleines, motiviertes Team zustande.</p>
+<h3><a class="header" href="#an-welche-zielgruppe-ist-das-projekt-gerichtet-1" id="an-welche-zielgruppe-ist-das-projekt-gerichtet-1">An welche Zielgruppe ist das Projekt gerichtet?</a></h3>
+<p>Vorteil für Unternehmen, die ‘Deposy‘ nutzen
+• Marketing (Umweltbewusstsein, Imagegewinn)
+• Verpflichtung zur CO2 neutralen Produktion bis 2050
+• Ressourcenschonung
+• In manchen Bereichen: Pfandsystem spart Herstellkosten
+• Förderprogramme vom Staat
+• Erfüllung gesetzlicher Auflagen
+Vorteil für diejenigen, die teilnehmen
+• Finanzieller Vorteil - größere Pfandrückgabe als Einzahlung
+• Gutes Gewissen (Umweltbewusstsein)
+• Pluspunkt bei individueller CO2-Steuer
+Volkswirtschaftliche Vorteile
+• Volkswirtschaftliche Kosten (40 Mrd. pro Jahr)
+• Erreichung der nationalen/internationelen Klimaziele
+• Gesundheitliche Folgen</p>
+<h3><a class="header" href="#auf-welche-vision-stützt-sich-das-projekt-1" id="auf-welche-vision-stützt-sich-das-projekt-1">Auf welche Vision stützt sich das Projekt?</a></h3>
+<p>Das Projekt ‘Deposy‘ will durch ein speziell entwickeltes Pfandsystem einen sortenreinen Plastikmüll erhalten und außerdem den Menschen einen Anreiz zum Sammeln und Sortieren geben. Somit hoffen wir die globale Müllflut etwas einzudämmen.</p>
+<h3><a class="header" href="#hat-das-projekt-konkrete-ziele-wenn-ja-welche-1" id="hat-das-projekt-konkrete-ziele-wenn-ja-welche-1">Hat das Projekt konkrete Ziele? Wenn ja, welche?</a></h3>
+<p>CO2-Emissionen. Deposy kann dafür eingesetzt werden, dass wiederverwendbares Plastik eingesammelt wird und einer tatsächlichen Wiederverwendung zugeführt wird. So zum Beispiel bei einem Einsatz von Kunststoffbechern, falls die ökologische Gesamtbilanz sinnvoll ist und es so zu einer deutlichen CO2- Einsparung kommt. Weiterhin kann es zur Abgabe von sortenreinen Plastikmüll führen, der einem sinnvollen Recycling zugeführt werden kann. Recycling schont nicht nur unsere natürlichen Ressourcen, indem es wertvolle Rohstoffe zurückgewinnt, es entlastet auch das Klima. Der Einsatz von Sekundärrohstoffen senkt den Energiebedarf in der Produktion von Plastikprodukten um bis zu 50 Prozent. Zum Klimaschutz trägt ebenso bei, dass Hersteller dank hochwertigem Recyclat auf neues Plastik aus Rohöl verzichten können. Beides schlägt sich positiv in der CO2-Bilanz nieder. So kann ‘Deposy‘ dazu beitragen die gesetzten Klimaziele zu erreichen.</p>
+<h3><a class="header" href="#wo-werden-iota-technologien-eingesetzt-1" id="wo-werden-iota-technologien-eingesetzt-1">Wo werden IOTA Technologien eingesetzt?</a></h3>
+<p>IOTA wird für die Zahlungen eingesetzt, da hier Transaktions- gebühren vermieden werden. Außerdem wird die Übertragung und Validierung der Produktdaten über das Tangle abgewickelt. So erhalten die Kunststoffverpackungen eine art Identität die unveränderbar festgehalten wird.</p>
+<h3><a class="header" href="#welche-iota-technologien-werden-benutzt-1" id="welche-iota-technologien-werden-benutzt-1">Welche IOTA Technologien werden benutzt?</a></h3>
+<p>Trinity Wallet, selektive Permanodes und die Python Bibliothek Pyota stehen momentan im Fokus. Im Laufe der Entwicklung kann jedoch noch einiges hinzukommen.</p>
+<h3><a class="header" href="#welche-hard--und-software-wird-sonst-noch-verwendet" id="welche-hard--und-software-wird-sonst-noch-verwendet">Welche Hard- und Software wird sonst noch verwendet?</a></h3>
+<p>Wir bauen unseren Prototypen gerade auf einem Raspberry Pi als Python Programm und haben für die Erfassung der QR Codes zwei Kameras gewählt, eine mit Infrarot und eine normale Webcam, das Ganze übertragen wir an einen externen Bildschirm. Außerdem ziehen wir noch externe Möglichkeiten von unseren Partnern, wie eine API von Omoku und eine Hard/Software Lösung von Lidbot in betracht.</p>
+<h3><a class="header" href="#wurden-andere-dlts-abgewegt" id="wurden-andere-dlts-abgewegt">Wurden andere DLT’s abgewegt?</a></h3>
+<p>Nein, wir waren von Anfang an von IOTA und den technologischen Möglichkeiten überzeugt.</p>
+<h3><a class="header" href="#was-ist-der-hauptgrund-für-die-wahl-von-iota-1" id="was-ist-der-hauptgrund-für-die-wahl-von-iota-1">Was ist der Hauptgrund, für die Wahl von IOTA?</a></h3>
+<p>Das entwickelte System basiert auf den für diesen Zweck gänzlich passenden Eigenschaften von IOTA, einer Distributed Ledger Technologie. IOTA ist eine junge Kryptowährung, die einen schnellen, sicheren und kostenlosen Transfer von Daten und Finanzen ermöglicht. Ein herkömmliches System, welches über Banken abgewickelt würde, könnte würde den Ansprüchen an das System nicht gerecht werden. Die Grundvoraussetzung für eine erfolgreiche Implementierung ist die Skalierbarkeit ohne exponentiell steigende Kosten, die Transparenz des Systems sowie die dezentrale, sichere Steuerung der Prozesse. Es könnten Mikrozahlungen zusammen mit einem Datenaustausch durchgeführt werden.</p>
+<h3><a class="header" href="#wer-steckt-hinter-dem-projekt" id="wer-steckt-hinter-dem-projekt">Wer steckt hinter dem Projekt?</a></h3>
+<p>Die Grundidee zu unserem System kam von Markus Gebhardt, gemeinsam mit dem Team das über Telegram entstanden ist, arbeiten wir diese nun aus und versuchen in unserem Prototyp die bestmöglichen Ideen umzusetzen.</p>
+<h3><a class="header" href="#welche-kenntnisse-und-erfahrungen-habt-ihr-1" id="welche-kenntnisse-und-erfahrungen-habt-ihr-1">Welche Kenntnisse und Erfahrungen habt ihr?</a></h3>
+<p>In unserem Team gibt es viel Wissen. U.a. sind wir Ingenieure, Entwickler, Projektmanager, Elektronik-Spezialisten, Designer und Nachhaltigkeits-Experten.</p>
+<h3><a class="header" href="#was-hat-euch-motiviert-das-projekt-voranzubringen-was-motiviert-euch-dazu-das-projekt-fortzuführen" id="was-hat-euch-motiviert-das-projekt-voranzubringen-was-motiviert-euch-dazu-das-projekt-fortzuführen">Was hat euch motiviert, das Projekt voranzubringen? Was motiviert euch dazu, das Projekt fortzuführen?</a></h3>
+<p>Unsere Leidenschaft zur IOTA Technologie und dem Wunsch eine nachhaltige Welt mitzugestalten treibt uns an immer wieder das Beste aus uns heraus zu holen. Das positive Feedback als wir mit der Idee an die Öffentlichkeit gingen, hat uns nochmal zusätzlich angestoßen Vollgas zu geben.</p>
+<h3><a class="header" href="#kann-die-community-euch-helfen-wenn-ja-wie-1" id="kann-die-community-euch-helfen-wenn-ja-wie-1">Kann die Community euch helfen? Wenn ja, wie?</a></h3>
+<p>In erster Linie ist es wichtig die Idee zu verbreiten und die breite Masse dafür zu sensibilisieren. Außerdem sind wir zurzeit noch
+auf Spenden angewiesen, um für die anfallenden Kosten und einen ersten Prototyp aufkommen zu können. Konstruktive Kritik und Verbesserungsvorschläge sind natürlich auch jederzeit willkommen. Wir wollen uns auch an einigen bereits bestehenden Ideen der Community bedienen, wie unter anderem AION (selektive Permandodes) die von Olaf van Wijk entwickelt werden. (https:// ecosystem.iota.org/projects/aion)</p>
+<h2><a class="header" href="#zusammenfassend" id="zusammenfassend">Zusammenfassend...</a></h2>
+<p>Deposy bietet einen Anreiz zum Abgeben der genutzten Verpackung. Beim Kauf eines mit einem besonderen QR-Code ausgestatteten Produktes wird ein zusätzliches Pfand erhoben. Nach dem Gebrauch kann es an einem Deposy Automaten abgegeben werden. Wer es zurückbringt, erhält das Pfand z.B. als IOTA Auszahlung auf sein Wallet (digitale Brieftasche). Über Kooperationspartner kann der Betrag auch in Landeswährung auf sein Konto ausgezahlt werden.</p>
+<h1><a class="header" href="#erklärecke" id="erklärecke">Erklärecke</a></h1>
+<p>Es ist uns wirklich schwergefallen, zu entscheiden, welche Themen wir vertiefen wollen. Es gibt einfach so viele spannende Themen! Das wohl kritischste Thema ist der Coordicide, den wir in unserem ersten Artikel etwas genauer durchleuchten. Außerdem tauchen wir in Masked Authenticated Messaging, Proof of Work und das ternäre System ein. Schnall Dich an, jetzt wirds theoretisch.</p>
+<p>TEXT SEBASTAN HEUSSER</p>
+<h1><a class="header" href="#was-ist-der-coordicide" id="was-ist-der-coordicide">Was ist der Coordicide?</a></h1>
+<p>Mit dem Coordicide möchte IOTA als Vorreiter im Bereich der DLT ein scheinbar unlösbares Problem hinter sich lassen.</p>
+<p>TEXT HAGI</p>
+<p>TODO: Trilemma SVG</p>
+<p>Auf der Abbildung werden die Kernziele der Distributed Ledger Technology (DLT) vorgestellt. Da bisher kein Projekt Sicherheit, Dezentralität und Skalierbarkeit unter einen Hut bekommen hat, spricht man von einem “Trilemma” (tri=drei)</p>
+<p>Um die großen Erwartungen rund um den sogenannten “Coordicide” verstehen zu können, lohnt es sich eine kleine Reise in die Vergangenheit zu wagen. Die Herkunft des Wortes geht zurück auf den “Coordinator” (auf deutsch: Koordinator), eine zentrale Einheit des IOTA Protokolls, die zum aktuellen Zeitpunkt präventiv zum Schutz gegen Betrug eingesetzt wird. Der Koordinator generiert in regelmäßigen Zeitabständen sogenannte “Meilensteine”, an denen sich andere Transaktionen entweder direkt oder indirekt orientieren müssen, um als ehrliche Transaktion im Netzwerk bestätigt zu werden. Da der Coordinator als zentrale Einheit der Foundation als eine Art Gesetzeshüter für Recht und Ordnung sorgt, ist die Sicherheit zwar gewährleistet, jedoch ein elementarer Punkt des DLT-Versprechens - die Dezentralität - nicht gegeben. (siehe Abbildung)
+Kritiker werden nicht müde diese Schwachstelle im Vergleich mit anderen Projekten hervorzuheben, denn solange keine Dezentralität gegeben ist, hat das IOTA-Protokoll nur einen bedingten Mehrwert für die Industrie 4.0 und das neue Zeitalter der Daten (“Daten sind das neue Öl”). Schließlich soll der Nutzer die Kontrolle über die eigenen Daten zurückerlangen, was mit einer zentralen Einheit nur schwer vorstellbar ist.
+Halten wir also fest: Der Coordicide soll ein Fundament für Skalierbarkeit, Sicherheit und Dezentralität darstellen. Bis 2025 werden nach Schätzungen in etwa 75 Milliarden vernetzte IoT- Geräte erwartet.
+Auf der Abbildung werden die Kernziele der Distributed Ledger Technology (DLT) vorgestellt. Da bisher kein Projekt Sicherheit, Dezentralität und Skalierbarkeit unter einen Hut bekommen hat, spricht man von einem Trilemma.
+Um erstmals in der jungen Geschichte der Distributed Ledger Technology dem Ziel einer Lösung für das Trilemma näher zu kommen, beschäftigen sich aktuell (Stand Oktober 2019) laut Angaben der Entwickler mehr als 20 Angestellte der IOTA Stiftung mit Forschung und technischer Entwicklung dieser grundlegenden Änderung.</p>
+<h2><a class="header" href="#die-nächsten-schritte" id="die-nächsten-schritte">Die nächsten Schritte</a></h2>
+<p>Was die zeitliche Erwartung für ein mögliches Testnetz angeht, bleiben die Forschungsergebnisse gleichbleibend spannend, wie unvorhersehbar für den Außenstehenden.
+Enthusiasten müssen sich mit dem Gedanken anfreunden, dass die IOTA Foundation zwar nah an einer Lösung dran ist, die Forschung rund um die Cutting Edge Technology (zu deutsch: Spitzentechnologie / neue Technologie) jedoch ungeahnte Hürden bereithält, die es nachhaltig und vor allem sicher durch aussagekräftige Testergebnisse und Studien hinter sich zu lassen gilt.
+An dieser Stelle sei noch einmal daran erinnert, dass das Protokoll als Rückgrat für das Internet der Dinge dienen soll. Milliarden Geräte werden eines Tages miteinander vernetzt sein, empfindliche Daten und monetäre Transaktionen in Echtzeit ausgetauscht.
+Ein grober Fehler in puncto Sicherheit kann hier wichtiges Vertrauen kosten, um große Spieler der Industrie für diese vielversprechende Technologie zu begeistern.
+Wem der monatliche Newsletter nicht ausreicht und wer an der Weiterentwicklung und den aktuellen Forschungsergebnissen näher teilhaben möchte, kann unter “discord.iota.org” einen Blick über den Tellerrand hinauswerfen und den Diskussionen zwischen klugen Köpfen folgen.</p>
+<h2><a class="header" href="#fazit-1" id="fazit-1">Fazit</a></h2>
+<p>Mit dem Coordicide möchte IOTA als Vorreiter im Bereich der DLT ein scheinbar unlösbares Problem hinter sich lassen. Skalierbarkeit, Sicherheit und Dezentralität sollen dabei keine Grenzen gesetzt werden und so wird tagtäglich für ein stabiles Fundament ein Stein nach dem anderen gesetzt, auf dem am Ende eine billionenschwere Industrie Platz nehmen soll.</p>
+<h1><a class="header" href="#was-ist-mam" id="was-ist-mam">Was ist MAM?</a></h1>
+<p>MAM, Masked Authenticated Messaging, sind verschlüsselte Nachrichten im Tangle, deren Quelle nachgewiesen werden kann.</p>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<p>OTA wurde für das Internet der Dinge und Maschinen zu Maschinen Kommunikation erschaffen. Mit Masked Authenticated Messaging können Sensoren und andere Geräte ganze Datenströme verschlüsseln und diese quantensicher im IOTA Tangle sichern. Nur autorisierte Personen können den gesamten Datenstrom lesen oder neue Daten anhängen. Im Wesentlichen funktioniert MAM wie ein Radio, bei dem nur diejenigen einem Sender zuhören können, die die richtige Frequenz kennen. Die Kanäle können öffentlich oder verschlüsselt sein, und nur der Sender kann neue Daten in den Kanel einbringen. Es gibt drei Optionen, aus denen Sender auswählen können, wenn sie eine neue Nachricht in dem Kanal veröffentlichen. -</p>
+<ul>
+<li>Public: Jeder kann den Inhalt der Nachricht lesen. </li>
+<li>Privat: Nur der Sender (dh. der Seed Besitzer) kann die Nachrichten lesen.</li>
+<li>Restricted: Man kann einen Schlüssel angeben, welcher weitergeben werden kann.</li>
+</ul>
+<p>Mit diesem Schlüssel kann man den Inhalt einer Nachricht lesen, jedoch ausschließlich mit dem Seed auch neue Nachrichten im Kanal veröffentlichen. Dieser Schlüssel wird im Quellcode als sideKey bezeichnet. Bibliotheken für MAM stehen für Javascript und C zur Verfügung. Hierbei sollte man allerdings sehr auf die Anweisungen im Code Repository achten, da sich das Projekt noch in einer sehr frühen Entwicklungsphase befindet. Eine gute Möglichkeit für Informationen, Diskussion und Fragen ist hierfür der #mam-dev und #mam-discussion Kanal im IOTA Discord.</p>
+<h1><a class="header" href="#was-ist-das-ternäre-system" id="was-ist-das-ternäre-system">Was ist das Ternäre System?</a></h1>
+<p>TEXT SCHMUCKLOS</p>
+<p>Was ist das Ternäre System und besteht dadurch ein Vorteil?
+Die ternäre Logik, die bei IOTA eingesetzt wird, zieht sich durch das gesamte Projekt. Angefangen bei dem ternären Mikrocontroller JINN, der Hash-Funktion Troika, über den Seed, welcher nur aus Großbuchstaben von A-Z und der Zahl 9 besteht, bis hin zur Tatsache das genau 2.779.530.283.277.761 IOTA Token existieren.</p>
+<h2><a class="header" href="#die-grundlagen" id="die-grundlagen">Die Grundlagen</a></h2>
+<p>Bevor wir klären, warum IOTA auf eine ternäre Logik setzt, müssen wir uns zuerst die beiden Systeme etwas genauer anschauen, die für diesen Artikel relevant sind.
+Das binäre System: Ein Bit (binary digit) kann genau zwei Zustände (21 = 2) annehmen: 0 und 1. Acht Bits ergeben ein Byte (28 = 256) und können somit 256 Kombinationen abbilden.
+Das ternäre System: Ein Trit (trinary digit) kann genau drei Zustände (31 = 3) annehmen: -1, 0 und 1. Drei Trits ergeben ein Tryte (33 = 27) und können somit 27 Kombinationen abbilden.</p>
+<p>Die Gegenzahl jeder balancierten ternären Zahl, wird durch das Vertauschen jeder −1 durch 1 und umgekehrt ermittelt. Negative Zahlen können dadurch ebenso leicht dargestellt werden wie positive Zahlen, da im Gegensatz zum Dezimalsystem kein negatives Vorzeichen notiert werden muss. Dieser Umstand macht einige Berechnungen im ternären System effizienter als im binären System. Da Trytes noch komplexer als Bytes sind, ist es wichtig diese leserlicher zu machen. Dabei werden sie in eine Art andere Sprache umgewandelt. Hierfür hat das IOTA Development Team das Tryte-Alphabet erschaffen. Dieses besteht aus der Zahl 9 und den Großbuchstaben A-Z. Das macht insgesamt 27 verschiedene Ziffern, also genau die Anzahl der Kombinationen eines Trytes. Somit kann jede Kombination eines Trytes durch eine Ziffer dargestellt werden. IOTA nutzt genau dieses Alphabet für den Seed, Adressen, Hashes etc. Der Seed selbst besteht aus 81 Ziffern, also 81 Trytes.</p>
+<p>Ein Beispiel
+CIIXLALQIZSAYXTYLOGYHMY9MSCDGCRXQFOHTZRXFRSFBQJJFFXRMVOJQWZJAILCKFSYEFWNLFWIHISEF</p>
+<p>Jedes Tryte hat 27 Kombinationen. Damit hat IOTAs Seed 27^81 Kombinationen. Das sind ~8.71 * 10 Kombinationen. Also deutlich mehr als es Atome im gesamten sichtbaren Universum gibt. Die Wahrscheinlichkeit einen Seed zu erraten, liegt praktisch bei 0 Prozent. Zum Vergleich: Bitcoins private keys sind praktisch ebenfalls nicht zu erraten und das bei nur 2256 = ~1.1577 Kombinationen. Bei Quantencomputern und der Rückrechnung von Adressen auf Seeds bzw. private Schlüssel hat IOTA, durch die deutlich gesteigerte Anzahl an Möglichkeiten, im Vergleich zu Bitcoin die Nase vorn.</p>
+<h2><a class="header" href="#warum-gibt-es-genau-2779530283277761-iota-token" id="warum-gibt-es-genau-2779530283277761-iota-token">Warum gibt es genau 2.779.530.283.277.761 IOTA Token?</a></h2>
+<p>Diese Zahl hat ebenfalls etwas mit den Trytes zu tun. Trytes „balancieren“ sich um den Wert 0 und das von -13 bis +13. Daher auch der Begriff balanced trinary system. Als Beispiel haben wir 27 Kombinationen und den maximalen Wert 13. Dieser kann auch mathematisch berechnet werden:
+(33 - 1) / 2 = 13 Kombinationen mit einem positiven Wert
+33 Trits ergeben das maximale Supply: (333 - 1) / 2 = 2.779.530.283.277.761 IOTA
+Anmerkung: Es war wichtig eine hohe Anzahl an Token zu erschaffen, da sie für Mikrozahlungen zwischen Maschinen genutzt werden sollen und dabei sind hohe Preise pro Token sehr hinderlich. Sollte es in ferner Zukunft, durch eine sehr hohe Nachfrage, nötig sein, die maximale Anzahl der Token zu erhöhen, so ist dies möglich.</p>
+<h2><a class="header" href="#warum-ergeben-genau-33-trits-das-maximalen-supply" id="warum-ergeben-genau-33-trits-das-maximalen-supply">Warum ergeben genau 33 Trits das maximalen Supply?</a></h2>
+<p>Das Wertefeld in einer Transaktion ist 81 Trits lang, von denen 33 Trits aktuell verwendet werden. Damit sind es genau (333 - 1) / 2 oder 2.779.530.283.277.761 IOTA, was eine Zahl ist, die noch mit einem 64-bit Integer (Datentyp für ganze Zahlen) dargestellt werden kann.
+Da 81 Trits für das Wertfeld reserviert wurden, kann bei Bedarf das max. Supply auf (381 - 1) / 2 erhöht werden. In diesem Fall würde jeder derzeitige Eigentümer immer noch den gleichen Anteil am Gesamtwert besitzen, aber diese Beträge können nun in kleinere Einheiten aufgeteilt werden. Beispiel: Wer vor der Erhöhung 1 MIOTA in der Wallet hatte, der hat nach der Erhöhung 1 GI in der Wallet, nichts ändert sich am Gesamtwert, jedoch stehen nun kleinere Einheiten zur Verfügung als vorher.</p>
+<h2><a class="header" href="#warum-verwenden-derzeitige-computer-das-binäre-zahlensystem" id="warum-verwenden-derzeitige-computer-das-binäre-zahlensystem">Warum verwenden derzeitige Computer das binäre Zahlensystem?</a></h2>
+<p>Zu den Anfangszeiten der Computertechnik wurden mechanische Rechenmaschinen durch elektrische Rechenmaschinen abgelöst, diese ersten Computer funktionierten mit Relais, die auch nur die Zustände „an“ oder „aus“ annehmen konnten. Weil Relais aber mit einem hohen Anteil an mechanischen Bauteilen sehr störanfällig, sind wurden diese durch Transistoren ersetzt, die ebenfalls nur die Zustände „an“ oder „aus“ annehmen (Spannung ein, Spannung aus). Da Transistoren ohne mechanische Bauteile auskommen, können sie in ihren Abmaßen sehr klein gefertigt werden.</p>
+<p>Heutige Computer besteht aus vielen Verbindungen und Komponenten, die zur Übertragung und Speicherung von Daten, sowie zur Kommunikation mit anderen Komponenten verwendet werden. Der größte Teil der Speicherung, Übertragung und Kommunikation geschieht heute mit digitaler Elektronik. Diese nutzen immer noch das Binärsystem mit den zwei klar voneinander getrennte Zuständen an = 1 und aus = 0.</p>
+<p>Binärsysteme werden immer noch wegen ihrer hohen Geschwindigkeit bei der Veränderung von Schaltungszuständen eingesetzt. Transistoren sind sehr schnelle und wirksame Schalter. Im Zusammenspiel der Menge an Transistoren und der Art ihrer Zustände lassen sich schnell unterschiedliche Zeichen abbilden und Rechenoperationen durchführen. Der Nachteil ist: Um die Geschwindigkeit eines, auf elektrischen Transistoren basierendem Chip zu erhöhen, muss man mehr Transistoren in diesen Chip verbauen. Dazu muss man entweder den Chip größer oder die einzelnen Transistoren kleiner herstellen. Derzeit tendiert man zu kleineren Transistoren, was aber den Nachteil der höheren Hitzeentwicklung, sowie höhere Fehleranfälligkeit mit sich bringt.</p>
+<h2><a class="header" href="#vorteile-eines-ternären-systems" id="vorteile-eines-ternären-systems">Vorteile eines ternären Systems</a></h2>
+<p>Ein System mit drei Zuständen, hätte insofern Vorteile, dass man auf andere Grundelemente statt Transistoren setzen könnte, um effizientere ICs (integrierter Schaltkreise) herzustellen. Ternär ist effizienter, da es die höchste Dichte an Informationsdarstellung unter ganzzahligen Basen (2,4...) aufweist. Im ternären System lassen sich also größere Zahlen in weniger Speicher unterbringen. So wäre die Dezimalzahl 6 im Binärsystem die Zahl 110 (benötigt 3 Bits), im ternären System nur noch 20 (eine Stelle weniger). Der Wirkungsgrad eines Nummernsystems zur Basis von 3 ist effizienter als zu 2 (etwa 1,58-fach effizienter). Man spart also Speicher und Berechnungen würden schneller ablaufen, bei geringerer Takt Zahl des Chips.</p>
+<p>Der für ein ternäres System erforderliche Aufwand, um eine komplexe logische Schaltung innerhalb der CPU aufzubauen, kann auf etwa 36% gegenüber einem gleichwertigen binären System reduziert werden. Das führt neben einer platzsparenden kleineren Bauform des Mikrocontrollers zu einer entsprechenden Energieeinsparung. Ternäre Baugruppen wurden in der Computerbranche bisher nicht verwendet, da die Umsetzung der Hardware viel komplexer ist. Zudem fehlt die breite Unterstützung des Massenmarkts. Ist
+diese Hardware Umsetzung aber einmal gelungen so sind diese Mikrocontroller deutlich energiesparender und viel leistungsstärker als ihr binäres Pendant.</p>
+<p>Mit dem Aufkommen, der in Massenproduktion gefertigten binären Bauteile für Computer, wurden ternäre Rechner (die es zu der Zeit schon gab) leider zu einer kleinen Fußnote der Computergeschichte, obwohl das balancierte ternär System eine effizientere Zahldarstellung in der Mathematik darstellt als das Binäre. In den Siebziger Jahren wurde die Entwicklung ternärer Computer weitestgehend eingestellt, weil binäre Systeme sich schneller und billiger weiterentwickeln ließen. Wie des Öfteren in der Vergangenheit, hat sich im Laufe der Zeit nicht das technisch überlegende Konzept durchgesetzt, sondern das Konzept, welches von der Hardware her am einfachsten und billigsten für den damaligen Massenmarkt umzusetzen war. Es stellt sich die Frage, wo die ternäre Computertechnik heute wäre, wenn diese ebenfalls ständig weiterentwickelt worden wäre.</p>
+<p>In Anbetracht der Eleganz und Effizienz der ternären Logik, wird von dem Experten Donald E. Knuth, ein Wiederaufkommen von ternären Computern in der Zukunft prognostiziert. Mögliche Wege, wie sich die Weiterentwicklung ternärer Computer in Zukunft gestalten könnte, ist auch die Kombination eines optischen Computers mit dem ternär System. Ein ternärer Computer unter Verwendung von Lichtwellenleitern könnte dunkel als 0 und zwei orthogonale Polarisationen von Licht als 1 und −1 verwenden.</p>
+<h1><a class="header" href="#was-ist-proof-of-work" id="was-ist-proof-of-work">Was ist Proof of Work?</a></h1>
+<p>TEXT THORALF MÜLLER</p>
+<p>PoW ist die Abkürzung von Proof of Work, also dem Nachweis einer Arbeit. Die Arbeit ist in unserem Falle eine Rechenaufgabe, die von einem Rechner gelöst werden muss. Bei den meisten Blockchains machen das die sogenannten “Miner”. Das Proof of Work wird bei IOTA als Spamschutz eingesetzt. Spam, wie man ihn von E-Mails kennt, will man natürlich auch in einem dezentralen System vermeiden. Damit das Netzwerk nicht mit Spam überflutet wird, setzt man nun dieses PoW ein. Somit muss man nun etwas Rechenleistung aufbringen, um Transaktionen in das System einzubringen. Im Endeffekt macht man das Spammen unprofitabel, da man durch viel Spam auch hohe Stromkosten erzeugt.</p>
+<p>Der PoW bei IOTA dient nur als Spamschutz und wird nicht für den Konsensus benötigt. Der Schlüssel zum PoW ist, dass er schwierig zu produzieren, aber einfach zu überprüfen ist. Für jede Transaktion muss der PoW gemacht werden, damit sie von den Nodes akzeptiert wird.
+Dabei wird die Nonce (die letzten 27 Trytes einer Transaktion) verändert und anschließend die Transaktion mit der geänderten Nonce gehasht. Wenn der Hash der Transaktion, in Trits umgewandelt, am Ende so viele Nullen hat, wie für das jeweilige Netzwerk benötigt werden, ist die Transaktion gültig. Falls nicht, wird der Prozess wiederholt, bis genug Nullen vorhanden sind.</p>
+<p>Die Anzahl der mindestens benötigten Nullen wird in MWM (minimum weight magnitude) angegeben, beim Mainnet sind es 14, im Devnet 9. Je höher die Zahl ist, umso aufwendiger ist es. 3 Trits mit dem Wert 0 sind eine 9 in Trytes, deswegen sind am Ende von einem gültigen Hash in Trytes immer mehrere 9en zu sehen.</p>
+<p>Beispielhash
+TRSJAIDFMDPA9DRRVMTQPSIKIWHJMEEUXTASVRKWGJCFASU
+99UFBVKFBJZSNQXMDXTL9YS9EvFBRMA9999</p>
+<p>Die letzten 9 Trytes des Hashes in Trits umgewandelt, mit 14 Nullen am Ende:
+0, -1, 1, -1, 1, 0, 0, 0, -1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+Der PoW kann entweder lokal auf dem Gerät ausgeführt werden, oder remote auf einem anderen Gerät. Der Vorteil von lokalem PoW ist, dass man von niemandem abhängig ist. Wenn man aber kein leistungsstarkes Gerät hat kann der PoW lange dauern, wodurch die Wahrscheinlichkeit einer Bestätigung der Transaktion sinken kann. In Trinity kannst du das in den Einstellungen selbst festlegen (remote PoW funktioniert nur bei Nodes, die das auch unterstützen). Wenn du remote PoW verwenden willst, kannst du dafür entweder
+öffentliche Nodes oder z.B. einen Service wie https://powsrv.io/ oder https://tanglebay.org/ nutzen, welche FPGAs einsetzen und dadurch den PoW sehr schnell und effizient erledigen.</p>
+<p>https://powsrv.io/ erledigt den PoW besonders schnell (ca. 50 ms/ Transaktion), ist aber kostenpflichtig. Hier kann man einfach den PoW für eine Anzahl an Transaktionen kaufen und so nutzen, wie man will. Zum Beispiel über mehrere Monate verteilt oder direkt alles auf einmal. Das geht zur Zeit mit ca. 90 Transaktionen pro Sekunde.
+Wenn du den PoW lokal und sehr schnell erledigen willst, kannst du dafür einen Proxy Server installieren. Der übernimmt nur den PoW und leitet alle anderen Anfragen an einen IRI Node weiter. Eine Anleitung dazu findest du hier: https://docs.iota.org/docs/node- software/0.1/iri/how-to-guides/install-a-pow-proxy
+Im Browser gibt es die Möglichkeit den PoW mit WebGL2 (GPU) zu erledigen, das wird aber nicht von allen Browsern unterstützt.
+Dafür kannst du curl.lib.js und iota.js für den Browser importieren und dann attachToTangle (die Funktion für den PoW) überschreiben:</p>
+<pre><code class="language-code">var iota = core.composeAPI({
+    provider: `https://nodes.thetangle.org:443`,
+    attachToTangle: curl.localPoW })
+</code></pre>
+<p>Unter https://thoralf-m.github.io/Devbox/ kannst du es selbst ausprobieren, indem du einfach eine Transaktion mit einer Nachricht schickst. Klicke dazu auf den „localPoW“, danach auf den „message tx“ und dann den „Run“ Button. An der Auslastung der GPU kann man dann sehen, dass es auch wirklich lokal berechnet wird.
+Es gibt auch Ideen den PoW in der Zukunft durch einen anderen Spamschutz zu ersetzen, dafür könnte man z.B. die Transaktionen pro Sekunde auf die physikalische Position limitieren, was vor allem für das IoT interessant ist.</p>
+<h1><a class="header" href="#bastelecke" id="bastelecke">Bastelecke</a></h1>
+<p>Bei IOTA geht es nicht zuletzt ums Basteln! Die allermeisten Anwendungsfälle brauchen in irgendeiner Form Hardware und fleißige Bastler, die nicht genug davon kriegen können. Deshalb haben wir für alle Tüftler unter uns hier zwei kleine Anleitungen zum Selberbauen: Wir stellen euch das Payment Modul vor und basteln ein Hardware Wallet mit dem ESP32 Mikrocontroller.</p>
+<p>TEXT SVEN REISER</p>
+<h1><a class="header" href="#iota-apps-in-unter-5-minuten-entwickeln" id="iota-apps-in-unter-5-minuten-entwickeln">IOTA Apps in unter 5 Minuten entwickeln</a></h1>
+<p>Das IOTA Payment Modul bringt eine IOTA Wallet in deine Javascript Anwendung.</p>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<p>Du hast eine Idee oder schon eine Applikation und möchtest IOTA Zahlungsmöglichkeiten einbauen? Kein Problem! Das IOTA Payment Modul bringt eine IOTA Wallet für Javascript Apps mit und kümmert sich um alles IOTA relevante. Das Modul kommt mit einem eigenen Webserver mit, kommuniziert mit dem Browser oder anderen Applikationen via HTTP und Websockets und bietet vielerlei Einstellungsmöglichkeiten.</p>
+<p>Mit einer einfachen Installation und Einbindung ist das ganze Modul nach nur wenigen Minuten einsatzbereit. Man muss nur noch im eigenen Code definieren, was passieren soll. So kann der Entwickler genau definieren, was passieren soll, wenn eine IOTA Transaktion einging und bestätigt wurde. Mit dem Websocket Server ist es möglich, dem Benutzer wichtiges Feedback zu geben, wie zum Beispiel “Die Transaktion ist eingegangen” oder “Die Zahlung wurde bestätigt”.</p>
+<p>Der Unterschied zwischen dem IOTA Hub und dem Payment Modul ist ein ganz einfach. Der IOTA hub wurde für Anwendungen wie Kryptobörsen entwickelt, also Anwendungen mit mehreren Benutzern die ein Wallet besitzen. Bei dem Payment Modul gibt es nur ein Wallet, welches auch durch ein mitgeliefertes Frontend benutzt und konfiguriert werden kann.</p>
+<p>Das Payment Modul ist noch in einer sehr frühen Entwicklungsphase, wurde aber schon von einigen Entwicklern erfolgreich eingebaut. So wurde zum Beispiel die Bezahlfunktion des einfachIOTA Magazin Onlineshops mit dem Payment Modul umgesetzt. Der Button wurde als Extra Frontend Modul als weiteres Paket ausgelagert, so das Frontendentwickler mit einer Zeile Code ihre Applikation mit einem IOTA Pay Button erweitern können. Ein Artikel auf Hackster. io beschreibt, wie man das Payment Modul auf einem Raspberry Pi in betrieb nimmt und die Adressen als QR-Code auf einem E-Ink Display anzeigt.</p>
+<p>Das Projekt befindet sich, wie IOTA auch, immer noch in de Entwicklungsphase. Tägliche Updates sind an der Tagesordnung. Wenn dir Fehler oder Verbesserungen auffallen, kannst Du gerne ein Issue auf GitHub anlegen. Wir suchen auch immer nach Unterstützung, um das Payment Modul noch sicherer und schneller zu machen.</p>
+<ul>
+<li><a href="https://github.com/iota-pay/iota-payment">Payment Modul</a></li>
+<li><a href="https://github.com/iota-pay/vue-iota-payment">VueJS Pay Button</a></li>
+<li><a href="https://www.hackster.io/huhn/raspberry-pi-as-iota-payment-provider-8f1e0f">Raspberry Pi Tutorial auf Hackster.io</a></li>
+</ul>
+<h1><a class="header" href="#hardware-wallet-mit-esp32" id="hardware-wallet-mit-esp32">Hardware Wallet mit ESP32</a></h1>
+<p>Bau dein eigenes Hardware Wallet mit dem du IOTA Transaktionen versenden kannst! </p>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<p>Der ESP32 ist, anders als der Raspberry Pi, nur ein Mikrocontroller und ist in etwa vergleichbar mit einem Arduino - nur hat der ESP32 viel mehr Power und Funktionalität. Beispielsweise hat letzterer einen integrierten WLAN und Bluetooth Chip und kann auf diese Weise einfach mit dem Heimnetz kommunizieren. An die GPIO Pins könnt ihr, ähnlich wie beim Raspberry Pi, Sensoren, Schalter und andere Teile anschließen. Der ESP32 kostet rund 10 Euro und kann mit verschiedenen Komponenten gekauft werden. Zum Beispiel einer Kamera oder einem kleinen Display. Aber Achtung der ESP32 mit Cam hat keinen USB Anschluss. Ihr müsst also ein passendes USB Modul haben, um ihn beschreiben zu können. Mit der Veröffentlichung von CClient v1.0.0-beta kann man auf dem ESP32 eine Hardware-Wallet implementieren. Wir benutzen hier die Version von TIm Rappe, die auf den Code der IOTA Foundation aufbaut, aber die Erstinstallation für uns noch viel einfacher macht. Viel Spaß beim Basteln!</p>
+<h2><a class="header" href="#dein-machine-wallet" id="dein-machine-wallet">Dein Machine Wallet</a></h2>
+<p>Im Grunde geht das ganz einfach:
+1. Alle benötigten Programme installieren
+2. Machine Wallet Software herunterladen
+3. Die Software auf den ESP hochladen (flashen)
+4. Seed eingeben und Transaktionen versenden
+Natürlich ist das nur die Theorie. In der Praxis geht das leider nicht immer ganz so reibungslos. Falls bei dir Fehler auftreten und du nicht mehr weiter kommst, kannst du dich gerne bei uns im Discord anmelden und im #hardware Channel nach Hilfe fragen!</p>
+<h2><a class="header" href="#schritt-für-schritt-anleitung" id="schritt-für-schritt-anleitung">Schritt für Schritt Anleitung</a></h2>
+<p>Befolge die Schritt für Schritt Anleitung auf einfachIOTA.de und du kannst schon bald dein eigenes Hardware Wallet benutzen. Wir raten dir jedoch das Devnet dafür zu nutzen, da die Bibliothek noch einen sehr frühen Entwicklungsstand hat.</p>
+<ul>
+<li><a href="https://www.einfachiota.de/#/post/iota-machine-wallet-auf-einem-esp32">Schritt für Schritt Anleitung</a></li>
+<li><a href="https://github.com/magnisinfo/IOTA_ESP32_integration">ESPIntegration</a></li>
+<li><a href="https://github.com/iotaledger/entangled/tree/develop/cclient">CCLibrary</a></li>
+</ul>
+<h1><a class="header" href="#partnerartikel" id="partnerartikel">Partnerartikel</a></h1>
+<p>Das IOTA Ökosystem wächst von Tag zu Tag mit neuen spannenden Ideen. Meist entsteht aus einer Idee ein Team und oft resultiert daraus ein Unternehmen. Wir haben einige unserer Freunde und Partner gebeten, ein Vorstellungsartikel für das Magazin zu schreiben. Ganz nach dem Motto „Hallo Welt“ bieten wir ihnen hier die Möglichkeit, sich der Community vorzustellen.</p>
+<p>TEXT SEBASTAN HEUSSER</p>
+<h1><a class="header" href="#lidbot" id="lidbot">Lidbot</a></h1>
+<p>Abfallmanagement der Zukunft.
+Es ist Zeit, unser globales Müllproblem intelligent zu lösen.</p>
+<p>TEXT SEBASTIAN HEUSSER und ALEXANDER LEHNERT</p>
+<p>Die Vision ist die Schaffung eines Ökosystems, in dem das Abfallmanagement transparent und autonom ist. Ziel ist es, eine Zukunft zu schaffen, in der Unternehmen zusammen die Städte sauber halten und Infrastrukturen aufbauen, in denen man den kompletten Lebenszyklus eines Müllsacks abbilden und ihn bis zur Deponie verfolgen kann. Doch aller Anfang ist schwer und man muss erstmal einen Platz in diesem gigantischen Ökosystem finden. Lidbot ist ein Füllstandsensor, der Teams benachrichtigt, wenn die Abfall- und Recycling Behälter voll sind. Lidbot sammelt auch wichtige Smart-Daten zu unserem Abfall und Recycling. Lidbot soll sowohl Unternehmen als auch Städten dabei helfen, ihre Abfall- und Recyclingsysteme durch die Sammlung intelligenter Sensordaten ordnungsgemäß zu verfolgen. Lidbot. verwendet auch das DLT „The Tangle“ von IOTA, um Abfall- / Recycling Daten ein neues Zuhause zu geben. Ein Zuhause, das sicher und unveränderlich ist.</p>
+<h2><a class="header" href="#das-team-hinter-lidbot" id="das-team-hinter-lidbot">Das Team hinter Lidbot.</a></h2>
+<p>Ham Karami ist CEO und Gründer von Lidbot. Seit seiner Schulzeit kämpft Ham für die Umwelt und hat an den verschiedensten Projekten gearbeitet, welche die Welt ein Stückchen weit zu einem besseren Ort gemacht haben.
+Andrzej Miller, kümmert sich um die Entwicklung der Lidbot Analyse Plattform. Hier treffen Distributed Ledger, Künstliche Intelligenz und ein Benutzerfreundliches Design aufeinander. Um Design der Inhalte, sowie auch Sensors kümmert sich Lead Designer Alex. Das Team besteht zusätzlich noch aus einem dreiköpfigen Design und Web Team, sowie einem Dreiköpfigen Hardware Team- die sogenannten “Hardware Engineers Magicians” - die Hardware Zauberer. Das Team ist dezentral auf der ganzen Welt verteilt, der großteil kommt jedoch aus Taiwan und Deutschland.</p>
+<h2><a class="header" href="#lidbot-im-detail" id="lidbot-im-detail">Lidbot. im Detail.</a></h2>
+<p>Wir wissen einfach viel zu wenig über unseren Müll. Wer wieviel produziert, von wem er eingesammelt wird und was wirklich mit ihm geschieht. Hier in Deutschland mag das ganze ganz gut geregelt sein. Wir stellen unsere volle Mülltonne auf die Straße und Unternehmen kümmern sich darum. In anderen Ländern ist das leider nicht der Fall, da wird meist der Müll einfach in den Fluss, oder in den Wald geworfen. Über Konsequenzen wie starke Umweltverschmutzung wird sich hier nicht viel gekümmert.
+Mit der Zeit hat man gelernt, dass man mit Recycling sehr viel Geld verdienen kann. Das hat solche Ausmaße angenommen, dass es mittlerweile schon einen illegalen Müllhandel gibt. Mit Lidbot wollen wir das ganze einfach viel transparenter machen, aber natürlich mit Hilfe von Technik und Innovation optimieren - um die Umwelt sauberer zu machen und vor allem sauber zu halten.
+Unser erstes Produkt wird ein Sensor sein, der den Füllstand von Mülleimern misst. Die Idee ist ein lebendiges System, das selbst Bescheid gibt, wenn ein Mülleimer geleert werden muss. So müssen Mitarbeiter von Städten oder großen Kaufhäusern nur noch zu den vollen Mülleimern gehen und Umwege zu leeren Mülleimern werden erspart. Das spart eine Menge Zeit und Geld, die in etwas anderes investiert werden kann. Der Sensor wurde so gebaut, dass er einfach in bestehende Infrastrukturen eingesetzt werden kann. Das Ganze funktioniert ohne weitere Zusatz-Technologien. Einfach im Mülleimer befestigen, auf der Plattform registrieren und der Sensor sendet die Daten. Plug and Play in 146 Ländern über das Mobilfunknetz.</p>
+<h2><a class="header" href="#warum-lidbot---unsere-vision" id="warum-lidbot---unsere-vision">Warum Lidbot. - unsere Vision</a></h2>
+<p>Wir wollen helfen, intelligente und saubere Städte zu bauen. Es reizt uns, an einem Projekt zu arbeiten, das erhebliche Auswirkungen auf den Planeten haben wird. Wir können Städten und Unternehmen helfen Geld zu sparen und haben einen positiven Einfluss auf die Umwelt. Mit dem Internet of Things und der steigenden Digitalisierung werden wir in Zukunft vermehrt autonome Fahrzeuge und Roboter in unserem Alltag sehen. Wir schaffen die Grundlage dafür, dass diese intelligenten System auch wissen, wo sich der nächste Mülleimer befindet. Somit können autonome Müllfahrzeuge durch die Stadt fahren und selbst die vollen Mülleimer leeren.</p>
+<h2><a class="header" href="#aktueller-stand" id="aktueller-stand">Aktueller Stand</a></h2>
+<p>Nach vielen Arbeitsstunden haben wir schließlich eine funktionierende und überarbeitete Version des Lidbot im Einsatz. Wir sind gerade in der Verhandlungen, um das Gehäuse des Sensors in Massenproduktion geben zu können. Lizenzierungen für Hardware kostet uns auch die ein oder andere Stunde und jede Menge Geld. Hardware braucht in vielen Ländern ein eigenes Zertifikat. Wir versuchen gerade diese Kosten zu stemmen, sodass der Lidbot auf dem Markt kommen kann.
+Wir hoffen, dass wir unsere Kunden Anfang des nächstes Jahres mit Sensoren ausstatten können.</p>
+<p>Ham Karami
+CEO und Gründer</p>
+<ul>
+<li>Twitter: @lidbot_</li>
+<li>Email: ham@twoiot.com</li>
+<li>Website: https://lidbot.com</li>
+</ul>
+<h1><a class="header" href="#accessec" id="accessec">Accessec</a></h1>
+<p>Vor mehr als einem Jahr führte die accessec GmbH mit dem Trinity Wallet Audit ihr erstes IOTA-bezogenes Projekt durch.</p>
+<p>Gegründet 2008 in Groß-Bieberau beratet die accessec GmbH in Deutschland und International erfolgreich Unternehmen und Institutionen aus nahezu allen Wirtschaftszweigen zum Thema IT- Sicherheit. Dabei war die accessec eines der ersten Beratungshäuser in der DACH-Region, die Identitätszentrische Strategien und Lösungen für das IoT, Automotive Security und Industrie 4.0 fokussierten. Unser Erfolgsrezept ist die große Innovationskraft im Team, sich immer mit neuen Technologien und Methoden im Bereich Manufacturing-Industrie und Automobilsektor in Deutschland auseinanderzusetzen, dass nicht zuletzt durch unsere starken Forschungsaktivitäten untermauert wird. Dadurch sowie durch unsere Faszination an dem Potential von IOTA begann auch vor mehr als einem Jahr die Anbahnung einer Partnerschaft mit der IOTA Foundation, um die Welt ein kleines bisschen sicherer zu machen.</p>
+<h2><a class="header" href="#bitte-wer" id="bitte-wer">Bitte wer?</a></h2>
+<p>Seit April 2019 hat die accessec mit Markus Soppa und Sven Feuchtmüller zwei neue Führungskräfte mit im Boot. Sie übernahmen den Staffelstab von Sebastian Rohr, der u.a. das Security-Testing der Trinity Wallet durch die accessec mit verantwortet hat. Sven und Markus werden die eingeleitete, neue strategische Ausrichtung in Richtung Distributed Ledger Beratung mit Fokus auf IOTA bei der accessec und innerhalb der Community weiter vorantreiben. Dabei wird das Unternehmen künftig auch einen stärkeren Fokus auf die Entwicklung eigener Produkte legen, die auf IOTA basieren sollen.</p>
+<h2><a class="header" href="#identitäten-für-alle" id="identitäten-für-alle">Identitäten für alle!</a></h2>
+<p>Die accessec hatte schon früh mit Ihrem Erfahrungsbereich das Potenzial in einer Dezentralen Identitätslösung gesehen, die im Industrial IoT Umfeld wesentlichen Herausforderungen entgegentreten kann. So möchte das accessec Team künftig die IOTA Technologie auch im motorisierten Verkehr einbeziehen, der durch die Entwicklung des autonomen, automatisierten und vernetzten Fahrens vor einer der größten Veränderung seiner Geschichte steht. Fahrzeuge sollen selbständig kommunizieren und Fahrfunktionen ausführen können. Hierbei ist es erforderlich, dass technische Systeme herstellerunabhängig genutzt werden können und übergreifende Schnittstellen sowohl auf konzeptioneller als auch technischer Ebene geschaffen werden. Eine solche Vorgehensweise schließt proprietäre Lösungen aus.
+Eine Kommunikation wird in Zukunft nicht nur zwischen allen Arten von Fahrzeugen stattfinden, sondern auch mit der straßenseitigen Infrastruktur sowie mit der IT-Infrastruktur der Hersteller, der Straßenbetreiber und anderen. Darüber hinaus ist zu erwarten, dass die Kommunikationsinfrastruktur eine neue Rolle übernimmt, indem sie zusätzlich zu den dezentral ausgeführten Funktionen zentrale Komponenten bereitstellt und sogar spezielle Teilfunktionen bei der Automatisierung übernimmt.</p>
+<h2><a class="header" href="#hieß-das-nicht-mal-libra" id="hieß-das-nicht-mal-libra">Hieß das nicht mal Libra?</a></h2>
+<p>Genau hier sieht accessec das große Potenzial für die IOTA Technologie und will nach Entwicklung der eigenen Fahrzeug-DID- Lösung Cyonis die Machbar- und Nutzbarkeit in den kommenden Monaten im realen Umfeld erproben.
+Der Produktname Libra, der ursprünglich von der IOTA Community vorgeschlagen und vorgesehen war, ist übrigens zwei Wochen danach durch die Veröffentlichung von Facebook’s Kryptowährung gleichen Namens wieder in der Versenkung verschwunden.</p>
+<p>Sven Feuchtmüller
+Technischer Direktor Accessec</p>
+<ul>
+<li>Email: info@accessec.com</li>
+<li>Website: www.accessec.com</li>
+</ul>
+<h1><a class="header" href="#smarter-plastikmüll-mit-deposy" id="smarter-plastikmüll-mit-deposy">Smarter Plastikmüll mit Deposy</a></h1>
+<p>Deposy ist ein innovatives Pfandsystem und ein neuer Weg, mit Müll umzugehen. Modernste Technologie macht einen effektiveren Umwelt- und Klimaschutz möglich. Das Deposy System ist im globalen Betrieb wie auch im kleinen Maßstab sozialverträglich.</p>
+<p>Wir befinden uns im Zeitalter des Klimawandels. Die großen globalen Probleme müssen schnell angegangen werden, um das Schlimmste zu verhindern. Zu den großen Problemen gehören unter anderem die globale CO2-Emissionsbelastung und die Flut an Plastikmüll. Das Thema einer nachhaltigen Gesellschaft wird immer dringlicher. Viele Staaten, Städte, Unternehmen aber auch Privatpersonen fühlen sich schon jetzt dazu verpflichtet.</p>
+<p>Natürlich ist es auch so, dass viele von denjenigen, die in einer
+Gesellschaft des Wohlstands leben, diese Errungenschaften nicht aufgeben wollen. Aber es ist zweifellos ein Umdenken erforderlich. Aus meiner Sicht besteht kein Zweifel daran, dass neue Technologien eingesetzt werden müssen, um zum einen die Dinge zu ändern und zum anderen einen Teil des Wohlstandes zu wahren. Das ist auch der Grund warum wir uns, als BIOTA e.V. (i.G.) mit einem neuartigen Pfandsystem auf Basis von IOTA und der Tangle Technologie beschäftigen.</p>
+<h2><a class="header" href="#volkswirtschaftliche-kosten-von-plastikmüll-steigen-ständig" id="volkswirtschaftliche-kosten-von-plastikmüll-steigen-ständig">Volkswirtschaftliche Kosten von Plastikmüll steigen ständig</a></h2>
+<p>Mit dem neuartigen Pfandsystem Deposy (deposit system) möchten wir direkt mehrere Dinge angehen. Nämlich zum einen zu einer Verringerung des Plastikmülls beitragen und gleichzeitig CO2 einsparen. Bevor ich das System beschreibe, möchte ich ein paar wichtige Zahlen und Fakten liefern. Laut einer Studie der Unternehmensberatung McKinsey gelangen mehr als 30 Prozent aller Plastikverpackungen nicht in einen geordneten Recycling- Kreislauf, sondern werden zu Lasten der Natur anderweitig entsorgt. Die dadurch entstehenden volkswirtschaftlichen Kosten schätzen die Experten auf 40 Milliarden Dollar pro Jahr. Mikroplastikpartikel, die bei der Zersetzung von Plastikmüll entstehen, werden von Menschen und Tieren über die Nahrung und Atemluft aufgenommen. Nach Ansicht von Experten birgt dies erhöhte gesundheitliche Risiken.</p>
+<p>In Zeiten, in denen größte Anstrengungen unternommen werden, um auf allen Ebenen schädliche Klimagase zu vermeiden, leistet das Kunststoffrecycling einen wichtigen Beitrag für mehr Klimaschutz. Pro kg Plastik-Recycling können in etwa, in Abhängigkeit von der Plastiksorte, 2 kg CO2 eingespart werden. Aber ohne gute Mülltrennung und Sortierung, kein Recycling. Denn alles, was im Hausmüll landet, wird in Müllverbrennungsanlagen verfeuert. Landet allerdings etwas anders als Verpackungsmüll im Gelben Sack oder der Gelben Tonne, erschwert das die Sortierung und damit das gesamte Recycling. Die Sortieranlagen sind auf Verpackungen spezialisiert, alles andere wird aussortiert und verbrannt. Das führt leider allzu oft zu erheblichem Verlust von gut recyclebarem Kunststoff.</p>
+<h2><a class="header" href="#plastikmüll-bekämpfung-und-co2-einsparung-mit-iota" id="plastikmüll-bekämpfung-und-co2-einsparung-mit-iota">Plastikmüll Bekämpfung und CO2-Einsparung mit IOTA</a></h2>
+<p>Das alles ist für uns, als BIOTA e.V., Grund genug das innovative Projekt Deposy ins Leben zu rufen. Dieses Projekt verfolgt den Ansatz durch ein speziell entwickeltes Pfandsystem einen sortenreinen Plastikmüll zu erhalten und außerdem den Menschen einen Anreiz zum Sammeln und Sortieren zu geben. Das von uns entwickelte System basiert auf den für diesen Zweck gänzlich passenden
+Eigenschaften von IOTA, einer Distributed Ledger Technologie. IOTA ist eine junge Kryptowährung, die einen schnellen, sicheren und kostenlosen Transfer von Daten und Finanzen ermöglicht. Ein herkömmliches System, welches über Banken abgewickelt würde, könnte den Ansprüchen an das System nicht gerecht werden.
+Kryptowährungen sind durch das energieaufwendige Mining, also der Generierung von neuen Einheiten, in den letzten Monaten stärker unter Beschuss geraten. Experten schätzen, dass das Mining von Kryptowährungen wie Bitcoin, Ethereum, Litecoin und Monero vom 1. Januar 2016 bis zum 30. Juni 2018 folgende Durchschnitt an Energie verbrauchte, um jeweils einen US-Dollar zu generieren:
+• Bitcoin: 17 MJ
+• Ethereum: 7 MJ 
+• Litecoin: 7 MJS 
+• Monero 14 MJ</p>
+<p>Bei IOTA ist das anders, denn für diese innovative Technologie ist kein Mining erforderlich. Natürlich verbrauchen die IOTA- Knoten und -Transaktionen auch Rechenleistung und erzeugen somit Stromverbrauch, aber dieser ist im Vergleich zu dem, der durch die traditionelle Blockchain-Technologie verursacht wird, vernachlässigbar gering.
+Das ist ein weiterer Grund, warum wir bei Deposy die IOTA/Tangle Technologie verwenden. Wir möchten von Anfang an mit diesem System auf Nachhaltigkeit setzen.</p>
+<h2><a class="header" href="#resultate-durch-anreize" id="resultate-durch-anreize">Resultate durch Anreize</a></h2>
+<p>Die Grundvoraussetzung für eine erfolgreiche Implementierung von IOTA ist die Skalierbarkeit ohne exponentiell steigende Kosten, die Transparenz des Systems, sowie die dezentrale, sichere Steuerung der Prozesse. Es können Mikrozahlungen zusammen mit einem Datenaustausch durchgeführt werden. Weiterhin ermöglicht dieses System auch einen Einsatz abseits von sonst für Pfandsysteme notwendige Einrichtungen, wie z.B. Einkaufsläden. Denkt man in einem globalen Maßstab, so kann diese Eigenschaft enorm wichtig sein. Es gibt mehrere Dinge wodurch das Deposy System hervorsticht:
+Die Bevölkerung bekommt für das Sammeln, Sortieren und der Abgabe von Plastikmüll einen finanziellen Anreiz. Es wird mehr zurückgezahlt als Pfand bezahlt wurde. Die Anwendung ist einfach. Es basiert auf IOTA, einer modernen Distributed-Ledger Technologie und könnte weltweit zum Einsatz gebracht werden. Der Sammler bekommt das Pfand entweder auf sein IOTA Wallet, oder dank einer Kooperation auch in seiner Landeswährung, z.B. Euro auf sein Konto ausgezahlt. Das maschinelle Sortieren von Plastikmüll ist heute noch aufwändig und braucht darüber hinaus auch viel Energie. Des Weiteren benötigt ein recycelter Kunststoff weitaus weniger Energie, als die komplette Neuherstellung. Somit hilft das Pfandsystem dabei, CO2 Emissionen zu reduzieren und die Klimaziele zu erreichen. Der Industrie erleichtert dieses System die Zielerreichung beim Recycling, weil der vorgeschaltete Schritt der teuren maschinellen Sortierung entfällt.</p>
+<h2><a class="header" href="#produktidentität-macht-plastik-smart" id="produktidentität-macht-plastik-smart">Produktidentität macht Plastik smart</a></h2>
+<p>Wie schon beschrieben nutzt Deposy die Eigenschaften der Kryptowährung IOTA in Kombination mit dem Tangle. IOTA wird für Zahlungen verwendet, da Transaktionsgebühren vermieden werden und die Übertragung und Validierung der Produktdaten erfolgt durch den Tangle. Dies verleiht der Kunststoffverpackung eine unveränderliche Identität. Bei der Umsetzung des Deposy-Projekts sind uns folgende Aspekte wichtig:</p>
+<p>•Umweltschutz
+•Sicherheit
+•Produktidentität
+•Vertrauen</p>
+<p>Es gibt einige Beispiel für Barcode-basierte Pfandsystem, wie z.B. das deutsche PET Pfandsystem für Mehrwegflaschen. Durch Pfandsystem Betrug mit kopierten Etiketten betrug der Schaden nach Expertenmeinung seit 2014 mehr als 100 Millionen Euro. Eine große Summe. Dies wollen wir mit Deposy verhindern. In unserem System erhält das Plastikteil eine Identität durch einen QR-Code. Diese Identität ist eindeutig und wird bei Rückgabe des Pfands entwertet, so dass ein QR-Code in jedem Fall nur einmal verwendet werden kann. Dies kann Vertrauen bei den Plastik Herstellern und Teilnehmern des Systems schaffen. Wofür kann eine Produkt Identität sonst noch gut sein? Für uns bedeutet diese Deposy- Produktidentität, dass wichtige Merkmale des Produkts während des gesamten Lebenszyklus auf dem Tangle sicher aufbewahrt werden. Grundsätzlich kann es sich um viele Informationen handeln. Für unser System sind zunächst die Produkteigenschaften und der CO2-Fußabdruck von Kunststoff wichtig. Die Produkteigenschaften stellen die sortenreine Sortierung im Automaten sicher. Mit diesen Eigenschaften kann der Recycler hinterher die Zusammensetzung der einzelnen Kunststoffabfälle genau erfassen. In Zukunft kann aber auch der CO2-Fußabdruck wichtig werden, um die eingesparte CO2-Menge zu erfassen. Viele weitere Informationen können in nachfolgenden Entwicklungen im Tangle abgelegt werden, wenn das gewünscht wird.</p>
+<p>In den letzten Wochen haben wir viele Diskussionen mit Interessenvertretern der Branche und Unternehmen geführt. Aktuell haben wir Förderanträge zur Umsetzung dieses Systems geschrieben und Forschungseinrichtungen werden das Projekt wissenschaftlich begleiten. Aktuell gibt es bereits einige Angebote für Teststände. Wenn alles gut läuft, hoffen wir innerhalb der nächsten 6 Monaten ein Testsystem in Betrieb zu nehmen.</p>
+<p>Markus Gebhardt
+Vorstandsvorsitzender BIOTA e.V.</p>
+<ul>
+<li>Email: info@deposy.org</li>
+<li>Website: https://www.deposy.org/</li>
+</ul>
+<h1><a class="header" href="#iota-team-karlsruhe" id="iota-team-karlsruhe">IOTA Team Karlsruhe</a></h1>
+<p>Während viele Menschen noch diskutieren, ob IOTA das Potenzial hat zum Backbone des IoT zu werden, wird bei uns schon fleißig an der Umsetzung gearbeitet - Let’s build it!</p>
+<p>Das IOTA Team Karlsruhe hat kein konkretes Gründungsdatum, sondern ist seit dem Januar diesen Jahres kontinuierlich gewachsen. Startend mit der Abschlussarbeit eines unserer Mitglieder, haben wir angefangen den Kontakt zur IOTA Community aufzubauen und schnell weitere IOTA Enthusiasten aus Karlsruhe finden können. Nach einem ersten gegenseitigen Kennenlernen haben wir schnell den Entschluss gefasst, ein erstes Meetup hier in Karlsruhe zu veranstalten und den Kontakt zur IOTA Community auszubauen. Getrieben von der Idee, auf dem Meetup nicht ausschließlich über die theoretischen Aspekte der IOTA Technologie zu sprechen, haben wir einen eigenen IOTA Prototypen entwickelt. Ziel war hierbei, den Besuchern des Meetups die technischen Eigenschaften des IOTA Protokolls zu verdeutlichen bzw. eine direkte Interaktion mit dem Tangle zu ermöglichen.
+Motiviert von dem positiven Feedback der Besucher und der erfolgreichen Publikation unseres ersten IOTA Prototypen zum offen und dezentralen Mobilitätsmarktplatz, arbeiten wir heute in unserem stetig wachsenden Team an den aktuellen technischen Herausforderungen des Tangles. Wir sehen uns selbst als ein junges Team von Wissenschaftlern, die zusammen mit der Community an der Zukunft der Maschinenökonomie, sowie der offenen und skalierbaren Vernetzung verschiedenster Maschinen arbeiten möchten.
+Hierzu befassen wir uns mit den unterschiedlichsten Aufgaben, wie beispielsweise der flexiblen Zugriffsverwaltung kontinuierlicher IoT Datenströme auf dem Tangle (Raphael Manke), mit sicherer und beschleunigter Hardware (Marvin Gnad), einem skalierbaren und dezentralen Identitäts- und Vertrauensmanagement (Christian Fries &amp; Robin Lamberti), sowie mit dem automatisierten Handel kleiner Datenmengen (Felix Kretzer).</p>
+<h2><a class="header" href="#das-team" id="das-team">Das Team</a></h2>
+<h3><a class="header" href="#markus-lücking" id="markus-lücking">Markus Lücking</a></h3>
+<p>Wiss. Mitarbeiter FZI Dipl. Ing. Maschinenbau </p>
+<ul>
+<li>Discord: Malue#6170</li>
+</ul>
+<h3><a class="header" href="#robin-lamberti" id="robin-lamberti">Robin Lamberti</a></h3>
+<p>Masterstudent Informatik KIT </p>
+<ul>
+<li>Discord: crossing#3428 </li>
+<li>Github: cr0ssing</li>
+</ul>
+<h3><a class="header" href="#christian-fries" id="christian-fries">Christian Fries</a></h3>
+<p>Masterstudent Wirtschaftsingenieurwesen KIT </p>
+<ul>
+<li>Twitter: @KIT_strong_WING</li>
+<li>Discord: karlsruhe-node#9791</li>
+</ul>
+<h3><a class="header" href="#raphael-manke" id="raphael-manke">Raphael Manke</a></h3>
+<p>M.Sc. Informationswirtschaft KIT </p>
+<ul>
+<li>Github: RaphaelManke</li>
+<li>Twitter @RaphaelManke</li>
+</ul>
+<h3><a class="header" href="#marvin-gnad" id="marvin-gnad">Marvin Gnad</a></h3>
+<p>Masterstudent Elektrotechnik KIT </p>
+<ul>
+<li>Discord: Tassenpudding#5503</li>
+</ul>
+<h3><a class="header" href="#felix-kretzer" id="felix-kretzer">Felix Kretzer</a></h3>
+<p>Masterstudent Wirtschaftsingenieurwesen KIT </p>
+<ul>
+<li>Discord: Felix - iotawatch.it#8563</li>
+</ul>
+<h1><a class="header" href="#ihr-seid-die-besten" id="ihr-seid-die-besten">Ihr seid die Besten</a></h1>
+<p>An alle Vorbesteller: Vielen Dank für euer Vertrauen und den Vorschuss!</p>
+<p>NO8ODY, Olsche, Marcus &amp; Frida, Peter Schiff, Markus, playnight, Bender, Bender, D. Dorsey, Martin Neubauer, Kryptonaut, SammyTS, Daniel T. Dorsey, Edur, moon? kommt!, Joe McWeirdo, Dimitrios, Bö, Mr. Tiii, Antonio Nardella - #IOTALove!, JΛn, JΛn, Antonio Nardella - #IOTALove!, Yannick Berberat, Christian Dennis Markert, Schmucklos, Andysun, Frank Pörtner, Holger Preßmar, Holger Preßmar, Dimitrios, Onur Usta, M.Wiesenhütter, huhn511, r3p0x, Denka, Roman Fischer (AT), LaK, Adrian Saxer, Phillipp Becker, Mirko Waschke, Mirko Waschke, Philipp, ToMo, Komplettmitscharf, Patrick Köhnen, DonTorti, Marco Talmann, Annette S., www.easy-passphrase-saver.de, Sven, Thomas, Scarface, Stoevi, Scarface, dsk0_, Stefano, Daniel Kühn, WurstsalatX, bIOTAtar, m.riemensperger@ web.de, Tobi, Joe McWeirdo, Patrick, Tobias, Maik Binding, Thorsten Seehofer?, oldjohn, Stefano, Ad_Moon, Chnöbi, Sebi, Sylvia Lermann, Paladin - TarKar, Michael Weiße, King Keb, Sebastian Krämer, Matthias Terzer, Fabi, Big_O, Mark Schmidt, Nicholas Karg, David Voth, Nesastor, Qaiz, Alex, Alex, IOTAshops.com - Felix R., Thomas Mehling, Philip Noack, MaSoHoliK, Philip Noack, Helmut Pessek, Mijota 007, Christian Oosting (Oostech), Rainer, Rainer, Mcell80, IOTA Team FZI, rambazamba, Jacqueline, Christian Zimon, Mcell80, Mathias Rupprecht, Linnemann Akustik, Ralph Scheyer, Zwi, Abraxas147, Moritz, PeterPaaaaaaaan, Simon Jegelka, Mario Lehenauer, Mario Lehenauer, VIO, M2M, K.Güvenc Armitli, Kai Neuschwander (Kaineahnung), Andi Knauer, PIOTA, Wiota, Patches O‘houlahan, Energine, Jacek, Peter Lameyer, OldJimmy, Iota4Future, Losche, Yammi, Tom, Elfer, Elfer, Flashdel, Nic0x36, ockerocker, Oliver und Gesche Stais, CDM aka ©ryptolotl, Sven Feuchtmüller, Ch.Zue alias Major Lazer ;), Christian Peter, Lars, Kai Zachert, Lars, IOTA Team FZI, IREMMOS, Jens S., Christoph Baumann, Heiko Faust, Nr.1 Papa Joe Nr.2 Becko, iota.coupons, Don Ted, Mario Steckel, @cbe78, Panni, L.G., L.G., lonny986, Picknicker, Richard (rck), Stefan Sommer,Mike Spyrka, Felix, Mauro, Roadrunner, Fr4sh, Johannes Bargehr, David P., Aleks, Oliver Ebach, Fabrilogy GmbH &amp; Co KG., Benedikt Bachmann, Becks, Marco, syncroworks, infi, LukSu TAbt, Pascal | Corinna | Schürmann, Pascal | Corinna | Schürmann, SKay, Erstausgabe für J.Messing, Simon Schumacher, Bazel, olifa, Thorsten, Thorsten, Michael Burger, Michael Burger, Horst Rieder, Pero, Silvio Schannak, jonmaxmue, Jan, Flomo, Roger Nussbaumer, jonmaxmue, dennis nagpal, Tilli, Tilli, Paschinho, Paschinho, Netsch, HPK, Bekir Bicer, Sabri Goldberg, MAIBACH, anynines GmbH, Bastel, Arne Flick, Daniel, Marko, ReffatG, julianlavii, Kevin Scheurer, Kevin Scheurer, Zwi, Johannes, Markus Kösters, Stefan, Stefan, BaBaTz, Tom &amp; Mumpitz, Tom &amp; Mumpitz, Ivo Simunic, d0ms0n, Ivo Simunic, Daniel Schwan, Sebastian, wismut, Benedikt, ockerocker, Durstin, Simon Schumacher, Nicolai, el Yeti, Denis, Pascal Müller, Bern, Pascal Müller, Bern, Socke, Lenny B., Jazz811, Cmon, Mario Sommer, Sibb, 123, Pascal Müller, Bern, AKITA Blockchain Solutions, Josef Schiebel, Darmo, Fynn, Rüdi, IOTAPower, Niklas Wehberg, Felipe Rehm, Moonshot, Sascha Hotz, Hank, Dedl, hallo Mario und Jutta., hallo Mario und Jutta., Artur, emobiton, Nou, Max Kirn, Da_ krieh, Nou, stone3d, Marco Stirmlinger, flintstone, F.B., Zwi, Felix, Hobst, Arminator, Johannes PzH, C. &amp; C. Albinus, Mike, Mike, Dombronick, Zwi, Paul `Skypaul ́ Kellermann, NWiOta, Mario Rangelov, Mike, Alessandro Buser, Elfer, LuLi Wunit, Dennis, Dennis, CEO Hans-Jürgen Felsch, ToswoSteven, ToswoSteju, iotadev.org, Reithi98, Thomas Lindemann, Iotina, Iotina, O. Falko S., Ferrior, Ferrior, TingelTangelBoB, Peter, Marco Grull, Armin Simon - NetStream GmbH, Mischa, Vernon Koch, WebtapeteDE, Thomas Heisig, IOTA, Fries Textil, Tobinski, RogueThorn, Monni, Leonhard Klein, Monni, Adin Softic, Cornelia Faust, tntRistan, F&amp;L&lt;3, Dennis, Andi Rupp, IOTA (Arno Hoffmann), Daniel Schmidt, Rico Loschke, DoubleK, randombit, Niklas Redh, Kai Umland, McEck, Peter Galley, Andre@s, Jonas Mock, Michael, Oberst Papillion, Oberst-Papillion, Witali, Danicoin, C.D., Thomas Lindemann, elmanulito, Mathias P., SISTI, Jan Leonhard Fändrich, Steven Makinin, x2Ente, Astro Dawg, Rudolf Haberler, Justus Granzow, Torsten Reeder, André Berger, Pipo, Hiko29, Florian Gebhard, Patrick Schönwälder, tangle. glumb.de, Chico, Chico, Fred Stein, slook, Alex 13 Micha 09 Müller, André, Alf A.O. Mega, David F. Oder WWW.RAVE-ON.DE, Felix, Clixmile, Andreas Bach, Max B., Martin Huzanic, Dennis, randombit, Tobi, kushmaster420, KingFelix, Burns, Jan Niclas Bardenhagen, girwes, girwes, Freedom for Lombardos, Markus Wagner = WagIOTA, GnrGnr, Von Lukas, corrigo.io, Ramona und Daniel Jakob m.Bear, Cartman SpecX, N. Graf, Cartman , dancatt, Attila, Thomas FleXChange-Medical GmbH, Kay Bieser, masxhi, masxhi, Fabian Odermatt, Julian Bärwald, Bennett Warda / adraw, Norbert Nicolaus, Marcel S., Malte Peters, BastiJan, Alf A.O. Mega, Lars R., JWS, Tim, atr4xxas, Gregor, Gregor, KevinS, Thomas Mächler, Lippstadt, Tim T., Denis Rösken / Philipp Köther, ANDREAS, Toni, Onur Usta, Dietz, Pierre Christian, Aventin, sERvERfRoG, sERvERfRoG, LFO-ONE, René Widmer, Noah, Noah, #wascostadiewelt, pixonauten, Bibip, Janeck aka Merkelcoin, Kalaschnikow, Simon Mall, Samuel-Norah, Stefan Überegger, Samuel- Norah, moses, vrom, Rolf aus Aichtal, Tim, vrom, Yunus Kara, Bastian, Thomas Mächler, Wolfgang Hentschel, Wolfgang Hentschel, Wolfgang Hentschel, Wolfgang Hentschel, RobiwanKenobi, SplinterTM, V. Illemann, Stefan und Salmana Ahmad, Daniel Wittchow, Stefan K, Middendorf, Frank Reichenberg, Freddy, Bastian Künzel, Patrick Ulloth, M2M, Roadrunner, Roadrunner, KI-OTA, Martin Mayrhofer, Martin Sturm, AutoteileTREND. de, www.Passives-Einkommen.blog, Robin, Daniel Stampfl, m0535_1989, Silvio</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

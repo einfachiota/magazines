@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>5x5 Fragen - Hallo Welt!</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_einleitung/index.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/index.html"><strong aria-hidden="true">2.</strong> Was ist IOTA?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_was_ist_iota/011_die_entstehung_des_tangles.html"><strong aria-hidden="true">2.1.</strong> Die Entstehung des Tangles</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/012_eine_deutsche_stiftung.html"><strong aria-hidden="true">2.2.</strong> Eine deutsche Stiftung</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/013_mitarbeiter_aus_der_ganzen_welt.html"><strong aria-hidden="true">2.3.</strong> Mitarbeiter aus der ganzen Welt</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/014_der_cosystemdevelopment_fund.html"><strong aria-hidden="true">2.4.</strong> Der Ecosystem Development Fund</a></li><li class="chapter-item expanded "><a href="../01_was_ist_iota/015_iota_linksammlung.html"><strong aria-hidden="true">2.5.</strong> IOTA Linksammlung</a></li></ol></li><li class="chapter-item expanded "><a href="../02_was_ist_einfachiota/index.html"><strong aria-hidden="true">3.</strong> Was ist einfachIOTA?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02_was_ist_einfachiota/021_unsere_mission.html"><strong aria-hidden="true">3.1.</strong> Unsere Mission</a></li><li class="chapter-item expanded "><a href="../02_was_ist_einfachiota/022_wir_stellen_uns_vor.html"><strong aria-hidden="true">3.2.</strong> Wir stellen uns vor</a></li><li class="chapter-item expanded "><a href="../02_was_ist_einfachiota/023_einfachIOTA_linksammlung.html"><strong aria-hidden="true">3.3.</strong> einfachIOTA Linksammlung</a></li></ol></li><li class="chapter-item expanded "><a href="../03_rueckblick/index.html"><strong aria-hidden="true">4.</strong> Rückblick</a></li><li class="chapter-item expanded "><a href="../04_aktuelles/index.html"><strong aria-hidden="true">5.</strong> Aktuelles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04_aktuelles/041_was_gibts_neues.html"><strong aria-hidden="true">5.1.</strong> Was gibts Neues? </a></li></ol></li><li class="chapter-item expanded "><a href="../05_menschen/index.html"><strong aria-hidden="true">6.</strong> Menschen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_menschen/051_5x5_fragen.html" class="active"><strong aria-hidden="true">6.1.</strong> 5x5 Fragen</a></li><li class="chapter-item expanded "><a href="../05_menschen/052_spotlight.html"><strong aria-hidden="true">6.2.</strong> Spotlight</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/index.html"><strong aria-hidden="true">7.</strong> Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_zukuenftige_events.html"><strong aria-hidden="true">7.1.</strong> Zukünftige Events</a></li><li class="chapter-item expanded "><a href="../06_events/062_muenchen_meetup.html"><strong aria-hidden="true">7.2.</strong> München Meetup</a></li></ol></li><li class="chapter-item expanded "><a href="../07_projects/index.html"><strong aria-hidden="true">8.</strong> Projekte</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../07_projects/071_alle_projekte_der_woche.html"><strong aria-hidden="true">8.1.</strong> Alle Projekte er Woche</a></li><li class="chapter-item expanded "><a href="../07_projects/072_deposy.html"><strong aria-hidden="true">8.2.</strong> Deposy</a></li></ol></li><li class="chapter-item expanded "><a href="../08_erklaerecke/index.html"><strong aria-hidden="true">9.</strong> Erklärecke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08_erklaerecke/081_was_ist_der_coordicide.html"><strong aria-hidden="true">9.1.</strong> Was ist der Coordicide?</a></li><li class="chapter-item expanded "><a href="../08_erklaerecke/082_was_ist_mam.html"><strong aria-hidden="true">9.2.</strong> Was ist MAM?</a></li><li class="chapter-item expanded "><a href="../08_erklaerecke/083_was_ist_das_ternaere_system.html"><strong aria-hidden="true">9.3.</strong> Was ist das Ternäre System?</a></li><li class="chapter-item expanded "><a href="../08_erklaerecke/084_was_ist_proof_of_work.html"><strong aria-hidden="true">9.4.</strong> Was ist Proof of Work?</a></li></ol></li><li class="chapter-item expanded "><a href="../09_bastelecke/index.html"><strong aria-hidden="true">10.</strong> Bastelecke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../09_bastelecke/091_IOTA_apps_in_unter_5_minuten_entwickeln.html"><strong aria-hidden="true">10.1.</strong> IOTA Apps in unter 5 Minuten entwickeln</a></li><li class="chapter-item expanded "><a href="../09_bastelecke/092_wardware_wallet_mit_ESP32.html"><strong aria-hidden="true">10.2.</strong> Hardware Wallet mit ESP32</a></li></ol></li><li class="chapter-item expanded "><a href="../10_partnerartikel/index.html"><strong aria-hidden="true">11.</strong> Partnerartikel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../10_partnerartikel/101_lidbot.html"><strong aria-hidden="true">11.1.</strong> Lidbot</a></li><li class="chapter-item expanded "><a href="../10_partnerartikel/102_accessec.html"><strong aria-hidden="true">11.2.</strong> Accessec</a></li><li class="chapter-item expanded "><a href="../10_partnerartikel/103_smarter_plastikmüll_mit_Deposy.html"><strong aria-hidden="true">11.3.</strong> Smarter Plastikmüll mit Deposy</a></li><li class="chapter-item expanded "><a href="../10_partnerartikel/104_IOTA_team_karlsruhe.html"><strong aria-hidden="true">11.4.</strong> IOTA Team Karlsruhe</a></li></ol></li><li class="chapter-item expanded "><a href="../11_danke/index.html"><strong aria-hidden="true">12.</strong> Schlusswort</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Hallo Welt!</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#5x5-fragen" id="5x5-fragen">5x5 Fragen</a></h1>
+<p>Wir stellen vor: 5 Menschen aus dem IOTA Ecosystem</p>
+<h2><a class="header" href="#antonio-nardella" id="antonio-nardella">Antonio Nardella</a></h2>
+<p>@antonionardella
+Antonio arbeitet bei der IOTA Foundation als Community Manager, ist Technologie Berater, Meetup Organizer, Speaker und Leiter des Projektes #STODT.</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden" id="wie-hast-du-zu-iota-gefunden">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Ich muss gestehen, dass ich relativ spät auf IOTA gekommen bin. Durch einen Artikel in der Wirtschaftszeitung in Südtirol bin ich auf Dominik Schiener und IOTA aufmerksam geworden und von da aus ging die Recherche und das Basteln mit IOTA los.</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade" id="an-was-arbeitest-du-gerade">An was arbeitest du gerade?</a></h3>
+<p>Momentan arbeite ich an technischen „Meetup Packages“. Es handelt sich um eine Serie von Präsentationen, Hintergrund- informationen und Erklärungen um von Null aus mit lokalen und unabhängigen IOTA Community Meetups loszulegen.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten" id="wie-informierst-du-dich-über-neuigkeiten">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Im internen Slack der IOTA Foundation ;) Ausserhalb nutze ich Twitter, etliche Telegram Gruppen, Reddit, das offizielle Discord oder die IOTA Digest App von Rafael Rohden.</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota" id="was-vermisst-du-bei-iota">Was vermisst du bei IOTA?</a></h3>
+<p>Ich kann heute nicht sagen, dass ich etwas vermisse. Als Italiener würde ich manchmal sehr gerne bei jemandem ins Büro reinspazieren und zu einem gemeinsamen Kaffee einladen.</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota" id="was-begeistert-dich-am-meisten-an-iota">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Ich bin so sehr ermutigt von den Mitgliedern der IOTA Foundation, ihrer Vision und dem Einsatz, den sie jeden Tag in diese weltbewegende Technologie investieren.</p>
+<h3><a class="header" href="#janna-zielinski" id="janna-zielinski">Janna Zielinski</a></h3>
+<p>@jz_berlin
+Head of Strategic Projects, IOTA Foundation</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden-1" id="wie-hast-du-zu-iota-gefunden-1">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Vor meiner Tätigkeit bei IOTA war ich 3 Jahre als Strategie- und Digitalberaterin tätig. Im Zuge dessen lernte ich unsere Gründer von IOTA während eines Projekts Anfang 2018 kennen. Die Innovationsfähigkeit von Dominik und David sowie des damals bestehenden Teams haben mich von Anfang an begeistert.</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade-1" id="an-was-arbeitest-du-gerade-1">An was arbeitest du gerade?</a></h3>
+<p>Meine Tätigkeiten sind sehr vielseitig. Unter anderem akquiriere und betreue ich neue Industriepartner und Projekte, vertrete die Foundation auf externen Events, unterstütze die Adoption der Technologie durch die Hilfe bei der Evaluierung von Use und Business Cases und arbeite mit internen und externen Kollegen und Partnern an der Entwicklung neuer Daten- getriebener Geschäftsmodelle.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten-1" id="wie-informierst-du-dich-über-neuigkeiten-1">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Bei der IOTA Foundation managen wir den Informationsfluss vor allem über Slack und entsprechende themenorientierte Channels. Darüber hinaus folge ich IOTA bei Twitter und LinkedIn.</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota-1" id="was-vermisst-du-bei-iota-1">Was vermisst du bei IOTA?</a></h3>
+<p>Wir sind eine komplett dezentrale Organisation, die mit über 120 Kollegen aus mehr als 23 verschiedenen Ländern, einen innovativen Arbeitsplatz mit entsprechend flacher Organisation bietet. Dies führt jedoch auch teilweise zu erhöhten Abstimmungs- und Koordinationsaufwänden.</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota-1" id="was-begeistert-dich-am-meisten-an-iota-1">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Die Internationalität des Teams sowie die Möglichkeit mit unseren Partnern an disruptiven Geschäftsmodellen zu arbeiten sind für mich die größten Mehrwerte an meiner Tätigkeit für die Foundation.</p>
+<h3><a class="header" href="#arne-flick" id="arne-flick">Arne Flick</a></h3>
+<p>@rionord
+Arne ist ein digitaler Unternehmer, der mit repeatmobile GmbH und der IOT1 Academy verschiedene Digital Learning Companies mit Sitz in Berlin und Shanghai betreibt und mit der IF eine exklusive Partnerschaft für IOTA Kurse geschlossen hat.</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden-2" id="wie-hast-du-zu-iota-gefunden-2">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Ich organisierte 2016 einen Status Blockchain Event in Berlin für 30 chinesische Unternehmer und Regine Haschka-Helmer brachte Dom zu einem IOTA Vortrag vorbei. Danach war das Interesse für IOTA bei mir geweckt.</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade-2" id="an-was-arbeitest-du-gerade-2">An was arbeitest du gerade?</a></h3>
+<p>Wir arbeiten gerade am “IOTA Onboarding Kurs für Manager”, der am Xmas Event der IF vorgestellt werden soll. Dort werden wir vor allem Vorteile und Nutzen von IOTA samt Use-Cases vermitteln, ein wichtiger Kurs, der weltweites Interesse geweckt hat.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten-2" id="wie-informierst-du-dich-über-neuigkeiten-2">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Über die Discord und Telegram-Channel und Twitter aber auch über die tollen Kontakte zur Community und zur Foundation, die ich genießen darf. Auch in digitalen Zeiten ist der persönliche Kontakt essentiell für Neues.</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota-2" id="was-vermisst-du-bei-iota-2">Was vermisst du bei IOTA?</a></h3>
+<p>Ich glaube, wir könnten mehr einfachste Use-Cases in Umfeldern von Firmen gebrauchen, die zeigen, dass IOTA operativ sehr gut einsatzfähig ist. Und natürlich den Coordicide. ;)</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota-2" id="was-begeistert-dich-am-meisten-an-iota-2">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Wie sehr die Community zusammenhält und den Vibe, den sie hat. Das ist großartig und wirklich selten. Und natürlich das Potential einer Technologie, die alles in den Schatten stellen wird und nur wenige wussten es. ;)</p>
+<h2><a class="header" href="#hans-moog" id="hans-moog">Hans Moog</a></h2>
+<p>@hus_qy
+Hans ist Softwareentwickler und Researcher bei der IOTA Foundation und arbeitet an der Software, welche die Coordicide Lösung testet.</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden-3" id="wie-hast-du-zu-iota-gefunden-3">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Vor IOTA war ich einem Bereich tätig, der Kryptowährungen für automatisierte “micro-payments” benutzte. Mit steigender Popularität und steigenden Gebühren wurde Bitcoin irgendwann einfach zu teuer. Auf der Suche nach Alternativen, stieß ich auf IOTA und verliebte mich.</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade-3" id="an-was-arbeitest-du-gerade-3">An was arbeitest du gerade?</a></h3>
+<p>Momentan arbeite ich an goshimmer - einem modularen “IOTA node” der Forschungsabteilung, der versucht die Coordicide Konzepte (aber auch Themen wie sharding, colored coins, wiederverwendbare Adressen usw.) in die Praxis umzusetzen.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten-3" id="wie-informierst-du-dich-über-neuigkeiten-3">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Der Kryptobereich ist so schnelllebig, dass es irgendwann schwierig wird immer alles selbst im Blick zu haben. Wenn aber irgendwo jemand einen Durchbruch erzielt bekommt man das meist über persönliche Kontakte relativ schnell mit.</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota-3" id="was-vermisst-du-bei-iota-3">Was vermisst du bei IOTA?</a></h3>
+<p>Ich würde mir wünschen, dass IOTA etwas offener im Umgang mit Informationen wäre. Wir haben beispielsweise konkrete Konzepte bezüglich sharding, in der Hinterhand, die den Unterschied zwischen einem guten DLT und einem game changer ausmachen.</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota-3" id="was-begeistert-dich-am-meisten-an-iota-3">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Die Kombination aus Vision und Technologie! IOTA ist für mich die Verkörperung des Ideals einer perfekten Kryptowährung, die die richtigen Ideale mit der richtigen Technologie verbindet.</p>
+<h2><a class="header" href="#thomas-pototschnig" id="thomas-pototschnig">Thomas Pototschnig</a></h2>
+<p>@ThomasPototsch1
+Thomas ist Linux Systemadmistrator und bekannt durch seine IOTA Hardware, die er in der Freizeit herstellt.</p>
+<h3><a class="header" href="#wie-hast-du-zu-iota-gefunden-4" id="wie-hast-du-zu-iota-gefunden-4">Wie hast du zu IOTA gefunden?</a></h3>
+<p>Ganz unspektakulär über eine Computer- zeitung. Das Konzept begeisterte mich direkt, da ich Blockchains und deren Skalierungsprobleme schon seit 2011 kenne. Deshalb habe ich übrigens nie in Bitcoin investiert, weil ich mir dachte: ”Das skaliert ja niemals!” - wer hätte schon ahnen können, dass sich die Probleme so lange hinauszögern lassen ;-)</p>
+<h3><a class="header" href="#an-was-arbeitest-du-gerade-4" id="an-was-arbeitest-du-gerade-4">An was arbeitest du gerade?</a></h3>
+<p>Nachdem mein gefundetes Core Ecosystem-Projekt im August abgeschlossen wurde, geht es nun darum, einen praktischen Nutzen aus der Arbeit zu ziehen. Das wird in Form eines Raspberry-Pi HATs als Development-Board für das FPGA- Modul geschehen, wofür es auch schon erste Abnehmer aus der Industrie gibt.</p>
+<h3><a class="header" href="#wie-informierst-du-dich-über-neuigkeiten-4" id="wie-informierst-du-dich-über-neuigkeiten-4">Wie informierst du dich über Neuigkeiten?</a></h3>
+<p>Ich lese fleißig im IOTA Discord und auf Twitter - das meiste Wichtige verpasse ich trotzdem. Big shout-out an vrom, der mich über Twitter - und gelegentlich per Privatnachricht - auf dem Laufenden hält :-)</p>
+<h3><a class="header" href="#was-vermisst-du-bei-iota-4" id="was-vermisst-du-bei-iota-4">Was vermisst du bei IOTA?</a></h3>
+<p>Dass es keine Informationen über Jinn gibt^^ Gerade als Hardware-Entwickler ist man doch sehr neugierig darauf.</p>
+<h3><a class="header" href="#was-begeistert-dich-am-meisten-an-iota-4" id="was-begeistert-dich-am-meisten-an-iota-4">Was begeistert dich am meisten an IOTA?</a></h3>
+<p>Die IOTA-Foundation, die ein sehr solides Fundament gelegt hat, was absolut wichtig für den Erfolg von IOTA ist. Und natürlich die Menschen hinter der IF.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../05_menschen/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../05_menschen/052_spotlight.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../05_menschen/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../05_menschen/052_spotlight.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

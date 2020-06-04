@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Ecosystem Development Fund - Hello World</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../01_focus/index.html"><strong aria-hidden="true">2.</strong> IOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_focus/011_the_genesis_of_the_tangle.html"><strong aria-hidden="true">2.1.</strong> The Genesis of the Tangle</a></li><li class="chapter-item expanded "><a href="../01_focus/012_a_german_foundation.html"><strong aria-hidden="true">2.2.</strong> A German Foundation</a></li><li class="chapter-item expanded "><a href="../01_focus/013_staff_from_all_over_the_world.html"><strong aria-hidden="true">2.3.</strong> Staff From All Over the World</a></li><li class="chapter-item expanded "><a href="../01_focus/014_the_ecosystem_development_fund.html" class="active"><strong aria-hidden="true">2.4.</strong> The Ecosystem Development Fund</a></li><li class="chapter-item expanded "><a href="../01_focus/015_iota_links.html"><strong aria-hidden="true">2.5.</strong> IOTA Links</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Hello World</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-ecosystem-development-fund" id="the-ecosystem-development-fund">The Ecosystem Development Fund</a></h1>
+<div class="introdution">
+A funding program to support IOTA-relevant projects.
+</div>
+<p>TEXT FELIX REICHARD</p>
+<p>Many people have good ideas as well as the knowledge and skills to implement these ideas. However, non-profit projects in particular often have difficulties in finding appropriate funding. Making ideas reality usually requires money. For this reason, the IOTA Foundation established the IOTA Ecosystem Development Fund (EDF) in the beginning of 2018. This fund is meant to close the financial gap between the ideas and their actual implementation.</p>
+<h2><a class="header" href="#why-a-fund" id="why-a-fund">Why a Fund?</a></h2>
+<p>IOTA still is quite a young technology. To promote it, we need pioneers who develop projects based on IOTA. This includes proofs of concept (PoC) but also projects that go beyond that. Many companies are already building their own solutions on the basis of the IOTA Tangle. But many projects are also created in private by Community developers who like doing new stuff. They want to carry the technology forward and to use the arising opportunities for their own business ideas. Luckily, the IOTA Community is packed with these smart heads. Some projects, however, are so big that the expenses go beyond the private budget of the developers, who are often still very young. The IOTA Foundation has brought a fund to life, so these ideas are not just given up. Developers can pitch their projects and apply for financial support here.</p>
+<p>A committee formed by members of the IOTA Foundation decides on the relevance of the given projects and determines whether it makes sense to support them in the long term. First and foremost, of course, projects that demonstrate the technology‘s full potential are favored. But also awareness campaigns like the “Everything Tangle“ Youtube channel are supported. This channel has been funded with 8,000 US dollars, so it can produce further high-quality videos in various languages. After all, it is not only the technology
+that needs to mature – we also need to raise awareness and promote understanding for IOTA. Since IOTA‘s Tangle functions in a completely novel way and does not have much in common with the notorious blockchain, much educational work needs to be done in this area.</p>
+<h2><a class="header" href="#for-the-community-by-the-community" id="for-the-community-by-the-community">For the Community, by the Community</a></h2>
+<p>The money available in the EDF for the main part consists of donations from Community members who invested in IOTA early on and thus received a high return on investment (ROI). These people wanted to share a part of their revenue with the Community and support the IOTA project with it. These immensely generous donations amounted to approximately 20 Ti (teran IOTA). This is an enormous sum, which grants support of the ecosystem for many years ahead, even at a low exchange rate.</p>
+<h2><a class="header" href="#the-procedure" id="the-procedure">The Procedure</a></h2>
+<p>If a developer would like to receive funding, theiy need to make an application. For the funding to be granted, certain requirements need to be fulfilled. For example, the project should be open source, it should have been initiated by Community members, and it should be relevant for IOTA, of course. A project‘s pursuing commercial ends is not a criterion for exclusion, however, the project needs to constitute an enrichment for IOTA and the protocol behind it. Once a project has successfully gone through this procedure, the beneficiary receives the amount requested in several instalments. Some milestones are defined beforehand at which payments are then made. By the way, payments are made in – what else could it be? – IOTA. Numerous projects have been funded already. Thanks to the EDF, they could be implemented and made reality. One of the first was the “Smart Flood Protection“ project. This was a proof of concept, which was supported with 26,500 US dollars.</p>
+<h2><a class="header" href="#crypto-core-fpga" id="crypto-core-fpga">Crypto Core FPGA</a></h2>
+<p>One of the best-known projects among the IOTA Community to have been approved by the EDF committee is “Crypto Core FPGA“, which was submitted by a Community member called MicroEngineer. The Crypto Core FPGA enables embedded systems to carry out IOTA‘s basic funtions securely, efficiently and, above all, quickly. It makes address generation, PoW (proof of work), seed management, and much more, accessible via an API. The IOTA technology can thus be easily implemented into existing or new systems still to be developed. This project was financed with 59,110 US dollars by the EDF.</p>
+<p>MicroEngineer says about the EDF:
+“I think the EDF is great, because it enables developers to focus on their project completely and without any financial pressure. Without an initiative like the EDF, many complex projects could not be realized. I also would like to use this opportunity to give a huge shout-out to the team of the Ecosystem Development Fund – Mark Schmidt, Dave de Fijter and all the others involved – for the great cooperation.“</p>
+<h2><a class="header" href="#xdk2mam" id="xdk2mam">XDK2MAM</a></h2>
+<p>If you are dealing with IoT (Internet of Things) topics, that is, with data and concepts in this field, the Bosch XDK will probably not be completely unknown to you. The XDK is an all-in-one developers‘ platform that is specifically oriented towards applications in the field of IoT in terms of its hardware and the software it provides.
+A large number of sensors, e.g. for temperature, humidity, brightness, and motion, as well as built-in WLAN and Bluetooth modules make this small device the ideal tool for various applications.</p>
+<p>Since IOTA‘s main focus lies on the Internet of Things, the idea to connect this hardeware component with the IOTA Tangle is an obvious one. Daniel De Michele and Alejandro Elustondo have addressed this interface. With their XDK2MAM project, they intend to provide a tool that makes an easy connection between the Bosch XDK and the IOTA Tangle possible for everybody. XDK2MAM is already a partner of the Bosch XDK Ecosystem as well as the IOTA Data Marketplace.</p>
+<p>Its main goal is to one day publish data coming from individual sensors on the Tangle automatically and without any intermediate steps. This would mean a huge step for everybody who wants to offer some kind of data, for example on the IOTA Data Marketplace. The project by Daniel De Michele and Alejandro Elustondo was funded with 85,150 US dollars from the EDF.</p>
+<p>Daniel De Michele says:
+“Today, XDK2MAM is an open-source-code hub with instructions, video tutorials and all software necessary to make the XDK110 ready for use immediately in line with your favorite method. Needless to say that all this would not have happened without the EDF funds.“</p>
+<h2><a class="header" href="#iota-industrial-lab-aachen-iila" id="iota-industrial-lab-aachen-iila">IOTA Industrial Lab Aachen (IILA)</a></h2>
+<p>One of the most influential projects is the IOTA Industrial Lab Aachen (IILA). To date, this initiative has been funded for the most part by the RWTH Aachen University. It gives students and representatives of various branches of the industry the opportunity to do research on topics such as artificial intelligence, M2M communication, machine economy, and of course IOTA technology.
+The 50,000 US dollars granted by the EDF are mainly used to create and advance proofs of concept for the industrial Internet of Things‘ (IIoT) supply chain. In more concrete terms, this is about storing encrypted data from precision cutting machines on the Tangle in real time and in a tamper-proof way. Like this, a so-called digital twin is generated, which makes process data reviewable in a tamper-proof way.</p>
+<p>Daniel Trauth, Chief Engineer of the WZL at RWTH Aachen and founder of the Industrial IOTA Lab Aachen, and his team have already gained a good deal of attention in this area and made representatives of various sectors of the industry aware of IOTA‘s advantages through many talks and presentations.</p>
+<p>Daniel Trauth says about the EDF:
+“The IOTA Foundation‘s EDF has made us, the Industrial IOTA Lab Aachen at the WZL of RWTH Aachen, pioneers in the industrial implementation of a machine economy use case. Even if it has become more quiet around us recently, we are still busy perfecting the use case that has been made possible by the EDF, and we will be able to come out with some news soon. The EDF is the perfect means for building up convincing use cases quickly, while avoiding overly bureaucratic funding authorities.“</p>
+<h2><a class="header" href="#transparency" id="transparency">Transparency</a></h2>
+<p>Transparency plays a central role in all areas of the IOTA Foundation. This is obviously also the case for the Ecosystem Development Fund. At fund.iota.org you can see the actual amount of funding money remaining at any time.
+The page transparency.iota.org shows in detail which projects have already been approved and what sums they have received to date. All this information is recorded on the IOTA Tangle.</p>
+<p>Mark Schmidt says about transparency:
+“The Ecosystem Development Fund has been brought to life with the Community‘s donations.
+It is a particular concern to us to share the resulting progress with the Community and to be transparent about every detail of the related payments and grant documents.“</p>
+<h2><a class="header" href="#conclusion" id="conclusion">Conclusion</a></h2>
+<p>The Ecosystem Development Fund is a brilliant initiative. Through it, developers and other parties promoting IOTA‘s progress get an opportunity to make their ideas and visions reality. Without such a funding scheme, many projects would probably never come to life.
+Thanks to the EDF and the related IOTA Ecosystem, an ecosystem of developers, visionaries and pioneers has formed that drives the advancement of the IOTA technology in a way that had been unthinkable before.</p>
+<h2><a class="header" href="#values-check" id="values-check">Values Check</a></h2>
+<ul>
+<li>Community</li>
+<li>Funding</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../01_focus/013_staff_from_all_over_the_world.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../01_focus/015_iota_links.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../01_focus/013_staff_from_all_over_the_world.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../01_focus/015_iota_links.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

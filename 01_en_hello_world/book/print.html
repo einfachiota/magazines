@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Hello World</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="00_introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="01_focus/index.html"><strong aria-hidden="true">2.</strong> IOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01_focus/011_the_genesis_of_the_tangle.html"><strong aria-hidden="true">2.1.</strong> The Genesis of the Tangle</a></li><li class="chapter-item expanded "><a href="01_focus/012_a_german_foundation.html"><strong aria-hidden="true">2.2.</strong> A German Foundation</a></li><li class="chapter-item expanded "><a href="01_focus/013_staff_from_all_over_the_world.html"><strong aria-hidden="true">2.3.</strong> Staff From All Over the World</a></li><li class="chapter-item expanded "><a href="01_focus/014_the_ecosystem_development_fund.html"><strong aria-hidden="true">2.4.</strong> The Ecosystem Development Fund</a></li><li class="chapter-item expanded "><a href="01_focus/015_iota_links.html"><strong aria-hidden="true">2.5.</strong> IOTA Links</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Hello World</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>WELCOME TO THE FIRST ISSUE</p>
+<h1><a class="header" href="#hello-world" id="hello-world">Hello, World!</a></h1>
+<div class="introdution">
+What‘s behind the IOTA Foundation and the Tangle? What‘s the Community‘s contribution? What can the technology do?
+</div>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<p>You are holding the first issue of the einfachIOTA Magazine in your hands. Thank you! We now explain IOTA in a simple way - both on paper and on the internet. Together with numerous supporters from the IOTA Ecosystem and the IOTA Foundation, we were able to bring this magazine into being in no time. We would like to say hello, world and invite you to join us on a journey through the IOTA universe. This issue is special to us in two ways: it is our debut magazine and the 2019 annual edition at the same time.
+As for our debut, we are placing special emphasis on presenting the IOTA Foundation and the Tangle in detail and introducing the basics in a newcomer-friendly way. IOTA is especially characterized by its strong values, which we explain in the Focus section. In the following section, we introduce the einfachIOTA team and our mission.</p>
+<p>As for the 2019 annual edition, we would like to present the people, projects and events that meant the most to us this year. In the Retrospective section, we illustrate the developments and key events of the last few years with a roadmap. You can find the latest news about the IOTA Foundation in the News section. The People section is all about the people behind our projects. Under the heading 5x5, we have asked five people from our Ecosystem five questions each. For our spotlight A Day in the Life of... we have interviewed IOTA co-founder Dominik Schiener. The Events section deals with past and future events. We report on the most important IOTA meetups of the year 2019 and present the events you shouldn‘t miss in 2020. Within our Project of the Week report series on our website, we have already presented many projects. You can find all of them in the Projects section, where we also put the spotlight on the Project of the Year selected by the Community. In the Explanation Corner, things get a little more techy. We give you an introduction into the technical basics of things like the Coordicide, masked authenticated messaging and proof of work. For the tinkerers among you, the
+Tinkering Corner focuses on several hardware projects, for example a guide to making your own cost-efficient hardware wallet. Last but not least, we have some guest contributions for you.</p>
+<p>We are incredibly proud of our team, our many helpers from the IOTA Community and every single one of you who have pre-ordered this magazine. Without you, this magazine would not be here. Thank you so much!
+We are always available for feedback and questions on our Discord server. We hope to have raised your interest in knowing more. Have fun reading on!</p>
+<p>Sebastian Heußer
+Editor in Chief, einfachIOTA</p>
+<p>Sven Reiser
+Creative Director, einfachIOTA</p>
+<p>IOTA</p>
+<h1><a class="header" href="#what-is-iota" id="what-is-iota">What Is IOTA?</a></h1>
+<p>The big hype around Bitcoin and blockchain in the last few years has escaped hardly anyone‘s attention. But what has really changed up to now? Cryptocurrencies still haven‘t taken root, because they normally entail long waiting times and transaction costs. Additional scalability issues and exorbitantly high energy consumption contribute to the growing number of sceptics. Against the backdrop of these developments, the German IOTA Foundation has made it its business to solve exactly these problems and to create a network where innumerable devices can exchange values and data freely. This network is based on the Tangle, a technology that has been developed in-house and which is an advancement of blockchain technology. It allows us to exchange values and data without any transcation costs and with considerably lower energy consumption. This means that we could pay our coffee or sandwich, or even amounts of less than one cent, with it. In our Focus section, you will learn how the Tangle was invented and get various insights into the IOTA world.</p>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<h1><a class="header" href="#the-genesis-of-the-tangle" id="the-genesis-of-the-tangle">The Genesis of the Tangle</a></h1>
+<div class="introdution">
+Do you know the difference between a blockchain and the Tangle? This article explains why we need the Tangle for the Internet of Things (IoT), and for many other things as well.
+</div>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<p>The Tangle is the basic technology on which we intend to ground the economy and data transfer of the Internet of Things. It is a protocol that allows us to exchange values and data free of charge within a distributed system. But why can‘t we just use a cryptocurrency like Bitcoin for this? In order to understand this, we need to look at the projects and their basis in detail. Let‘s go back to the start.</p>
+<h2><a class="header" href="#in-the-beginning-there-was-blockchain" id="in-the-beginning-there-was-blockchain">In the Beginning There Was Blockchain</a></h2>
+<p>In 2008, the fist blockchain – Bitcoin – was born. A software developer still unknown to date pulished the soure code as well as a statement paper titled Bitcoin: A Peer-to-Peer Electronic Cash System under the pseudonym Satoshi Nakamoto. The term peer-to-peer means that devices communicate with each other directly and without any additional interfaces. Bitcoin made it possible for the first time to exchange values in a decentralized way, without any central authority, and it quickly became known as digital money. For the first time, it was possible to send and receive money without having to open an account with a bank or on a website. The Bitcoin concept soon became a success and was also used as the basis for further projects and ideas. You could download Bitcoin‘s open-source code, make some changes and thus easily create and operate a new blockchain. Many developers have made use of this, leading to countless copies of the Bitcoin blockchain being published, which in most cases differ from Bitcoin only very slightly. Each blockchain has its own units which are traded in online markets much like shares.
+The values created within a blockchain are called tokens. The programmers define in the beginning how many tokens exist on a blockchain and at what point new tokens can be created. New bitcoins are created with each new block, but the number of tokens created decreases step by step until the maximum number of 21 million bitcoins has been reached. Transfering bitcoins is secure and anonymous up to a certain level, but it is not free of charge. Transcation costs serve as an incentive to add ever new blocks to the blockchain after generating the previous bitcoin. This validation process is carried out by so-called miners which generate random numbers using vast amounts of computing power. These random numbers are part of the cryptographic puzzles, which are solved roughly every ten minutes by a miner from the network. The miner to first find a possible solution writes the next block with the new transcations and receives the newly generated bitcoins as well as all transaction fees for the transactions contained in the block. This has spurred a race for more computing power among miners. Who has more computing power can generate random numbers more quickly and thus enhances their chances to score the reward for the next block. This race has led to the Bitcoin miner network becoming restricted to big computer centers, which has in turn made Bitcoin less decentralized.</p>
+<p>The enormous computing power that is necessary to find a valid random number has another important drawback – very high energy consumption. One single transaction consumes roughly as much energy as an average US household in 21 days. This carbon footrpint is comparable with the one of the entire country of Denmark, and this is just for calculations that stand similar chances to success as scratch cards. In short: a lot of waste and just one winner.</p>
+<p>So, the transactions checked for their validity by the miners are added to the blockchain in blocks. But what happens if many transactions are to be processed, that is, if very many people want to make payments with bitcoins? For a better understanding, let‘s have a closer look at such a block. Blocks are restricted to a certain size. This means that only a limited number of transactions fits into one block. Since new blocks are only added every ten minutes, some transactions literally have to wait for the next block. If there are very many transactions, some of them may get incorporated into the blockchain with a huge delay – or never. We call this the bottleneck of the blockchain. The image below illustrates this. We can see that in the case of a large number of transactions, only part of them can actually be incorporated into the blockchain. Since miners get the sum of all transaction fees in the block as an incentive, they obviously choose the transactions with the highest fees. As a consequence, the transactions with the lowest fees automatically get pushed back in the queue. This entails that we need to pay a high fee if we want to make sure that a transaction is processed and incorporated into the blockchain.</p>
+<p>&lt; TODO: blockhain svg&gt;
+The bottleneck of a blockchain</p>
+<h2><a class="header" href="#then-there-was-swap" id="then-there-was-swap">Then There Was Swap</a></h2>
+<p>Bitcoins, just like many other cryptocurrencies, can be exchanged for currencies like euros or dollars in swaps. This gives the tokens a certain value. Because transaction costs for bitcoin are also paid in bitcoins, transaction costs increase according to the token‘s value. For example, if the number of bitcoins that we have to pay as the fee for a certain transaction was worth one euro and then bitcoin‘s exchange rate doubled, we would still pay the same number of bitcoins for the transaction, but it would cost twice the amount in euros. During the 2017 high, the general interest in bitcoin transactions increased rapidly, which meant that people had to pay higher and higher fees to secure a place on the blockchain. When the bitcoin reached its peak price of approximately 20,000 US dollars per BTC, the transaction cost rose to 60 US dollars. However, even at a low exchange rate the transaction fees are just too much for us to pay our coffees or after-work beers in bitcoins.</p>
+<h2><a class="header" href="#the-blockchain-is-not-scalable" id="the-blockchain-is-not-scalable">The Blockchain Is Not Scalable!</a></h2>
+<p>Many software developers have realized that blockchain technology has scalability problems and are searching for new solutions. IOTA founders Sergey Ivancheglo, Serguei Popov, Dominik Schiener and David Sønstebø have taken on the challenge. They wanted to find a new approach and developed a system without scalability and
+cost issues, a system that can be used to exchange values and data, open or encrypted, free of any charge and in a decentralized manner. The team built their system on a directed acyclic graph, which is a mathematical construction. There were neither blocks nor miners here. The transactions and the users took center stage. The Tangle was born and was described in detail in a white paper by mathematics professor Serguei Popov. During the following year, the first IOTA reference implemantation, IRI for short, was carried out in the Java programming language. The basic rule is simple: if someone wants to send a transaction, they must validate two previous transactions that are randomly chosen. This way, we avoid the blockchain‘s bottleneck and arrive at a scalable system. We do not need immense computing power any longer, and at the same time, the system becomes quicker the more it is used. The Tangle is thus something like a multitrack transaction chain. We can describe how the Tangle and blockchains function with the analogy of a two-story department store. The entrance is on the ground floor, whereas the tills and the exit are on the first floor. The blockchain department store offers its clients a lift that takes them upstairs. This lift arrives every ten minutes, and there is a corruptible ticket machine that lets whoever pays the most enter first. At least clients get up to the first floor very comforatbly – as long as they can keep up with the ticket prices. Whenever there are many clients, the whole thing gets uncomfortable quite quickly. Compared to this scenario, the Tangle department store would have a simple staircase. Clients can use it free of charge, and everybody can climb the stairs on their own without having to wait. The scalability in case of a visitor rush would be limited by the breadth of the staircase. This is true for the Tangle as well, as its capacity is eventually limited by the internet bandwidth.</p>
+<p>The image below illustrates the basic structure of the Tangle. Every transaction references two other transactions. The blue transactions are regarded as definitely confirmed already, while the gray ones have been referenced only recently. The white blocks are called tips. Tips are unconfirmed transactions that still need to be referenced by new transactions. Currently, transactions are not regarded as confirmed until they have been referenced directly or indirectly by the Coordinator. This Coordinator is what currently gives rise to most criticism against IOTA with regard to decentralization, because the Coordinator centralizes the Tangle in a certain way. </p>
+<p>&lt; TODO: tangle svg&gt;
+IOTA Tangle</p>
+<p>However, the Coordinator can only confirm transactions. Neither can it evade consensus rules nor can it create new tokens, freeze or abstract them. The Coordinator‘s source code is publicly available, as are the plans and prototypes to decentralize it. The removal of the Coordinator goes by the project name of the Coordicide and
+is the IOTA Foundation‘s top-priority project. </p>
+<h2><a class="header" href="#iota--more-than-a-cryptocurrency" id="iota--more-than-a-cryptocurrency">IOTA – More Than a Cryptocurrency</a></h2>
+<p>IOTA tokens, much like bitcoins, are traded in exchanges and have a certain value. However, our vision clearly transcends a mere currency. IOTA wants to become the open standard of the Internet of Things, a standard for the exchange of values and data in the future. The Tangle will make it possible for cars to pay for charging, tolls and parking autonomously. Drones delivering packages will receive their destination data and updates from the Tangle, all the while being sure that these data come from a reliable source. Because there are no transaction fees, so-called micropayments are possible, that is, payments worth less than one cent. These can be used, for example, to buy data and energy in tiny quantities. New business models that go by the motto “pay what you use“ become feasible in all sorts of areas. The Tangle is more than just a cryptocurrency. It paves the way for the next industrial revolution. It provides the protocol that enables people and machines to exchange data and values securely and free of charge.</p>
+<h2><a class="header" href="#data-in-the-focus" id="data-in-the-focus">Data in the Focus</a></h2>
+<p>Data are regarded as precious goods already today. In the future, we will collect and store more and more data. The number of devices connected to the internet and thus the mass of stored data is continuously increasing. But what is the value of these data? A huge part of today‘s data are only privately avaiable or stored in enormous data silos which are exclusively avaiable to a few companies. With IOTA, these data can be made available for everyone. The creators of the data can decide whether they would like to make the data freely available or offer them for sale on a market. Completely new business models can grow out of this. Consolidating large amounts of data enables us, for example, to prevent traffic accidents or errors in production processes.</p>
+<p>The Tangle also allows us to send transactions with data packages. These transactions do not need to contain IOTA tokens and can be created and sent by anybody. So even the smallest devices can continuously send sensor data to the Tangle. Technologies that build on the IOTA protocol, such as MAM (masked authenticated messaging) make it possible to store data on the Tangle in encrypted and interlinked form. Interlinked transactions allow us to open so- called data channels and publish ever new data through them. A time stamp is applied to these data which is unchangeable. Only who has the according authorization can add new transactions to the channel. An example for this would be a temperature or carbon sensor that publishes the results of new measurements through a channel. This way, complete data sets can be offered on markets for sale or subscription. Buyers get admission to a channel and can then use the data sets belonging to this channel.</p>
+<h2><a class="header" href="#not-yet-fully-decentralized-but-soon" id="not-yet-fully-decentralized-but-soon">Not Yet Fully Decentralized. But Soon!</a></h2>
+<p>To date, the Tangle has been monitored by the so-called Coordinator. The Coordinator sets the clock for the Tangle‘s synchronization of the full nodes. Full nodes are the servers on which the IOTA reference implementation is carried out. Because of the Coordinator, the Tangle is currently still centralized. However, the databases themselves, which are located on the full nodes of the network participants, are scattered all over the world and are thus already decentral. The IOTA Foundation is currently working on shutting down the Coordinator and thus removing the last centralized part from the Tangle. You can find further information on the Coordicide in the article What Is the Coordicide? on page 58.</p>
+<h2><a class="header" href="#values-check" id="values-check">Values Check</a></h2>
+<ul>
+<li>Free of Charge </li>
+<li>Scalability</li>
+<li>Data Integrity</li>
+</ul>
+<h1><a class="header" href="#a-german-foundation" id="a-german-foundation">A German Foundation</a></h1>
+<div class="introdution">
+The IOTA Foundation is both the first German
+and the first non-profit foundation in the
+cryptoworld.
+</div>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<p>On November 3, 2017, after more than a year of meticulous preparations by the team, the IOTA Foundation was officially registered in Berlin by the State Secretary for Justice. This makes the IOTA Foundation the first entirely regulated non-profit foundation in the cryptoworld, and the first with a seat in Germany. The IOTA Foundation is led by its founders and the foundation council, namely David Sønstebø, Dominik Schiener and Serguei Popov.
+The IOTA Foundation has various alliances with businesses, start-ups, research centers and other non-profit organizations. The Foundation‘s core is formed by the software developers, researchers, consultants and business developers who develop the IOTA protocol and promote its acceptance.</p>
+<h2><a class="header" href="#diversification" id="diversification">Diversification</a></h2>
+<p>The IOTA protocol is extremely versatile and can be used for a range of purposes – from Industry 4.0 and the Internet of Things to Web 3.0 and data exchange of the future. Each of these domains brings different possibilities and challenges, which require different areas of expertise. The IOTA Foundation is constantly enlarging its team of experts from all over the world who are working on numerous projects in interdisciplinary groups and collaborate with businesses and research centers.</p>
+<h2><a class="header" href="#a-non-profit-foundation" id="a-non-profit-foundation">A Non-Profit Foundation</a></h2>
+<p>In order to establish the IOTA Foundation, the IOTA Community donated 5 percent of all IOTA tokens, which amounts to roughly 140 Ti (1 Ti = 1 teran IOTA = 1 trillion IOTA). With a rate of 0.25€ per Mi (1 Mi = 1 megan IOTA = 1 million IOTA), these are worth approxiamtely 35 million euros. This money is primarily used to finance the team and the further development of the technology.
+The IOTA Foundation intends to become self-sufficient in the future. There are many possibilities to ensure the continued existence of the foundation in the long run, for example, business consulting, selling educational certificates or participating in public tenders.</p>
+<h2><a class="header" href="#our-mission" id="our-mission">Our mission</a></h2>
+<p>The IOTA Foundation‘s primary objective is to develop and standardize the IOTA core protocol. This obviously includes providing tools and documentation for the developers. The IOTA Foundation furthermore plays an active role at conferences and hackathons related to topics like the Internet of Things, digitization and Industry 4.0.</p>
+<p>The IOTA Foundation publishes new content through several channels on a daily basis, including a podcast with exciting interviews about future-related topics, videos with hands-on application examples, and even live streamings where developers demonstrate how to use the Tangle and the new tools.</p>
+<h2><a class="header" href="#values-check-1" id="values-check-1">Values Check</a></h2>
+<ul>
+<li>Non-Profit Status </li>
+<li>Regulation</li>
+<li>Transparency</li>
+</ul>
+<h1><a class="header" href="#staff-from-all-over-the-world" id="staff-from-all-over-the-world">Staff From All Over the World</a></h1>
+<div class="introdution">
+The IOTA Foundation is active worldwide, with over 100 employees from more than 23 countries.
+</div>
+<p>TEXT SEBASTIAN HEUSSER</p>
+<p>The IOTA Foundation has grown rapidly in the last few years. Since its establishment in 2015, it has hired more than 100 employees. The main goal of the first few years was to establish a stable organizational culture. To stay on top of things with a team that is spread all over the world and growing at such speed is an unparalleled challenge. How does IOTA meet this challenge concretely?</p>
+<h2><a class="header" href="#sumsum" id="sumsum">SumSum</a></h2>
+<p>To really act in concert, the team members need to get to know each other in person and develop personal relationships. For this purpose, there is the annual SummerSummit, or SumSum for short. This event is organized for the team to celebrate successes, present news and novelties and discuss new ideas. The SumSum also is the perfect opportunity to get to know the person behind an online username. This article‘s header picture shows the IOTA team at the 2019 SumSum.</p>
+<h2><a class="header" href="#iota-hubs" id="iota-hubs">IOTA Hubs</a></h2>
+<p>With team members from more than 23 countries, a large part of the communication obviously happens exclusively over the internet. To give the team the opportunity to work together more closely, we have more and more offices spreading around the world, the so- called IOTA Hubs. Currently there are hubs in Berlin, Tel Aviv, Oslo and Taipei. In these hubs, the team can work together and also meet with important partners.</p>
+<p>The picture above shows the Tel Aviv team, which is led by Alon Elmaliah (on the right). Tel Aviv is a renowned center of technology, which keeps popping up in top 10 start-up reviews. Tel Aviv is home to many start-ups and companies. Also big software companies such as Apple, Microsoft, Google, Amazon and Intel are established in Israel. The biggest sectors in the Isreali technology scene are cyber security and biotechnology.
+IOTA‘s four current hubs are just the beginning. Stay tuned to find out when and where the next hub will open its gates.</p>
+<h2><a class="header" href="#strong-team-of-developers" id="strong-team-of-developers">Strong Team of Developers</a></h2>
+<p>The team behind the Tangle, the tools and the libraries consists of many experienced software developers. The fact that these developers are spread all over the world and live in different time zones enables us to keep developing around the clock. Our open- source code is updated hourly. The Community takes part here in two ways: as developers and testers. The Community is formed by roughly 70,000 people, many of whom are looking at every single change in the code with a critical eye, thus actively taking part in the development process.
+There is also a council of elected Community members responsible for the latest full node software, which takes the Community‘s insights and experiences to the IOTA developers.
+There are now libraries for working with the Tangle in almost every existing programming language. Various tools have been developed, for example a program that can install an IOTA full node with just one mouse click.
+All this is the result of close cooperation between IOTA developers and the Community. Special chat channels were opened to speed up the exchange of ideas and problem solutions. The Community has even managed to get its own section on the popular developers‘ platform Stack Overflow. Stack Overflow helps developers to find solutions to urgent technical problems.</p>
+<h2><a class="header" href="#academic-research-council" id="academic-research-council">Academic Research Council</a></h2>
+<p>In 2018, the IOTA Foundation announced its academic research council. An impressive research team has been put together, consisting of globally leading professors, doctoral students and other scientists. The council will cooperate closely with the research departments to define the strategic orientation of the technology and to place the IOTA reasearch in an academic framework. In September 2019, Professor Jon Crowcroft, one of the internationally most renowned researchers for distributed computing, joined the council.</p>
+<h2><a class="header" href="#values-check-2" id="values-check-2">Values Check</a></h2>
+<ul>
+<li>Diversity </li>
+<li>Remote Culture</li>
+</ul>
+<h1><a class="header" href="#the-ecosystem-development-fund" id="the-ecosystem-development-fund">The Ecosystem Development Fund</a></h1>
+<div class="introdution">
+A funding program to support IOTA-relevant projects.
+</div>
+<p>TEXT FELIX REICHARD</p>
+<p>Many people have good ideas as well as the knowledge and skills to implement these ideas. However, non-profit projects in particular often have difficulties in finding appropriate funding. Making ideas reality usually requires money. For this reason, the IOTA Foundation established the IOTA Ecosystem Development Fund (EDF) in the beginning of 2018. This fund is meant to close the financial gap between the ideas and their actual implementation.</p>
+<h2><a class="header" href="#why-a-fund" id="why-a-fund">Why a Fund?</a></h2>
+<p>IOTA still is quite a young technology. To promote it, we need pioneers who develop projects based on IOTA. This includes proofs of concept (PoC) but also projects that go beyond that. Many companies are already building their own solutions on the basis of the IOTA Tangle. But many projects are also created in private by Community developers who like doing new stuff. They want to carry the technology forward and to use the arising opportunities for their own business ideas. Luckily, the IOTA Community is packed with these smart heads. Some projects, however, are so big that the expenses go beyond the private budget of the developers, who are often still very young. The IOTA Foundation has brought a fund to life, so these ideas are not just given up. Developers can pitch their projects and apply for financial support here.</p>
+<p>A committee formed by members of the IOTA Foundation decides on the relevance of the given projects and determines whether it makes sense to support them in the long term. First and foremost, of course, projects that demonstrate the technology‘s full potential are favored. But also awareness campaigns like the “Everything Tangle“ Youtube channel are supported. This channel has been funded with 8,000 US dollars, so it can produce further high-quality videos in various languages. After all, it is not only the technology
+that needs to mature – we also need to raise awareness and promote understanding for IOTA. Since IOTA‘s Tangle functions in a completely novel way and does not have much in common with the notorious blockchain, much educational work needs to be done in this area.</p>
+<h2><a class="header" href="#for-the-community-by-the-community" id="for-the-community-by-the-community">For the Community, by the Community</a></h2>
+<p>The money available in the EDF for the main part consists of donations from Community members who invested in IOTA early on and thus received a high return on investment (ROI). These people wanted to share a part of their revenue with the Community and support the IOTA project with it. These immensely generous donations amounted to approximately 20 Ti (teran IOTA). This is an enormous sum, which grants support of the ecosystem for many years ahead, even at a low exchange rate.</p>
+<h2><a class="header" href="#the-procedure" id="the-procedure">The Procedure</a></h2>
+<p>If a developer would like to receive funding, theiy need to make an application. For the funding to be granted, certain requirements need to be fulfilled. For example, the project should be open source, it should have been initiated by Community members, and it should be relevant for IOTA, of course. A project‘s pursuing commercial ends is not a criterion for exclusion, however, the project needs to constitute an enrichment for IOTA and the protocol behind it. Once a project has successfully gone through this procedure, the beneficiary receives the amount requested in several instalments. Some milestones are defined beforehand at which payments are then made. By the way, payments are made in – what else could it be? – IOTA. Numerous projects have been funded already. Thanks to the EDF, they could be implemented and made reality. One of the first was the “Smart Flood Protection“ project. This was a proof of concept, which was supported with 26,500 US dollars.</p>
+<h2><a class="header" href="#crypto-core-fpga" id="crypto-core-fpga">Crypto Core FPGA</a></h2>
+<p>One of the best-known projects among the IOTA Community to have been approved by the EDF committee is “Crypto Core FPGA“, which was submitted by a Community member called MicroEngineer. The Crypto Core FPGA enables embedded systems to carry out IOTA‘s basic funtions securely, efficiently and, above all, quickly. It makes address generation, PoW (proof of work), seed management, and much more, accessible via an API. The IOTA technology can thus be easily implemented into existing or new systems still to be developed. This project was financed with 59,110 US dollars by the EDF.</p>
+<p>MicroEngineer says about the EDF:
+“I think the EDF is great, because it enables developers to focus on their project completely and without any financial pressure. Without an initiative like the EDF, many complex projects could not be realized. I also would like to use this opportunity to give a huge shout-out to the team of the Ecosystem Development Fund – Mark Schmidt, Dave de Fijter and all the others involved – for the great cooperation.“</p>
+<h2><a class="header" href="#xdk2mam" id="xdk2mam">XDK2MAM</a></h2>
+<p>If you are dealing with IoT (Internet of Things) topics, that is, with data and concepts in this field, the Bosch XDK will probably not be completely unknown to you. The XDK is an all-in-one developers‘ platform that is specifically oriented towards applications in the field of IoT in terms of its hardware and the software it provides.
+A large number of sensors, e.g. for temperature, humidity, brightness, and motion, as well as built-in WLAN and Bluetooth modules make this small device the ideal tool for various applications.</p>
+<p>Since IOTA‘s main focus lies on the Internet of Things, the idea to connect this hardeware component with the IOTA Tangle is an obvious one. Daniel De Michele and Alejandro Elustondo have addressed this interface. With their XDK2MAM project, they intend to provide a tool that makes an easy connection between the Bosch XDK and the IOTA Tangle possible for everybody. XDK2MAM is already a partner of the Bosch XDK Ecosystem as well as the IOTA Data Marketplace.</p>
+<p>Its main goal is to one day publish data coming from individual sensors on the Tangle automatically and without any intermediate steps. This would mean a huge step for everybody who wants to offer some kind of data, for example on the IOTA Data Marketplace. The project by Daniel De Michele and Alejandro Elustondo was funded with 85,150 US dollars from the EDF.</p>
+<p>Daniel De Michele says:
+“Today, XDK2MAM is an open-source-code hub with instructions, video tutorials and all software necessary to make the XDK110 ready for use immediately in line with your favorite method. Needless to say that all this would not have happened without the EDF funds.“</p>
+<h2><a class="header" href="#iota-industrial-lab-aachen-iila" id="iota-industrial-lab-aachen-iila">IOTA Industrial Lab Aachen (IILA)</a></h2>
+<p>One of the most influential projects is the IOTA Industrial Lab Aachen (IILA). To date, this initiative has been funded for the most part by the RWTH Aachen University. It gives students and representatives of various branches of the industry the opportunity to do research on topics such as artificial intelligence, M2M communication, machine economy, and of course IOTA technology.
+The 50,000 US dollars granted by the EDF are mainly used to create and advance proofs of concept for the industrial Internet of Things‘ (IIoT) supply chain. In more concrete terms, this is about storing encrypted data from precision cutting machines on the Tangle in real time and in a tamper-proof way. Like this, a so-called digital twin is generated, which makes process data reviewable in a tamper-proof way.</p>
+<p>Daniel Trauth, Chief Engineer of the WZL at RWTH Aachen and founder of the Industrial IOTA Lab Aachen, and his team have already gained a good deal of attention in this area and made representatives of various sectors of the industry aware of IOTA‘s advantages through many talks and presentations.</p>
+<p>Daniel Trauth says about the EDF:
+“The IOTA Foundation‘s EDF has made us, the Industrial IOTA Lab Aachen at the WZL of RWTH Aachen, pioneers in the industrial implementation of a machine economy use case. Even if it has become more quiet around us recently, we are still busy perfecting the use case that has been made possible by the EDF, and we will be able to come out with some news soon. The EDF is the perfect means for building up convincing use cases quickly, while avoiding overly bureaucratic funding authorities.“</p>
+<h2><a class="header" href="#transparency" id="transparency">Transparency</a></h2>
+<p>Transparency plays a central role in all areas of the IOTA Foundation. This is obviously also the case for the Ecosystem Development Fund. At fund.iota.org you can see the actual amount of funding money remaining at any time.
+The page transparency.iota.org shows in detail which projects have already been approved and what sums they have received to date. All this information is recorded on the IOTA Tangle.</p>
+<p>Mark Schmidt says about transparency:
+“The Ecosystem Development Fund has been brought to life with the Community‘s donations.
+It is a particular concern to us to share the resulting progress with the Community and to be transparent about every detail of the related payments and grant documents.“</p>
+<h2><a class="header" href="#conclusion" id="conclusion">Conclusion</a></h2>
+<p>The Ecosystem Development Fund is a brilliant initiative. Through it, developers and other parties promoting IOTA‘s progress get an opportunity to make their ideas and visions reality. Without such a funding scheme, many projects would probably never come to life.
+Thanks to the EDF and the related IOTA Ecosystem, an ecosystem of developers, visionaries and pioneers has formed that drives the advancement of the IOTA technology in a way that had been unthinkable before.</p>
+<h2><a class="header" href="#values-check-3" id="values-check-3">Values Check</a></h2>
+<ul>
+<li>Community</li>
+<li>Funding</li>
+</ul>
+<p><a href="01_focus/">IOTA</a></p>
+<h1><a class="header" href="#iota-links" id="iota-links">IOTA Links</a></h1>
+<p>Want to find out more? Here are the IOTA Foundation‘s most important links.</p>
+<ul>
+<li><a href="01_focus/www.iota.org">Official Website</a></li>
+<li><a href="https://trinity.iota.org">Trinity Wallet</a></li>
+<li><a href="https://blog.iota.org">News</a></li>
+<li><a href="https://ecosystem.iota.org">Ecosystem</a></li>
+<li><a href="https://fund.iota.org">Ecosystem Development Fund</a></li>
+<li><a href="https://data.iota.org">Data Marketplace</a></li>
+<li><a href="https://industry.iota.org">Industry Marketplace</a></li>
+<li><a href="https://qubic.iota.org">Qubic</a></li>
+<li><a href="https://automation.iota.org">The Automation Series Podcast</a></li>
+<li><a href="https://coordicide.iota.org">Coordicide</a></li>
+<li><a href="https://training.iota.org">Developer Course</a></li>
+<li><a href="https://docs.iota.org">Documentation</a></li>
+<li><a href="https://coordicide.iota.org">Coordicide</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
