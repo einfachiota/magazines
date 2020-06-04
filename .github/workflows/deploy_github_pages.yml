@@ -16,12 +16,8 @@ jobs:
         with:
           mdbook-version: 'latest'
 
-      - run: |
-            cd 01_de_hallo_welt
-            mdbook build
-            cd ..
-            cd 01_en_hello_world
-            mdbook build
+      - run: bash deploy.sh
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
