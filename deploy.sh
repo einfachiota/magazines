@@ -1,6 +1,7 @@
 #!/bin/sh
 # This is a comment!
 rm -f ./dist
+mkdir ./dist
 echo "Build 01_de_hallo_welt..."
 mdbook build ./01_de_hallo_welt
 mkdir ./dist/01_de_hallo_welt
