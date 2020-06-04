@@ -1,2 +1,2 @@
 # 1. einfachIOTA Magazin
-## HAllo Welt
+## Hallo Welt
