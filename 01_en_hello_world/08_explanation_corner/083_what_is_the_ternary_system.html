@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>What Is the Ternary System? - Hello World</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../01_focus/index.html"><strong aria-hidden="true">2.</strong> IOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_focus/011_the_genesis_of_the_tangle.html"><strong aria-hidden="true">2.1.</strong> The Genesis of the Tangle</a></li><li class="chapter-item expanded "><a href="../01_focus/012_a_german_foundation.html"><strong aria-hidden="true">2.2.</strong> A German Foundation</a></li><li class="chapter-item expanded "><a href="../01_focus/013_staff_from_all_over_the_world.html"><strong aria-hidden="true">2.3.</strong> Staff From All Over the World</a></li><li class="chapter-item expanded "><a href="../01_focus/014_the_ecosystem_development_fund.html"><strong aria-hidden="true">2.4.</strong> The Ecosystem Development Fund</a></li><li class="chapter-item expanded "><a href="../01_focus/015_iota_links.html"><strong aria-hidden="true">2.5.</strong> IOTA Links</a></li></ol></li><li class="chapter-item expanded "><a href="../02_einfachIOTA/index.html"><strong aria-hidden="true">3.</strong> einfachIOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02_einfachIOTA/021_what_is_einfachIOTA.html"><strong aria-hidden="true">3.1.</strong> What Is einfachIOTA?</a></li><li class="chapter-item expanded "><a href="../02_einfachIOTA/022_our_mission.html"><strong aria-hidden="true">3.2.</strong> Our Mission</a></li><li class="chapter-item expanded "><a href="../02_einfachIOTA/023_introducing_ourselves.html"><strong aria-hidden="true">3.3.</strong> Introducing Ourselves</a></li><li class="chapter-item expanded "><a href="../02_einfachIOTA/024_einfachIOTA_links.html"><strong aria-hidden="true">3.4.</strong> einfachIOTA Links</a></li></ol></li><li class="chapter-item expanded "><a href="../03_retrospective/index.html"><strong aria-hidden="true">4.</strong> Retrospective</a></li><li class="chapter-item expanded "><a href="../04_news/index.html"><strong aria-hidden="true">5.</strong> News</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04_news/041_whats_new.html"><strong aria-hidden="true">5.1.</strong> What‘s New? </a></li></ol></li><li class="chapter-item expanded "><a href="../05_people/index.html"><strong aria-hidden="true">6.</strong> People</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_people/051_5x5_questions.html"><strong aria-hidden="true">6.1.</strong> 5x5 Questions</a></li><li class="chapter-item expanded "><a href="../05_people/052_spotlight.html"><strong aria-hidden="true">6.2.</strong> Spotlight</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/index.html"><strong aria-hidden="true">7.</strong> Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_upcoming_events.html"><strong aria-hidden="true">7.1.</strong> Upcoming Events</a></li><li class="chapter-item expanded "><a href="../06_events/062_munich_meetup.html"><strong aria-hidden="true">7.2.</strong> Munich Meetup</a></li></ol></li><li class="chapter-item expanded "><a href="../07_projects/index.html"><strong aria-hidden="true">8.</strong> Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../07_projects/071_all_projects_of_the_week.html"><strong aria-hidden="true">8.1.</strong> All Projects of the Week</a></li><li class="chapter-item expanded "><a href="../07_projects/072_deposy.html"><strong aria-hidden="true">8.2.</strong> Deposy</a></li></ol></li><li class="chapter-item expanded "><a href="../08_explanation_corner/index.html"><strong aria-hidden="true">9.</strong> Explanation Corner</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08_explanation_corner/081_what_is_coordicide.html"><strong aria-hidden="true">9.1.</strong> What Is the Coordicide?</a></li><li class="chapter-item expanded "><a href="../08_explanation_corner/082_what_is_mam.html"><strong aria-hidden="true">9.2.</strong> What Is MAM?</a></li><li class="chapter-item expanded "><a href="../08_explanation_corner/083_what_is_the_ternary_system.html" class="active"><strong aria-hidden="true">9.3.</strong> What Is the Ternary System?</a></li><li class="chapter-item expanded "><a href="../08_explanation_corner/084_what_is_proof_of_work.html"><strong aria-hidden="true">9.4.</strong> What Is Proof of Work?</a></li></ol></li><li class="chapter-item expanded "><a href="../09_tinkering_corner/index.html"><strong aria-hidden="true">10.</strong> Tinkering Corner</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../09_tinkering_corner/091_developing_iota_apps_in_under_5_minutes.html"><strong aria-hidden="true">10.1.</strong> Developing IOTA Apps in Under 5 Minutes</a></li><li class="chapter-item expanded "><a href="../09_tinkering_corner/092_hardware_wallet_with_esp32.html"><strong aria-hidden="true">10.2.</strong> Hardware Wallet with ESP32</a></li></ol></li><li class="chapter-item expanded "><a href="../10_partner_contributions/index.html"><strong aria-hidden="true">11.</strong> Partner Contributions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../10_partner_contributions/101_lidbot.html"><strong aria-hidden="true">11.1.</strong> Lidbot</a></li><li class="chapter-item expanded "><a href="../10_partner_contributions/102_accessec.html"><strong aria-hidden="true">11.2.</strong> Accessec</a></li><li class="chapter-item expanded "><a href="../10_partner_contributions/103_smart_plastic_waste_with_deposy.html"><strong aria-hidden="true">11.3.</strong> Smart Plastic Waste with Deposy </a></li><li class="chapter-item expanded "><a href="../10_partner_contributions/104_iota_team_karlsruhe.html"><strong aria-hidden="true">11.4.</strong> IOTA Team Karlsruhe</a></li></ol></li><li class="chapter-item expanded "><a href="../11_thanks/index.html"><strong aria-hidden="true">12.</strong> Thank you!</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Hello World</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#what-is-the-ternary-system" id="what-is-the-ternary-system">What Is the Ternary System?</a></h1>
+<p>TEXT SCHMUCKLOS</p>
+<h2><a class="header" href="#what-is-the-ternary-sytem-and-does-it-come-with-any-advantage" id="what-is-the-ternary-sytem-and-does-it-come-with-any-advantage">What is the ternary sytem, and does it come with any advantage?</a></h2>
+<p>The ternary logic applied to IOTA is found throughout the whole project. Ternary logic is behind the JINN microcontroller, the Troika hash function, the seed, which only contains the capital letters A-Z along with the number 9, and also behind the fact that there are exactly 2,779,530,283,277,761 IOTA tokens.</p>
+<h2><a class="header" href="#the-basics" id="the-basics">The basics</a></h2>
+<p>Before explaining why IOTA builds on ternary logic, we need to have a closer look at the two basic systems that are relevant for this article.
+The binary system: one bit (binary digit) can assume exactly two (21 = 2) states: 0 and 1. Eight bits make one byte (28 = 256) and can thus represent 256 combinations.
+The ternary system: one trit (trinary digit) can assume exactly three (31 = 3) states: -1, 0 and 1. Three trits make one tryte (33 = 27) and can thus represent 27 combinations.</p>
+<p>The opposite of every balanced ternary number is identified by swapping every -1 with a 1 and vice versa. Negative numbers can thus be depicted just as easily as positive numbers, since – as opposed to the decimal system – there is no need to note down a negative sign. This makes certain calculations more efficient in the ternary system compared to the binary system. As trytes are even more complex than bytes, it is important to make them more readable. They are therefore converted into a sort of different language. The IOTA development team has created the tryte alphabet for this purpose. It consists of the number 9 and the capital letters A-Z. This means that it contains 27 digits, just as many as there are combinations in a tryte. So, every combination of a tryte can be depicted by one digit. IOTA uses this alphabet for the seed, addresses, hashs etc. The seed itself consists of 81 digits, that is, 81 trytes.</p>
+<p>An example</p>
+<pre><code>  CIIXLALQIZSAYXTYLOGYHMY9MSCDGCRXQFOHTZRXFRSFBQJJFFXRMVOJQWZJAILCKFSYEFWNLFWIHISEF
+</code></pre>
+<p>Every tryte has 27 combinations. So the IOTA seed has 2781 combinations. Expressed differently, these are ~8.71 * 10115 combinations, which is by far more than there are atoms in the entire visible universe. Chances to guess a seed are virtually zero percent. For comparison: Bitcoin‘s private keys are virtually impossible to guess, too, and they have only 2256 = ~1.1577 combinations. In the case of quantum computers and back calculation from addresses to seeds, or private keys respectively, IOTA is ahead of Bitcoin due to its considerably higher number of possibilities.</p>
+<h2><a class="header" href="#why-are-there-exactly-2779530283277761-iota-tokens" id="why-are-there-exactly-2779530283277761-iota-tokens">Why are there exactly 2,779,530,283,277,761 IOTA tokens?</a></h2>
+<p>This number also has to do with the trytes. Trytes balance themselves around the value 0, from -13 to +13. This is why we also speak of a balanced ternary system. We have 27 combinations and the maximum value 13. We can also calculate this mathematically:
+(33 - 1) / 2 = 13 combinations with a positive value
+33 trits make the maximum supply: (333 - 1) / 2 = 2,779,530,283,277,761 IOTA
+Note: It was important to create a high number of tokens, because they are intended to be used for micropayments between machines, for which high token prices are a hindrance. If in the distant future it should become necessary to raise the maximum number of tokens, due to very high demand, this would be possible.</p>
+<h2><a class="header" href="#why-do-exactly-33-trits-define-the-maximum-supply" id="why-do-exactly-33-trits-define-the-maximum-supply">Why do exactly 33 trits define the maximum supply?</a></h2>
+<p>The value field of a transaction is 81 trits long, 33 of which are currently in use. This makes exactly (333 - 1) / 2 or 2,779,530,283,277,761 IOTA, a number which can still be depicted with a 64-bit integer (data type for whole numbers).
+As 81 trits have been reserved for the value field, the maximum supply can be raised to (381 - 1) / 2 if necessary. In this case, every current owner would still own the same part of the total value, but the amounts could now be subdivided into smaller units.
+Example: If you had 1 MIOTA (1 megan IOTA = 1 million IOTA) in your wallet before the increase, you will have 1 GI (1 gigan IOTA = 1 billion IOTA) afterwards. This does not change anything about the total value; there will just be smaller units available than before.</p>
+<h2><a class="header" href="#why-do-current-computers-use-the-binary-system" id="why-do-current-computers-use-the-binary-system">Why do current computers use the binary system?</a></h2>
+<p>In the beginnings of computer technology, mechanical calculators were superseded by electrical calculators. These first computers worked with relays, which can assume only the two states on and off. However, since relays with their high percentage of mechanical parts are very interference-prone, they were replaced with transistors. These can also assume only the two states on and off (voltage on, voltage off). As transistors make do without mechanical parts, they can have very small dimensions.
+Today‘s computers consist of many connections and components that are used to transmit and store data and to communicate with other components. The biggest part of storing, transmitting and communicating is executed by digital electronics these days. These still use the binary system with the two clearly separated states, on = 1 and off = 0.</p>
+<p>Binary systems are still employed, because they are very fast when it comes to changing switch status. Transistors are very fast and effective switches. Combining a range of transistors and their states, different signs can be depicted and mathematic calculations can be carried out quickly. The disadvantage here is the following. To enhance the speed of a chip based on electrical transistors, more transistors need to be incorporated in the chip. This means that either the chip needs to be bigger or the individual transistors need to be smaller. The current trend is towards smaller transistors. However, the downside of this is that more heat develops and the chip becomes more prone to errors.</p>
+<h2><a class="header" href="#the-advantages-of-a-ternary-system" id="the-advantages-of-a-ternary-system">The advantages of a ternary system</a></h2>
+<p>Employing a system with three states would have the advantage that we could build on other basic elements than transistors to make more efficient IC‘s (integrated circuits). A ternary system is more efficient, because it provides the highest densitiy of data representation among integral bases (2,4...). In a ternary system, we can thus accomodate bigger numbers in less memory. For example, the decimal number 6 is represented by 110 in the binary system (needing 3 bits), while it is represented by 20 in the ternary system (one digit less). The efficiency of a base 3 number system is higher than that of a base 2 number system (by factor 1.58, approximately). We could thus save memory space, and calculations could be carried out faster, while the chips would have lower clock rates.</p>
+<p>The effort necessary to build a complex logical circuit in the CPU based on a ternary system can be reduced to roughly 36% compared to an equivalent binary system. Besides resulting in a more space-saving design of the microcontroller, this would also lead to energy savings. Ternary components have not yet been used in the IT sector, because realisation of the hardware is much more complex. Moreover we are still lacking the broad support of the mass market. Once the realisation of the necessary hardware has been accomplished, the new microcontrollers will be significantly more energy-efficient and powerful than their binary equivalents.</p>
+<p>With the advent of mass-produced binary components for computers, ternary computers (which already existed at the time) were unfortunately degraded to a small footnote in computer history, although the balanced ternary system allows for a more efficient mathematical number representation than the binary system. In the 1970s, development of ternary computers largely came to a halt, because binary systems could be developed further more quickly and cheaply. As has often been the case in the past, what prevailed over time was not the technically superior concept but the concept that was the easiest and cheapest, in terms of hardware, to implement for the mass market. One ends up wondering at what point ternary computer technology would be today if it had been continuously developed, too.</p>
+<p>In view of the elegance and efficiency of ternary logic, computer expert Donald E. Knuth predicts a revival of ternary computers in the future. One possible way to develop ternary computers further in the future would be to combine optical computers with the ternary system. A ternary computer with optical fibres could use dark as 0 and two orthogonal polarizations of light as 1 and -1, respectively.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../08_explanation_corner/082_what_is_mam.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../08_explanation_corner/084_what_is_proof_of_work.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../08_explanation_corner/082_what_is_mam.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../08_explanation_corner/084_what_is_proof_of_work.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
