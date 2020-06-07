@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Von MAM zu Steams - IOTA in der Industrie</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_intro/index.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../01_iota/index.html"><strong aria-hidden="true">2.</strong> IOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_iota/01_standards.html"><strong aria-hidden="true">2.1.</strong> Der neue Standard in der Industrie</a></li><li class="chapter-item expanded "><a href="../01_iota/02_industriemarktplatz.html"><strong aria-hidden="true">2.2.</strong> Erster Dezentraler Industrie Marktplatz</a></li><li class="chapter-item expanded "><a href="../01_iota/03_tangleee.html"><strong aria-hidden="true">2.3.</strong> TangleEE</a></li><li class="chapter-item expanded "><a href="../01_iota/04_maas.html"><strong aria-hidden="true">2.4.</strong> Machines-as-a-Service</a></li><li class="chapter-item expanded "><a href="../01_iota/05_mam2streams.html" class="active"><strong aria-hidden="true">2.5.</strong> Von MAM zu Steams</a></li></ol></li><li class="chapter-item expanded "><a href="../02_einfachiota/index.html"><strong aria-hidden="true">3.</strong> einfachIOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02_einfachiota/01_news.html"><strong aria-hidden="true">3.1.</strong> Neues von uns</a></li><li class="chapter-item expanded "><a href="../02_einfachiota/02_magazin.html"><strong aria-hidden="true">3.2.</strong> Das Magazin</a></li><li class="chapter-item expanded "><a href="../02_einfachiota/03_workshop.html"><strong aria-hidden="true">3.3.</strong> IOTA Workshop</a></li></ol></li><li class="chapter-item expanded "><a href="../03_retrospective/index.html"><strong aria-hidden="true">4.</strong> Rückblick</a></li><li class="chapter-item expanded "><a href="../04_news/index.html"><strong aria-hidden="true">5.</strong> Aktuelles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04_news/041_news_list.html"><strong aria-hidden="true">5.1.</strong> Was gibt es Neues? </a></li></ol></li><li class="chapter-item expanded "><a href="../05_people/index.html"><strong aria-hidden="true">6.</strong> Menschen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_people/051_5x5.html"><strong aria-hidden="true">6.1.</strong> 5x5 Fragen</a></li><li class="chapter-item expanded "><a href="../05_people/052_spotlight.html"><strong aria-hidden="true">6.2.</strong> Spotlight</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/index.html"><strong aria-hidden="true">7.</strong> Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_past.html"><strong aria-hidden="true">7.1.</strong> Vergangene Events</a></li><li class="chapter-item expanded "><a href="../06_events/062_upcomming.html"><strong aria-hidden="true">7.2.</strong> Zukünftige Events</a></li></ol></li><li class="chapter-item expanded "><a href="../07_projects/index.html"><strong aria-hidden="true">8.</strong> Projekte</a></li><li class="chapter-item expanded "><a href="../08_learn/index.html"><strong aria-hidden="true">9.</strong> Lernen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08_learn/01_mam2streams.html"><strong aria-hidden="true">9.1.</strong> MAM heißt jetzt Steams</a></li></ol></li><li class="chapter-item expanded "><a href="../09_makers/index.html"><strong aria-hidden="true">10.</strong> Basteln</a></li><li class="chapter-item expanded "><a href="../10_partners/index.html"><strong aria-hidden="true">11.</strong> Partnerartikel</a></li><li class="chapter-item expanded "><a href="../11_end/index.html"><strong aria-hidden="true">12.</strong> Schlusswort</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">IOTA in der Industrie</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#masked-authenticated-messaging" id="masked-authenticated-messaging">Masked Authenticated Messaging</a></h1>
+<p><a href="">TODO</a></p>
+<div class="head_text">
+Eine Einführung
+</div>
+<h2><a class="header" href="#einleitung" id="einleitung">Einleitung</a></h2>
+<p>Bei Masked Authenticated Messaging (MAM) handelt es sich um ein Protokoll zur Datenübertragung, welches  als zusätzlicher Layer auf dem Tangle abgebildet wird. Dies ermöglicht es beispielsweise Sensoren ihre Messwerte an den Tangle zu senden und für gewünschte Parteien verfügbar zu machen. Die Funktionsweise ähnelt einem sozialen Netzwerk (z.B. YouTube), welches im Fall von MAM jedoch hauptsächlich für IoT-Geräte anstatt für Menschen gedacht ist. Es existieren Sender, die Kanäle erstellen und Empfänger, welche diese Kanäle abonnieren. Die drei wichtigsten Eigenschaften ergeben sich direkt aus dem Namen.</p>
+<p>Verschlüsselt (Masked)
+Nachrichten können nur von solchen Empfängern gelesen werden, die vom Sender dazu berechtigt wurden.</p>
+<p>Authentifiziert (Authenticated)
+Es kann sichergestellt werden, dass Nachrichten von einem bestimmten Sender kommen. Dazu nutzt der Sender seinen Seed.</p>
+<p>Nachrichtenstream (Messaging)
+Ein Gerät kann einen kontinuierlichen Stream von Nachrichten an den Tangle senden. Stream bedeutet in diesem Zusammenhang, dass jede Nachricht einen Verweis auf die folgende Nachricht enthält. Empfänger können den Stream von der ersten bekannten Nachricht an nur in Vorwärtsrichtung verfolgen. Auf vorherige Nachrichten besteht kein Zugriff.</p>
+<img MAM-Stream>
+Vereinfachte Darstellung eines MAM-Streams
+<h2><a class="header" href="#notwendigkeit" id="notwendigkeit">Notwendigkeit</a></h2>
+<p>IOTA ermöglicht bereits ohne zusätzlichen Layer das Versenden wertfreier Transaktionen, also einfacher Nachrichten, an den Tangle. Es können also beispielsweise verschlüsselte Sensordaten in festgelegten Intervallen an eine vordefinierte Adresse gesendet werden. Aber wozu wird MAM dann überhaupt benötigt? Da der komplette Tangle öffentlich einsehbar ist, wäre es für Angreifer ein Leichtes Adressen zu finden, auf denen in regelmäßigen Abständen Transaktionen eingehen und diese mit falschen Transaktionen zu überfluten. Um dies zu umgehen, sollte die Adresse mit jeder neuen Nachricht gewechselt werden. Das ist beispielsweise möglich, indem die verschiedenen Adressen in einer zentralen Datenbank gehalten werden, um den Überblick zu behalten. Dadurch würde jedoch auf viele Vorteile verzichtet werden, die ja der eigentliche Grund für die Nutzung eines DLT wie IOTA sind. Eine weitere Möglichkeit ist ein komplexeres Verfahren, welches durch Verschlüsselung und Signaturen die Möglichkeit bietet, innerhalb des Tangle auf weitere Adressen zu verweisen ohne diese für potentielle Angreifer sichtbar zu machen. Genau dies ermöglicht MAM.</p>
+<h2><a class="header" href="#gossip" id="gossip">Gossip</a></h2>
+<p>IOTA verwendet das Gossip-Protokoll, um Transaktionen im Netzwerk zu verteilen. Das bedeutet, dass jeder Netzwerkknoten alle neuen Transaktionen an sämtliche benachbarten Knoten weiter “tratscht”. Das sind entweder solche Transaktionen, die der Knoten von anderen erhalten hat oder solche, die von diesem Knoten selbst ausgestellt wurden. Um nun einem MAM-Stream zu folgen,  benötigt man die jeweilige Channel-ID und prüft den eingehenden Tratsch darauf, ob dieser eine Nachricht mit der gewünschten ID enthält.</p>
+<h2><a class="header" href="#root-adresse-und-channel-id" id="root-adresse-und-channel-id">Root, Adresse und Channel-ID</a></h2>
+<p>Beschäftigt man sich genauer mit MAM, stolpert man immer wieder über die Begriffe Root, Adresse und Channel-ID. Während die Channel-ID eine IOTA-Adresse bezeichnet, die Teil eines MAM-Streams ist, muss man bei der Abgrenzung zum Root etwas genauer hinsehen.</p>
+<p>Was genau ist also ein Root? MAM verwendet den sogenannten Merkle-Tree. Dabei handelt es sich um eine hash-basierte Datenstruktur zur effizienten Verifizierung von Daten. Jeder Merkle-Tree enthält einen Wurzelknoten, welcher mit allen anderen Knoten und Blättern verbunden ist.. Dieser Wurzelknoten wird auch als Root bezeichnet und dient in MAM als Schlüssel zur Dekodierung von Nachrichten. In öffentlichen MAM-Streams ist der Root zusätzlich gleich der Adresse/Channel-ID.</p>
+<p>&lt;img: Merkle-Tree&gt;
+Merkle-Tree</p>
+<h2><a class="header" href="#zugriffsberechtigung" id="zugriffsberechtigung">Zugriffsberechtigung</a></h2>
+<p>MAM bietet verschiedene Modi zum Streamen von Nachrichten an:</p>
+<p>Public
+Eine reine Adressabfrage ermöglicht Zugriff auf die Nachricht. Die Adresse ist gleich dem Root, wodurch es jedem, der die jeweilige Adresse abfragt, möglich ist die enthaltene Nachricht zu entschlüsseln.</p>
+<p>Private
+Im privaten Modus wird aus dem Root ein Hash generiert, welcher als Adresse dient. Nur Empfänger, welche den Root kennen, können also die Nachricht entschlüsseln. Dies ist sinnvoll für Netze verschiedener Geräte eines einzelnen Eigentümers. Dieser Modus sollte nicht verwendet werden, um externen Parteien Zugriff zu gewähren, da ein solcher Zugriff nicht wieder entzogen werden kann. </p>
+<p>Restricted
+Zum Entschlüsseln der Nachrichten wird neben dem Root ein zusätzlicher Schlüssel (side key) benötigt. Somit können auch externe Parteien Zugriff auf die Daten erhalten. Durch Änderung des Schlüssels besteht die Möglichkeit den Zugriff </p>
+<h2><a class="header" href="#snapshots" id="snapshots">Snapshots</a></h2>
+<p>Um die Größe des  Tangle auf einem angemessenen Level zu halten, verwendet das IOTA-Protokoll sogenannte Snapshots. Dabei werden sämtliche vor dem Zeitpunkt des Snapshots getätigten Transaktionen gelöscht. Die Adressen behalten lediglich ihre Balance. Dies muss bei der Verwendung von MAM beachtet werden. Sollte es notwendig sein Nachrichten über einen langen Zeitraum im Tangle zu halten, wird die Nutzung einer Permanode-Lösung wie Chronicle empfohlen. Diese kann entweder selbst gehostet oder von externen Anbietern als kostenpflichtiger “query as a service” genutzt  werden. </p>
+<h2><a class="header" href="#data-marketplace" id="data-marketplace">Data Marketplace</a></h2>
+<p>Der Data Marketplace ist ein dezentraler Marktplatz für Daten wie beispielsweise Sensordaten. Diese werden in Echtzeit erfasst und mithilfe von MAM wird es anderen Teilnehmern im Marketplace ermöglicht Zugriff auf die Nachrichtenstreams zu erhalten. Als Benutzer des Data Marketplace haben Sie somit die Möglichkeit, mit MAM verschlüsselte Daten sowohl zu kaufen als auch  zu verkaufen.</p>
+<p>Bisher wird ein Großteil der Daten in Datensilos gesammelt und selten über Unternehmensgrenzen hinweg genutzt. Der Data Marketplace soll die Verschwendung dieser Daten stoppen, Silogrenzen sprengen und die befreiten Daten in einem offenen und dezentralen Marktplatz sammeln.</p>
+<h2><a class="header" href="#mam-in-der-industrie" id="mam-in-der-industrie">MAM in der Industrie</a></h2>
+<p>Es existieren unzählige Anwendungsbereiche für MAM in der Industrie. Wo immer die Authentizität von Daten eine Rolle spielt, kann der Einsatz von MAM Sinn ergeben. Dies ist in der Industrie vor allem der Fall, wenn gemeinsame Datensätze verschiedener Hersteller oder Zulieferer verwaltet werden müssen. </p>
+<img Fujitsu Audit-Trail mit IOTA und MAM>
+Fujitsu Audit-Trail mit IOTA und MAM
+<p>Fujitsu stellte bereits auf der Hannover Messe 2018 das Proof of Concept eines verteilten Audit-Trails auf Basis von IOTA vor, welches die Vorteile der Nutzung eines DLT wie IOTA gegenüber einer klassischen Datenbank verdeutlicht. Dabei wird ein zwischen zwei Unternehmen verteilter Produktionsprozess simuliert, indem zwei Roboter gemeinsam an einem Förderband arbeiten und Komponenten platzieren. Die Roboter sind in der Lage diese Komponenten eindeutig zu identifizieren sowie alle relevanten Daten wie ID, Standort und Zeitpunkt der Ausführung eines Arbeitsschrittes mithilfe von MAM manipulationssicher und für alle beteiligten Parteien abrufbar im Tangle zu speichern. Zusätzlich können die Roboter durch Überwachung des MAM-Streams erkennen, ob eine Komponente alle vorgeschriebene Produktionsschritte durchlaufen hat und Komponenten aussortieren, falls notwendig. Die beteiligten Unternehmen können somit auf eine gemeinsame Infrastruktur verzichten.</p>
+<img MAM FLOW>
+<h2><a class="header" href="#xdk2mam" id="xdk2mam">XDK2MAM</a></h2>
+<p>Bosch hat mit dem XDK (Cross Domain Development Kit) eine Prototyping-Plattform für das Internet der Dinge entwickelt. Das XDK lässt sich als leistungsstarke Lösung zur Entwicklung von Sensorknoten einsetzen. Es enthält ein Gyroskop, einen Beschleunigungssensor, einen Temperatursensor, einen Lichtsensor und vieles mehr. Zudem ist das Gerät mit WLAN, Bluetooth Low Energy, einem Steckplatz für SD-Karten und  gebrauchsfertigen Softwarepaketen ausgestattet.</p>
+<p>XDK2MAM stellt die passende Software bereit, um mit dem XDK Sensordaten an den Tangle zu senden und diese auf dem IOTA Data Marketplace zu verkaufen. Es handelt sich um ein Open-Source-Projekt von Daniele de Michele und Alejandro Elustondo in Zusammenarbeit mit Daniel Trauth von der RWTH Aachen. XDK2MAM stellt Schnittstellen bereit, um Daten sowohl über HTTP als auch über Bluetooth Low Energy, MQTT oder USB an den Tangle zu streamen.  Dies gewährleistet eine einfach programmierbare, effiziente und kostengünstige Entwicklung von IoT-Prototypen in Verbindung mit MAM und dem Data Marketplace.</p>
+<h2><a class="header" href="#fazit" id="fazit">Fazit</a></h2>
+<p>Masked Authenticated Messaging ist bereits heute einsatzbereit und bietet die Möglichkeit Daten verschlüsselt und manipulationssicher auf dem Tangle zu hinterlegen sowie diese Daten mit ausgewählten Nutzern zu teilen. Neben Bosch und Fujitsu entdecken mehr und mehr Unternehmen die sich bietenden Möglichkeiten und entwickeln Lösungen auf Basis von MAM. Momentan wird an der Folgeversion MAM 1.1 gearbeitet, welche laut Roadmap der IOTA Foundation Mitte dieses Jahres fertiggestellt werden soll. </p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../01_iota/04_maas.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../02_einfachiota/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../01_iota/04_maas.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../02_einfachiota/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
