@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>IOTA Sternstunden - IOTA in der Industrie</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_intro/index.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../01_iota/index.html"><strong aria-hidden="true">2.</strong> IOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_iota/01_standards.html"><strong aria-hidden="true">2.1.</strong> Der neue Standard in der Industrie</a></li><li class="chapter-item expanded "><a href="../01_iota/02_industriemarktplatz.html"><strong aria-hidden="true">2.2.</strong> Erster Dezentraler Industrie Marktplatz</a></li><li class="chapter-item expanded "><a href="../01_iota/03_tangleee.html"><strong aria-hidden="true">2.3.</strong> TangleEE</a></li><li class="chapter-item expanded "><a href="../01_iota/04_maas.html"><strong aria-hidden="true">2.4.</strong> Machines-as-a-Service</a></li><li class="chapter-item expanded "><a href="../01_iota/05_mam2streams.html"><strong aria-hidden="true">2.5.</strong> Von MAM zu Steams</a></li></ol></li><li class="chapter-item expanded "><a href="../02_einfachiota/index.html"><strong aria-hidden="true">3.</strong> einfachIOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02_einfachiota/01_news.html"><strong aria-hidden="true">3.1.</strong> Neues von uns</a></li><li class="chapter-item expanded "><a href="../02_einfachiota/02_magazin.html"><strong aria-hidden="true">3.2.</strong> Das Magazin</a></li><li class="chapter-item expanded "><a href="../02_einfachiota/03_workshop.html"><strong aria-hidden="true">3.3.</strong> IOTA Workshop</a></li></ol></li><li class="chapter-item expanded "><a href="../03_retrospective/index.html"><strong aria-hidden="true">4.</strong> Rückblick</a></li><li class="chapter-item expanded "><a href="../04_news/index.html"><strong aria-hidden="true">5.</strong> Aktuelles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04_news/041_news_list.html"><strong aria-hidden="true">5.1.</strong> Was gibt es Neues? </a></li></ol></li><li class="chapter-item expanded "><a href="../05_people/index.html"><strong aria-hidden="true">6.</strong> Menschen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_people/051_5x5.html"><strong aria-hidden="true">6.1.</strong> 5x5 Fragen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_people/051_5x5_01_lisa_schneider.html"><strong aria-hidden="true">6.1.1.</strong> Lisa Schneider</a></li><li class="chapter-item expanded "><a href="../05_people/051_5x5_02_holger_koether.html"><strong aria-hidden="true">6.1.2.</strong> Holger Köther</a></li><li class="chapter-item expanded "><a href="../05_people/051_5x5_03_richard_soley.html"><strong aria-hidden="true">6.1.3.</strong> Richard Soley</a></li></ol></li><li class="chapter-item expanded "><a href="../05_people/052_spotlight.html"><strong aria-hidden="true">6.2.</strong> Spotlight</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/index.html"><strong aria-hidden="true">7.</strong> Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_past.html"><strong aria-hidden="true">7.1.</strong> Vergangene Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_past_01_IOTA_sternstunden.html" class="active"><strong aria-hidden="true">7.1.1.</strong> IOTA Sternstunden</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/062_upcomming.html"><strong aria-hidden="true">7.2.</strong> Zukünftige Events</a></li></ol></li><li class="chapter-item expanded "><a href="../07_projects/index.html"><strong aria-hidden="true">8.</strong> Projekte</a></li><li class="chapter-item expanded "><a href="../08_learn/index.html"><strong aria-hidden="true">9.</strong> Lernen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08_learn/01_mam2streams.html"><strong aria-hidden="true">9.1.</strong> MAM heißt jetzt Steams</a></li></ol></li><li class="chapter-item expanded "><a href="../09_makers/index.html"><strong aria-hidden="true">10.</strong> Basteln</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../09_makers/01_hornet.html"><strong aria-hidden="true">10.1.</strong> Hornet Tutorial </a></li></ol></li><li class="chapter-item expanded "><a href="../10_partners/index.html"><strong aria-hidden="true">11.</strong> Partnerartikel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../10_partners/01_IILA.html"><strong aria-hidden="true">11.1.</strong> Industrial IOTA Lab Aachen</a></li><li class="chapter-item expanded "><a href="../10_partners/02_tanglekit.html"><strong aria-hidden="true">11.2.</strong> TangleKit</a></li><li class="chapter-item expanded "><a href="../10_partners/03_filancore.html"><strong aria-hidden="true">11.3.</strong> filancore</a></li></ol></li><li class="chapter-item expanded "><a href="../11_end/index.html"><strong aria-hidden="true">12.</strong> Schlusswort</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">IOTA in der Industrie</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#iota-sternstunden" id="iota-sternstunden">IOTA Sternstunden</a></h1>
+<p>Recap 2019 / Outlook 2020 Meetup
+Text Felix Reichard</p>
+<h2><a class="header" href="#erfolge-soll-und-darf-man-feiern" id="erfolge-soll-und-darf-man-feiern">Erfolge soll und darf man feiern</a></h2>
+<p>2019 ist viel passiert.
+Nicht nur die IOTA Stiftung hat eine Menge erreicht - auch die Community hatte viele Erfolge zu feiern. Es war so viel los, dass man gerne den Überblick verliert.
+Ja, manch ein Ereignis mag sogar in Vergessenheit geraten.</p>
+<p>Was passt also besser, als zum Jahresende das Jahr revue passieren zu lassen? Genau dieser Aufgabe nahm ich mir zusammen mit der IOTA Stiftung an.
+Ein Event, das noch einmal die Geschehnisse des vergangenen Jahres aufarbeitet.</p>
+<p>Am 12.12.19 wurden die Community und alle, die sich für IOTA begeistern, nach Berlin geladen. Im Coworking Space “SpaceShack” in Berlin Schöneberg fanden sich knapp 140 IOTA Enthusiasten aus ganz Europa zusammen. 
+Ursprünglich war das Meetup als kleines Event gedacht. Nach und nach sagten aber immer mehr hochkarätige Mitglieder der IOTA Stiftung zu, eine Präsentation halten zu wollen. Das Interesse und die Neugier der Community waren geweckt, denn nicht alle Teilnehmer wurden gleich zu Beginn verkündet. Special Guests, die nicht weiter genannt wurden, sowie zahlreiche angekündigte Überraschungen sorgten dafür, dass die rund 100 Gästelistenplätze innerhalb kürzester Zeit belegt waren.</p>
+<p>Somit war ein Umdenken erforderlich, denn natürlich wollten wir jedem der kommen wollte, die Möglichkeit geben beim Meetup teilzunehmen
+Die geplante Anzahl an Sitzen, Versorgung mit Getränken und Essen mussten neu ausgelegt werden.
+Um es vorweg zu nehmen: Es hat alles geklappt!</p>
+<h2><a class="header" href="#das-event-beginnt" id="das-event-beginnt">Das Event beginnt</a></h2>
+<p>Um 17:30 Uhr öffneten sich die Türen. Im Untergeschoss des CoWorking Spaces, wo sich der Eventraum befand, fanden sich die Gäste zusammen.
+Bei Snacks und Drinks, die von Durstexpress.de gesponsert wurden, wartete die Community gespannt auf den Beginn des Events. Man tauschte sich aus, lernte sich kennen.</p>
+<p>Um 18:30 Uhr betrat meine Co-Organisatorin Regine Haschka Helmer von der IOTA Stiftung die Bühne und begrüßte das Publikum. Mit ein paar Fragen an das Publikum sorgte sie für eine lockere Atmosphäre und gab den Start für die Präsentationen.</p>
+<p>Showtime!</p>
+<h2><a class="header" href="#dominik-schiener" id="dominik-schiener">Dominik Schiener</a></h2>
+<p>Die erste Präsentation des Abends wurde von Dominik Schiener gehalten. Als Co-Founder von IOTA, berichtete er von den Anfängen - wie IOTA 2015 von ihm, David Sønstebø, Sergey Ivancheglo aka. “Come-from-beyond” &amp; “CFB” und Serguei Popov gegründet wurde und innerhalb weniger Jahre zu dem geworden ist, was IOTA heute ist: eine gemeinnützige Stiftung mit über 100 Mitarbeitern und einer der größten und aktivsten Communities im gesamten Cryptospace.</p>
+<p>Natürlich stellt ein solch rasantes Wachstum einen vor Herausforderungen. Hohe Erwartungen und die vielen Mitarbeiter verteilt auf verschiedenen Kontinenten sorgten Ende 2017 für Chaos, weshalb vor allem Anfang 2018 große Priorität darauf gesetzt wurde Struktur in die IOTA Stiftung zu bringen, um künftig effektiv arbeiten zu können.</p>
+<p>Partnerschaften 2019
+Die wichtigsten Meilensteine</p>
+<p>Jaguar Landrover, die eigenständig eine Smartwallet für ihre Fahrzeuge entwickelt haben, das Powerhouse Projekt in Trondheim Norwegen, an dem ebenfalls Jaguar Landrover zusammen mit dem Energieversorger Engie und weiteren Partnern beteiligt waren, CityXChange, STMicroelectronics und die Linux Foundation zählten, neben vielen weiteren, zu den größten und bedeutendsten Partnerschaften in 2019.</p>
+<p>Aber auch Kollaborationen mit Avery Dennison, Fiware und die Interoperabilität mit Hyperledger zählen zu wichtigen Meilensteinen in 2019 für IOTA. Die Veröffentlichung des IOTA Industry Marketplace und der Trinity Wallet waren ebenfalls wichtige Ereignisse in Richtung Massentauglichkeit.
+Für 2020 hat sich die IOTA Stiftung zudem vorgenommen, den Schritt von all den Proof of Concepts (POC), die bereits existieren, hin zu mehr Testbeds unter Realbedingungen zu machen. Des Weiteren wird die IF einen Fokus auf die Zusammenarbeit mit Banken und anderen Finanzinstituten legen. Digital Identities, sowie der IOTA Cryptocore werden auch Themen sein, auf die wir uns in 2020 freuen dürfen.</p>
+<h2><a class="header" href="#charlie-varley--andrew-brough" id="charlie-varley--andrew-brough">Charlie Varley &amp; Andrew Brough</a></h2>
+<p>Als nächstes betraten die beiden Trinity Lead-Developer Charlie Varley und Andrew Brough die Bühne. Sie erzählten u.a. über die Herausforderungen, die es bei der Entwicklung einer Cryptowallet gibt.</p>
+<p>Zum einen soll sie dem Nutzer eine einfache und benutzerfreundliche Oberfläche bieten, auf der anderen Seite muss die Wallet so sicher wie möglich sein.
+Eine Aufgabe die nicht so einfach ist, wie sie klingt. Mit der Trinity Wallet ist dieser Spagat aber gelungen.
+Seit der Veröffentlichung im Juli 2019 wurde die Trinity Wallet über 70 tsd. mal heruntergeladen, absolvierte erfolgreich zwei unabhängige Sicherheitsaudits und erfreut sich in der Crypto-Community großer Beliebtheit.</p>
+<p>Trinity V2 und Spark Wallet
+Viele spannende Sachen warten auf uns</p>
+<p>Die Trinity Wallet ist ein voller Erfolg - doch darauf ruht sich die IOTA Stiftung nicht aus. Hinter den Kulissen wird schon fleißig am Nachfolger gearbeitet: Trinity V2.
+Mit einer Alpha-Version kann die Community bereits 2020 rechnen. Diese Wallet wird über noch mehr Funktionen verfügen und auch erstmals externen Quellen die Möglichkeit bieten, ihre Dienste zu integrieren.
+Um sich die Zeit bis dahin zu vertreiben, hatten die beiden Entwickler noch eine Überraschung - sie verkündeten das Spark Wallet!</p>
+<p>Bei Spark handelt es sich um ein “on-the-go” Wallet, das für den Alltag und kleine Summen gedacht ist, um z.B. beim Bäcker die Brötchen oder einen Fahrschein für den Bus zu bezahlen. Ein minimalistisches Design und einfachste Handhabung machen somit das Bezahlen mit IOTA noch simpler.</p>
+<h2><a class="header" href="#julie-maupin" id="julie-maupin">Julie Maupin</a></h2>
+<p>Julie Maupin, von der Social Impact Abteilung der IOTA Stiftung, berichtete über die Fortschritte,  die u.a. im Bereich Smart Cities und dem CityXChange Projekt gemacht wurden.
+Eines der Highlight für 2019 dürfte sicher die Gründung von  INATBA - International Association of Trusted Blockchain Applications - in der Europäischen Kommission sein, wo IOTA eines der Gründungsmitglieder ist. Bei INATBA handelt es sich um einen Zusammenschluss von Unternehmen, Startups und Blockchain Unternehmen, die Strategien zur Förderung von Distributed Ledger Technologien erarbeiten wollen. Außerdem sollen regulatorische Rahmenbedingungen für DLT und Blockchain Anwendungen geschaffen werden.</p>
+<p>Aber auch anderweitig ist die IOTA Stiftung in Sachen Aufklärungsarbeit aktiv. So arbeitet sie nämlich nicht nur an eigenen Projekten - sie berät unter anderem auch Städte und Regierungen bei der Integration von IOTA in Smart City Lösungen. Außerdem unterstützt und berät sie Interessensgruppen bei regulatorischen und vielen weiteren Fragen.
+Für 2020 würde laut Julie Maupin der Fokus auf Nachhaltigkeit, Smart Cities, Digital ID’s und den Aufbau von Ökosystemen gelegt.</p>
+<h2><a class="header" href="#antonio-nardella" id="antonio-nardella">Antonio Nardella</a></h2>
+<p>Antonio Nardella, IOTA Community Manager, ging bei seiner Präsentation auf einen wichtigen Teil von IOTA ein: die Community. Programmierer, Unternehmer und Leute, die einfach nur großes Interesse an der Technik haben, sind alle eine treibende Kraft hinter diesem Projekt. Über 150 aktive Community-Mitglieder, die bei Github beitragen und über 1000 Leute, die auf Hackster.io ihre Projekte und Ideen veröffentlichen.</p>
+<p>Zudem ist die Community sehr aktiv an der Forschung rund um IOTA beteiligt. Wissenschaftliche Arbeiten, Forschungsberichte usw. werden von Community-Mitgliedern verfasst, die der IOTA Stiftung bei der Arbeit hilfreich sind und das Projekt IOTA und dessen Vision vorantreiben.</p>
+<ul>
+<li>5722 Mitglieder bei LinkedIn</li>
+<li>121248 Follower bei Twitter</li>
+<li>6310 Abonnenten bei Youtube</li>
+<li>64116 Mitglieder in der Facebook Gruppe</li>
+<li>15313 Mitglieder bei Telegram</li>
+<li>113642 Mitglieder bei Reddit</li>
+<li>2624 Mitglieder bei Stack Exchange</li>
+</ul>
+<p>In 2019 ist die Zahl der User bei Discord um 21% auf 27502 Mitglieder gestiegen
+Die IOTA Community in Zahlen - Stand: Dezember 2019</p>
+<p>All diese Leute auf den verschiedensten Plattformen sorgen dafür, dass IOTA bekannter gemacht wird, Informationen ausgetauscht werden und Leute an der Entwicklung teilhaben können. Für 2020 wünscht sich Antonio Nardella, dass die Zusammenarbeit zwischen der IOTA Stiftung und der Community weiterhin so aktiv bleibt und sich daraus viele tolle Projekte, Kooperationen uvm. entwickeln.</p>
+<p>Weiter ging es mit ein paar Fakten und Zahlen zum Ecosystem Development Fund (EDF). Beim EDF handelt es sich um einen Fond, der von Community-Projekten zur Verwirklichung ihrer Projekte beantragt und genutzt werden kann - denn oft scheitern grandiose Ideen an finanziellen Hürden.
+Hier springt die IOTA Stiftung ein und unterstützt vielversprechende Projekte, wenn diese erfolgreich das Bewerbungsverfahren abgeschlossen haben.
+Insgesamt wurden 2019 rund 670.000€ an Projekte ausgezahlt. U.a. zählen hierzu bekannte Projekte wie z.B. die selektive Permanode-Lösung “AION”, der Youtube Kanal “Everything Tangle” und der IOTA “Crypto Core”.</p>
+<p>Zu guter Letzt hatte Antonio noch ein Announcement zu verkünden: IOT2TANGLE vom Team XDK2MAM.io</p>
+<p>“Bei IOT2TANGLE geht es darum, den auf XDK2MAM verfolgten Prozess umzukehren: Anstatt Code für ein Tool zu schreiben, das für nützlich gehalten wird, will das Team herausfinden, welche Boards von IoT-Entwicklern verwendet werden und den Code bereitstellen, um sie in IOTA zu integrieren.”
+Antonio Nardella über IOT2TANGLE</p>
+<h2><a class="header" href="#muxxer" id="muxxer">muXxer</a></h2>
+<p>Passend zum Thema Community hatten wir unseren ersten Überraschungsgast: Maximilian Hase aka. muXxer - einen der engagiertesten und einflussreichsten Entwickler aus der IOTA Community. Unter anderem hat er schon zu der Integration von IOTA in die Ledger Hardwallet beigetragen. Am bekanntesten ist er aber wohl für seine Spam-Events auf das IOTA Netzwerk, die der IOTA Stiftung und deren Entwicklern bei der Aufdeckung und Beseitigung von Schwachstellen enorm hilfreich waren.</p>
+<p>An diesem Abend ging es aber um etwas anderes.
+muXxer stellte den Proof of Work Service “powsrv.io” und das Projekt “HORNET” vor.
+Bei HORNET, das eine Unterstützung vom Ecosystem Development Fond erhalten hat, handelt es sich um eine in Golang geschriebene IOTA Fullnode-Alternative zu IRI, die für das aktuelle Mainnet gedacht ist. Mit HORNET werden einige Schwachstellen von IRI ausgebessert - z.B. eignet sich IRI in seiner aktuellen Form nicht für Einplatinencomputer, wie den Raspberry Pi o.ä..</p>
+<p>In einer Demo führte er die Funktionen von HORNET dem Publikum vor und ging auf die wichtigsten Eigenschaften ein.
+Aber er hatte auch eine kleine Überraschung parat: Ganz nebenbei erwähnte er, dass HORNET bereits als beta Version released wurde und seine Präsentation schon das laufende HORNET zeigte - und nicht nur eine einfache Demoversion.
+Damit hatte wohl niemand der anwesenden gerechnet, da alle davon ausgegangen sind, dass die Entwicklung noch einige Zeit in Anspruch nehmen würde, bis eine funktionsfähige Version verfügbar ist.
+Überraschung gelungen!</p>
+<h2><a class="header" href="#serguei-popov-und-hans-moog" id="serguei-popov-und-hans-moog">Serguei Popov und Hans Moog</a></h2>
+<p>Die letzte Präsentation des Abends war für viele vermutlich die größte Überraschung. Lange Zeit wurde gemunkelt, wer denn der geheimnisvolle Überraschungsgast sein würde.
+Nun war es Zeit für eine Auflösung: Serguei Popov, Co-Founder von IOTA und Hans Moog, einer der bekanntesten Developer der IOTA Stiftung, betraten die Bühne.</p>
+<p>Eines der vermutlich spannendsten Themen für IOTA in 2019 war der Coordicide. Das Unterfangen, den Coordinator im IOTA Mainnet zu entfernen.
+Eine Aufgabe, die gar nicht so einfach ist, wie man meinen möchte. Ein großes Team an Entwicklern, Forschern und Mathematikern arbeitet daran, eine sichere “Abschaltung” zu bewerkstelligen.</p>
+<p>Serguei Popov und Hans Moog erzählten über die Herausforderungen denen sie sich stellen mussten und über Lösungsansätze, an denen sie arbeiten. Unter anderem wird das IOTA Netzwerk bereits vor dem eigentlichen  Coordicide von der Forschung profitieren, da einzelne Bausteine schon vorab in das Mainnet integriert werden. Außerdem können wir uns auf den ersten GoShimmer Prototypen und viele weitere Neuigkeiten in den ersten Quartalen 2020 freuen.</p>
+<h2><a class="header" href="#bescherung-drinks-und-networking" id="bescherung-drinks-und-networking">Bescherung, Drinks und Networking</a></h2>
+<p>Was wäre ein Weihnachts-Meetup ohne Geschenke?!
+Um dem Publikum ein vorweihnachtliches Gefühl zu bescheren, gab es zwischen den Präsentationen Goodie Bags für die Besucher, die von fleißigen Helfern und mir an die Gäste verteilt wurden.
+Diese enthielten neben etwas Schokolade und Gummibärchen auch einen IOTA Magneten und eine ausgedruckte Spark Wallet, die mit 50 MIOTA “aufgeladen” war.
+Zudem gab es in jedem Goodie Bag eine Losnummer, die in eine Box geworfen werden musste, die im Publikum herumgereicht wurde.
+Nachdem alle Präsentationen fertig waren, war die Zeit gekommen, die glücklichen Gewinner zu ziehen.
+Die Preise, die es zu verlosen gab, waren etwas ganz besonderes: Alle stammten von Mitgliedern aus der IOTA Community und wurden für diesen Abend von ihnen gespendet! IOTA Magazine von einfachIOTA.de, Easy Seed Saver von easy-passphrase-saver.de, ein IOTA Preisticker von Community-Entwickler “Oxinon” , T-Shirts von CaerSidi.net und ein Ledger Nano S von einem Community Mitglied, das anonym bleiben wollte. Die Rolle der Glücksfeen übernahmen Regine H. Helmer, Antonio Nardella und ich. Wir übergaben die Preise den glücklichen Gewinnern und Antonio erzählte, worum es sich bei den Preisen handelte.
+Ein perfektes Finale für einen Abend voller grandioser Präsentationen und Überraschungen.</p>
+<p>Das Meetup war aber noch lange nicht vorbei.
+Im Anschluss an die Präsentationen ging es in den gemütlichen Teil des Abends über. Bei Drinks, die uns freundlicherweise von Durstexpress.de gesponsert wurden, und leckeren Burgern und Quesadillas, die frisch von Mama Burrito &amp; Sons zubereitet wurden, war Zeit für die Gäste sich kennenzulernen und auszutauschen.
+Die Stimmung war fabelhaft. Viele der Gäste kannten sich untereinander online bereits seit einigen Jahren und begegneten sich nun zum ersten Mal im realen Leben.
+Es gab viel zu besprechen und viele nutzten die Chance ein Gespräch mit einem der anwesenden IOTA Stiftungs Mitglieder zu suchen.</p>
+<h2><a class="header" href="#fazit" id="fazit">Fazit</a></h2>
+<p>Zusammenfassend kann man sagen, dass das IOTA: Sternstunden 2019 Meetup in Berlin ein voller Erfolg war.
+Ein Abend voller Überraschungen, guter Laune und der ideale Anlass sich als Community für seine Erfolge selbst zu feiern.
+Es war mir persönlich auch eine große Freude mit all den involvierten Personen zusammenarbeiten zu dürfen und ich freue mich schon sehr auf das IOTA: Sternstunden 2020 Meetup!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../06_events/061_past.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../06_events/062_upcomming.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../06_events/061_past.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../06_events/062_upcomming.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

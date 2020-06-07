@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Industrial IOTA Lab Aachen - IOTA in der Industrie</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_intro/index.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../01_iota/index.html"><strong aria-hidden="true">2.</strong> IOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_iota/01_standards.html"><strong aria-hidden="true">2.1.</strong> Der neue Standard in der Industrie</a></li><li class="chapter-item expanded "><a href="../01_iota/02_industriemarktplatz.html"><strong aria-hidden="true">2.2.</strong> Erster Dezentraler Industrie Marktplatz</a></li><li class="chapter-item expanded "><a href="../01_iota/03_tangleee.html"><strong aria-hidden="true">2.3.</strong> TangleEE</a></li><li class="chapter-item expanded "><a href="../01_iota/04_maas.html"><strong aria-hidden="true">2.4.</strong> Machines-as-a-Service</a></li><li class="chapter-item expanded "><a href="../01_iota/05_mam2streams.html"><strong aria-hidden="true">2.5.</strong> Von MAM zu Steams</a></li></ol></li><li class="chapter-item expanded "><a href="../02_einfachiota/index.html"><strong aria-hidden="true">3.</strong> einfachIOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02_einfachiota/01_news.html"><strong aria-hidden="true">3.1.</strong> Neues von uns</a></li><li class="chapter-item expanded "><a href="../02_einfachiota/02_magazin.html"><strong aria-hidden="true">3.2.</strong> Das Magazin</a></li><li class="chapter-item expanded "><a href="../02_einfachiota/03_workshop.html"><strong aria-hidden="true">3.3.</strong> IOTA Workshop</a></li></ol></li><li class="chapter-item expanded "><a href="../03_retrospective/index.html"><strong aria-hidden="true">4.</strong> Rückblick</a></li><li class="chapter-item expanded "><a href="../04_news/index.html"><strong aria-hidden="true">5.</strong> Aktuelles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04_news/041_news_list.html"><strong aria-hidden="true">5.1.</strong> Was gibt es Neues? </a></li></ol></li><li class="chapter-item expanded "><a href="../05_people/index.html"><strong aria-hidden="true">6.</strong> Menschen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_people/051_5x5.html"><strong aria-hidden="true">6.1.</strong> 5x5 Fragen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_people/051_5x5_01_lisa_schneider.html"><strong aria-hidden="true">6.1.1.</strong> Lisa Schneider</a></li><li class="chapter-item expanded "><a href="../05_people/051_5x5_02_holger_koether.html"><strong aria-hidden="true">6.1.2.</strong> Holger Köther</a></li><li class="chapter-item expanded "><a href="../05_people/051_5x5_03_richard_soley.html"><strong aria-hidden="true">6.1.3.</strong> Richard Soley</a></li></ol></li><li class="chapter-item expanded "><a href="../05_people/052_spotlight.html"><strong aria-hidden="true">6.2.</strong> Spotlight</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/index.html"><strong aria-hidden="true">7.</strong> Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_past.html"><strong aria-hidden="true">7.1.</strong> Vergangene Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_past_01_IOTA_sternstunden.html"><strong aria-hidden="true">7.1.1.</strong> IOTA Sternstunden</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/062_upcomming.html"><strong aria-hidden="true">7.2.</strong> Zukünftige Events</a></li></ol></li><li class="chapter-item expanded "><a href="../07_projects/index.html"><strong aria-hidden="true">8.</strong> Projekte</a></li><li class="chapter-item expanded "><a href="../08_learn/index.html"><strong aria-hidden="true">9.</strong> Lernen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08_learn/01_mam2streams.html"><strong aria-hidden="true">9.1.</strong> MAM heißt jetzt Steams</a></li></ol></li><li class="chapter-item expanded "><a href="../09_makers/index.html"><strong aria-hidden="true">10.</strong> Basteln</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../09_makers/01_hornet.html"><strong aria-hidden="true">10.1.</strong> Hornet Tutorial </a></li></ol></li><li class="chapter-item expanded "><a href="../10_partners/index.html"><strong aria-hidden="true">11.</strong> Partnerartikel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../10_partners/01_IILA.html" class="active"><strong aria-hidden="true">11.1.</strong> Industrial IOTA Lab Aachen</a></li><li class="chapter-item expanded "><a href="../10_partners/02_tanglekit.html"><strong aria-hidden="true">11.2.</strong> TangleKit</a></li><li class="chapter-item expanded "><a href="../10_partners/03_filancore.html"><strong aria-hidden="true">11.3.</strong> filancore</a></li></ol></li><li class="chapter-item expanded "><a href="../11_end/index.html"><strong aria-hidden="true">12.</strong> Schlusswort</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">IOTA in der Industrie</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#industrial-iota-lab-aachen" id="industrial-iota-lab-aachen">Industrial IOTA Lab Aachen</a></h1>
+<p>Experimentierraum für die Maschine Economy
+Text Dr. Daniel Trauth</p>
+<p>Das Industrial IOTA Lab Aachen (IILA) wurde im April 2018 als gemeinnütziges Gemeinschaftsprojekt des Werkzeugmaschi- nenlabors WZL der RWTH Aachen University und der senseering GmbH, ein mit dem RWTH-Spin-off-Award ausgezeichnetes Startup, initiiert. Die Idee des IILA ist ein virtueller Inkubator, der Studenten, WissenschaftlerInnen, Industriellen und Industrie 4.0-Enthusiasten einen explorativen Raum bietet, um Abseits von Bürokratie und Sicherheitsbedenken die Zukunft einer Maschinenökonomie erforschen und erproben zu können. </p>
+<p>Am Beispiel einer industriellen Großserienfertigungsmaschine der Fa. Feintool wurde am IILA zu jedem gefertigten Bauteil ein digitaler Maschinenzwilling mit ausgewählten Daten in den IOTA Tangle geschrieben. Ein zugehöriger Prototyp eines Datenmarktplatzes erlaubte dann ausgewählte Datensätze nach dem Pay-Per-X-Prinzip zu erwerben und die Integrität der Maschinendaten zu überprüfen. Zwischen Oktober 2018 und Juli 2019 wurden diese Arbeiten auch durch den IOTA Ecosystem Development Fund unterstützt. Basierend auf dem o. g. Proof-of-Concept sind drei weitere Projekte entstanden, welche im Folgenden näher vorgestellt werden sollen.</p>
+<p>Blockchain Reallabor.NRW 
+Das Projekt ist Teil der Reallabor-Strategie des Bundesministeriums für Wirtschaft und Energie (BMWi). Ziel ist die Förderung und Weiterentwicklung von digitalen Innovationen und den dazugehörigen Regulierungen in virtuellen und realen Testräumen, um unter praxisnahen und realen Bedingungen Erfahrungen mit innovativen Technologien zu sammeln. In zeitlich und räumlich begrenzten Experimentierräumen sollen hierbei neue Technologien und Geschäftsmodelle erprobt werden, die mit dem bestehenden Rechts- und Regulierungsrahmen nur bedingt vereinbar sind.</p>
+<img >
+(v.l.n.r) Christian Gülpen (TIME, RWTH Aachen), Prof. Dr. Frank Thomas Piller (TIME, RWTH Aachen), Minister Prof. Dr. Andreas Pinkwart, Prof. Antonello Monti (RWTH Aachen), Dr.-Ing. Daniel Trauth (WZL, RWTH Aachen) © MWIDE NRW/R. Sondermann
+<p>Vor diesem Hintergrund wurde das „Blockchain Reallabor im Rheinischen Revier“ zusammen mit dem Projektträger Jülich und dem BMWi erarbeitet. Funktionierende und praxisrelevante Anwendungsbeispiele sollen im Projekt als Nachweis für das Potenzial einer Blockchain-Technologie für Nordrhein-Westfalen ermittelt werden. Dafür werden die im Rheinischen Revier stark vertretenen Branchen sowie die zugehörigen Geschäftsmodelle betrachtet, zunächst mit Fokus auf die Bereiche Energie, Daseinsvorsorge, Logistik, Industrie 4.0 und Finanzwirtschaft. Teilnehmende Forschungspartner sind daher die drei Fraunhofer-Institute FIT, INT und IML, das Institut für Internet-Sicherheit–if(is), die Ruhr Universität Bochum sowie die drei RWTH-Institute ACS, TIME und WZL (https://blockchain-reallabor.de/).</p>
+<p>Der Schwerpunkt des IILA liegt in der Realisierung eines IOTA-Demonstrators zur Veranschaulichung der Potenziale einer Produktionsökonomie. Die Produktionsökonomie soll darüber hinaus klären, wie der Wert von Produktionsdaten quantifiziert werden kann und wie diese Daten zwischen Maschinen und Produktionsanlagen fair, sicher und effizient gehandelt werden können.</p>
+<quote>
+„Daten werden hierdurch zu wirtschaftlichen Gütern und sind nicht länger nur eine ungenutzte Information.“
+Dr. Daniel Trauth
+</quote>
+<h2><a class="header" href="#spaicer" id="spaicer">SPAICER</a></h2>
+<p>Produktionsunternehmen kämpfen jeden Tag mit Störungen. Dies können Störungen von außen sein, wie Verzögerungen in der Logistik, Rohstoffengpässe oder politisch motivierte Handelsbarrieren, aber auch Störungen von innen, wie Krankheitsstände, Werkzeugbrüche oder Produktionsstill- stände. Nun soll Künstliche Intelligenz (KI) Unternehmen dabei unterstützen, sich flexibel an solche internen und externen Störungen sowohl reaktiv als auch proaktiv anzupassen. Hierzu wurde das KI-Leuchtturm- Projekt SPAICER – Skalierbare Adaptive Produktionssysteme durch KI-basierte Resilienz-Optimierung als zentrales Element für die Umsetzung der Strategie Künstliche Intelligenz der Bundesregierung ausgewählt, an welchem auch das WZL und senseering beteiligt sind (https://www.spaicer.de/).</p>
+<p>SPAICER wird dabei Teil der Implementierung des internationalen Markenzeichens KI made in Germany sein, das für moderne, sichere und gemeinwohlorientierte KI-Anwendungen auf Basis des europäischen Wertekanons steht. Gemeinsam mit führenden Forscherinnen und Forschern sowie Produktionsunternehmen untersucht das Projekt SPAICER, wie Methoden der Künstlichen Intelligenz in ein Resilienz-Management für die Industrie überführt werden können. Dies soll eine bessere Vorbereitung und Reaktion auf interne und externe Störungen ermöglichen. </p>
+<img >
+Am 30.08.2019 verteidigten VertreterInnen des SPAICER-Konsortiums erfolgreich das Konzept vor den Gutachterinnen und Gutachtern des KI-Innovationswettbewerbs in Berlin unter der Leitung von Prof. Wolfgang Maaß. V.l.n.r.: Bruno Wedrich (Fa. Schaeffler), Prof. Kristian Kersting (TU Darmstadt), Matthias Wagner (Fa. Schaeffler), Stephan Kaulbach (Deutsche Bahn), Patrick Mattfeld (WZL, RWTH Aachen), Prof. Wolfgang Maaß (DFKI), Christian Gülpen (TIME, RWTH Aachen), Silke Knoche (Fa. Schott), Frank Seiferth (Fa. Seitec), Bernd Decker (Fa. Feintool), Thorsten Engesser (Uni Freiburg), Marcus Kunde (Microsoft) sowie nicht im Bild Daniel Trauth (WZL, RWTH Aachen). © Daniel Trauth
+<p>Im Produktionsbereich versteht man Resilienz als Fähigkeit eines Unternehmens, sich permanent an interne und externe Veränderungen und Störungen in komplexen, sich schnell verändernden Produktionsnetzwerken anzupassen. Angetrieben wird diese Forschung zu einem Resilienz-Management u. a. durch eine wachsende Komplexität und Fragilität einer Industrie 4.0 Produktion, Volatilität politischer, ökonomischer und ökologischer Kontexte, Unsicherheiten beim Nachschub von Rohstoffen sowie nicht zuletzt durch einen demographischen Wandel und steigende Qualifikationsanforderungen.</p>
+<p>Konkret ist die Großserienfertigungsmaschine der Fa. Feintool Forschungsgegenstand des IILA. Am Beispiel von Störungen, die in der Wertschöpfungskette dieser Technologie auftreten, soll die Resilienz feinschneidender Unternehmen erhöht werden. Das Feinschneiden wird beispielsweise als Großserienfertigungsprozess für sicherheitskritische Bauteile für die Automobil-, Luftfahrt- oder Medizintechnik eingesetzt. Dort treten nicht nur Störungen auf Mikroebene, wie das Brechen eines Werkzeugs auf, sondern insbesondere auch innerhalb der gesamten Supply Chain (Mesoebene), wie variierende Werkstoffqualitäten oder logistische Heraus- forderungen. Das IILA stellt hierfür ein mittels IOTA realisiertes Edge-AI-Netzwerk zur Verfügung, welches den fairen, sicheren und effizienten Austausch der Daten der unterschiedlichen Stakeholder sicherstellen soll. Die Arbeiten am Demonstrator werden direkt durch einen Industriearbeitskreis zum Thema Feinschneiden (www.arbeitskreis-feinschneiden) mit wert- vollen Praxiserfahrungen unterstützt. So wird eine praktische Umsetzung in der Industrie sichergestellt. Darüber hinaus verfügt SPAICER über das vermutlich größte Industriekonsortium innerhalb des Wettbewerbs.</p>
+<img>
+Das SPAICER-Konsortium zum 30.08.2019. © DFKI / Wolfgang Maaß
+<h2><a class="header" href="#awk-turning-data-into-value" id="awk-turning-data-into-value">AWK: Turning Data Into Value</a></h2>
+<p>Sichere Verfügbarkeit von Daten, Informationen und Wissen zu jeder Zeit und an jedem Ort – das ist das zentrale Versprechen von Industrie 4.0. Doch welchen Mehrwert schöpfen produzierende Unternehmen aus der Vielfalt der aufgezeichneten Daten? Welche Analysetools und Algorithmen bieten überhaupt sichere Prognosen und ermöglichen damit eine durchgängige Kontrolle der Produktion? Diese und weitere Fragen werden Thema des Aachener Werkzeugmaschinenkolloquiums AWK’20 im Mai 2020 (https://www.awk-aachen.com/) sein.</p>
+<p>Die traditionsreiche Konferenz mit dem Anspruch stets die neuesten Entwicklungen der Produktionstechnik aufzuzeigen und zu reflektieren, ist damit Netzwerktreffen und Informations-Hub zugleich: Im Austausch mit mehr als 1000 TeilnehmerInnen unterschiedlichster Disziplinen und Fachrichtungen, einem hochkarätig besetzten Vortragsprogramm sowie Besichtigungstouren zu den gastgebenden Forschungseinrichtungen bietet das AWK’20 einen weltweit einzigartigen Einblick in die Trends der angewandten Forschung und Entwicklung in Industrie und Wissenschaft.</p>
+<p>Ein solch einzigartiger Einblick wird der vom IILA moderierte Expertenvortrag Monetarisierungs von Maschinendaten sein. Zusammen mit den Firmen BMW, DELL, DFKI, Feintool, Fujitsu, grandcentrix, Microsoft, senseering, ZEISS sowie dem ITC und TIME der RWTH Aachen werden zwei Monetarisierungsstrategien für Maschinendaten erarbeitet. Der Vortrag soll anhand eines leicht verständlichen Monetarisierungsframeworks die Mehrwerte beim Handeln von und mit Maschinendaten verdeutlichen. Ebenfalls sollen die notwendigen Schritte für produzierende Unternehmen erläutert werden, die dafür notwendig sind, an einer solchen Maschinendatenökonomie teilnehmen zu können. Ergänzt wird die Theorie durch gemeinsam erarbeitete Fallstudien sowie am Beispiel einer Live-Demonstration mit der Großserienfertigungsmaschine der Fa. Feintool im IILA-Showroom.   Interessierten TeilnehmerInnen werden eine bestimmte Menge an IOTA geschenkt, welche Sie dann zum Kaufen von Maschinendaten und zum Testen der Monetarisierungsstrategien nutzen können.</p>
+<img >
+AWK Plenarsaal. © Fraunhofer IPT
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../10_partners/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../10_partners/02_tanglekit.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../10_partners/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../10_partners/02_tanglekit.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

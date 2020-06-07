@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang="de" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>filancore - IOTA in der Industrie</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../00_intro/index.html"><strong aria-hidden="true">1.</strong> Einleitung</a></li><li class="chapter-item expanded "><a href="../01_iota/index.html"><strong aria-hidden="true">2.</strong> IOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01_iota/01_standards.html"><strong aria-hidden="true">2.1.</strong> Der neue Standard in der Industrie</a></li><li class="chapter-item expanded "><a href="../01_iota/02_industriemarktplatz.html"><strong aria-hidden="true">2.2.</strong> Erster Dezentraler Industrie Marktplatz</a></li><li class="chapter-item expanded "><a href="../01_iota/03_tangleee.html"><strong aria-hidden="true">2.3.</strong> TangleEE</a></li><li class="chapter-item expanded "><a href="../01_iota/04_maas.html"><strong aria-hidden="true">2.4.</strong> Machines-as-a-Service</a></li><li class="chapter-item expanded "><a href="../01_iota/05_mam2streams.html"><strong aria-hidden="true">2.5.</strong> Von MAM zu Steams</a></li></ol></li><li class="chapter-item expanded "><a href="../02_einfachiota/index.html"><strong aria-hidden="true">3.</strong> einfachIOTA</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02_einfachiota/01_news.html"><strong aria-hidden="true">3.1.</strong> Neues von uns</a></li><li class="chapter-item expanded "><a href="../02_einfachiota/02_magazin.html"><strong aria-hidden="true">3.2.</strong> Das Magazin</a></li><li class="chapter-item expanded "><a href="../02_einfachiota/03_workshop.html"><strong aria-hidden="true">3.3.</strong> IOTA Workshop</a></li></ol></li><li class="chapter-item expanded "><a href="../03_retrospective/index.html"><strong aria-hidden="true">4.</strong> Rückblick</a></li><li class="chapter-item expanded "><a href="../04_news/index.html"><strong aria-hidden="true">5.</strong> Aktuelles</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04_news/041_news_list.html"><strong aria-hidden="true">5.1.</strong> Was gibt es Neues? </a></li></ol></li><li class="chapter-item expanded "><a href="../05_people/index.html"><strong aria-hidden="true">6.</strong> Menschen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_people/051_5x5.html"><strong aria-hidden="true">6.1.</strong> 5x5 Fragen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../05_people/051_5x5_01_lisa_schneider.html"><strong aria-hidden="true">6.1.1.</strong> Lisa Schneider</a></li><li class="chapter-item expanded "><a href="../05_people/051_5x5_02_holger_koether.html"><strong aria-hidden="true">6.1.2.</strong> Holger Köther</a></li><li class="chapter-item expanded "><a href="../05_people/051_5x5_03_richard_soley.html"><strong aria-hidden="true">6.1.3.</strong> Richard Soley</a></li></ol></li><li class="chapter-item expanded "><a href="../05_people/052_spotlight.html"><strong aria-hidden="true">6.2.</strong> Spotlight</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/index.html"><strong aria-hidden="true">7.</strong> Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_past.html"><strong aria-hidden="true">7.1.</strong> Vergangene Events</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06_events/061_past_01_IOTA_sternstunden.html"><strong aria-hidden="true">7.1.1.</strong> IOTA Sternstunden</a></li></ol></li><li class="chapter-item expanded "><a href="../06_events/062_upcomming.html"><strong aria-hidden="true">7.2.</strong> Zukünftige Events</a></li></ol></li><li class="chapter-item expanded "><a href="../07_projects/index.html"><strong aria-hidden="true">8.</strong> Projekte</a></li><li class="chapter-item expanded "><a href="../08_learn/index.html"><strong aria-hidden="true">9.</strong> Lernen</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../08_learn/01_mam2streams.html"><strong aria-hidden="true">9.1.</strong> MAM heißt jetzt Steams</a></li></ol></li><li class="chapter-item expanded "><a href="../09_makers/index.html"><strong aria-hidden="true">10.</strong> Basteln</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../09_makers/01_hornet.html"><strong aria-hidden="true">10.1.</strong> Hornet Tutorial </a></li></ol></li><li class="chapter-item expanded "><a href="../10_partners/index.html"><strong aria-hidden="true">11.</strong> Partnerartikel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../10_partners/01_IILA.html"><strong aria-hidden="true">11.1.</strong> Industrial IOTA Lab Aachen</a></li><li class="chapter-item expanded "><a href="../10_partners/02_tanglekit.html"><strong aria-hidden="true">11.2.</strong> TangleKit</a></li><li class="chapter-item expanded "><a href="../10_partners/03_filancore.html" class="active"><strong aria-hidden="true">11.3.</strong> filancore</a></li></ol></li><li class="chapter-item expanded "><a href="../11_end/index.html"><strong aria-hidden="true">12.</strong> Schlusswort</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">IOTA in der Industrie</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#filancore" id="filancore">filancore</a></h1>
+<p>Ein Startup für dezentrale Identitäten</p>
+<h2><a class="header" href="#wer-ist-filancore" id="wer-ist-filancore">Wer ist filancore</a></h2>
+<p>Hinter filancore steht ein dynamisches Team, dessen Kernkompetenzen im Bereich der IT-Sicherheit sowie der Distributed Ledger Technologien liegen. Aus der klassischen Beratung stammend, begleitet das Team heute nationale sowie internationale Kunden wegweisend bei der Umsetzung von Konzepten, Machbarkeitsstudien und Lösungen, beteiligt sich an Forschungsprojekten und unterstützt engagiert open-source Entwicklungsprojekte im Bereich der dezentralen Identitäten. Das Hauptziel der filancore allerdings ist die Umsetzung einer Identitäts-Plattform.</p>
+<h2><a class="header" href="#status-quo" id="status-quo">Status Quo</a></h2>
+<p>Infolge der zunehmenden Digitalisierung werden Daten zum Öl der Zukunft. Dabei bieten die Visionen Industrie 4.0 und Internet der Dinge ein bislang unausgeschöpftes Potenzial. Gleichzeitig stehen dieser Chance erhebliche Risiken hinsichtlich IT-Sicherheit und Datenschutz gegenüber. Denn die Kommunikation und Interaktion von Millionen oder gar Milliarden vernetzter Maschinen und Sensoren bieten eine enorme Angriffsfläche und unterschiedlichste Einfallstore für Hacker. Gefragt ist folglich eine sichere Basistechnik, welche die Kommunikation verschiedenster IoT-Geräte regelt.
+Ein vielversprechender Ansatz für eine solche Basistechnik sind Distributed Ledger Technologien wie IOTA. So kommt der Tangle ohne aufwändiges Mining Dritter und somit auch ohne Transaktionsgebühren aus, benötigt zudem keine ständige Netzanbindung und ist zumindest theoretisch unbegrenzt skalierbar. Das impliziert auch die Verarbeitung von mehreren Tausend Transaktionen pro Sekunde. IOTA ist aber mehr als nur ein Bezahlsystem. Unternehmen, die IOTA adaptieren, sind vielmehr in der Lage, ihre IoT-Visionen zu unterstützen und umzusetzen.
+Dabei bilden Integrität, Verfügbarkeit und Transparenz die obersten Schutzziele in einer verträglichen Maschinen-Globalisierung. IOTA bietet diese Eigenschaften, jedoch fehlt noch ein entscheidender Faktor: Millionen oder gar Milliarden von vernetzten Maschinen und Geräten müssen zudem sicher über eindeutige Identifikatoren und Kanäle agieren können.</p>
+<img >
+<p>Nur wenn die Dienstanbieter und Infrastrukturbetreiber in der Lage sind, eine gemeinsame Identitätsebene zu nutzen, ist die vertrauenswürdige Interoperabilität und sichere Konnektivität zwischen allen Maschinen-Entitäten ermöglicht. Derzeit werden auf Computern und Smartphones häufig Zertifikate und Public Key Infrastrukturen genutzt, um dieses Vertrauen herzustellen, jedoch stoßen wir mit dieser bewährten Lösung allmählich an technische Grenzen, wenn es um das Internet der Dinge im Kontext von Sicherheit, Skalierung und Interoperabilität geht. Das bedeutet, dass neue Ansätze echter mobiler vertrauenswürdiger Identitäten für vernetzte autonome Maschinen notwendig sind. Genau hier setzt filancore mit Ihrem Identity Gateway an!</p>
+<h2><a class="header" href="#die-vision" id="die-vision">Die Vision</a></h2>
+<p>Die Vorteile des DLT in Kombination mit einer dezentralen Identitätsinfrastruktur werden als Idealvoraussetzung gesehen, um eine gemeinsame Vertrauensquelle, Interoperabilität und sichere Konnektivität zu bilden und eröffnet vielversprechende und sichere neue Möglichkeiten in einer globalisierten Welt. Dennoch bleibt die flächendeckende Nutzung dieser Infrastruktur bisher durch das Fehlen von leicht zu benutzenden, intuitiven Benutzeroberflächen, Apps und APIs aus bzw. stark hinter ihrem Potential zurück.</p>
+<img >
+Um den derzeit bestehenden Problemen zu begegnen und den Bedarf der Unternehmen sowie Privatanwender zu decken, entwickelt das filancore Team ein Identity Gateway, um den einfachen Umgang mit dezentralen Identitäten zu ermöglichen.
+<h2><a class="header" href="#filancore-identity-gateway" id="filancore-identity-gateway">filancore Identity Gateway</a></h2>
+<p>Mit dem filancore Identity Gateway bietet das innovative Unternehmen einen Service, welcher es Unternehmen, privaten Nutzern, Maschinen und Applikationen erlaubt, für sich selbst und andere solche digitalen Identitäten auszustellen, zu überprüfen und zu verwalten. Diese Identitäten werden erstmals sämtliche Anforderungen der Beteiligten über den gesamten Identitätszyklus vollständig abbilden und gleichzeitig die entscheidenden Teile der Registrierung und Verwaltung beim jeweiligen Besitzer der Identität belassen.</p>
+<p>So soll z.B. sichergestellt werden, dass einfache und sichere verifizierbare Credentials von Kunden ausgestellt und signiert werden können, dass Unternehmen ihren Produkten eine eigene Identität verleihen können und dass unsere Anwender effizient verifizierbare Credentials verwalten können, ohne selbst eine eigene IT-Sicherheitsinfrastruktur betreiben zu müssen. Die Handhabung von kritischen Daten erfolgt sicher, weitestgehend automatisiert und mit einer hohen Benutzerfreundlichkeit für  jegliche Systemintegration.</p>
+<p>Kontakt
+www.filancore.com
+mail@filancore.com</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../10_partners/02_tanglekit.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../11_end/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../10_partners/02_tanglekit.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../11_end/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
