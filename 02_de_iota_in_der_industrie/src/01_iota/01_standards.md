@@ -69,7 +69,7 @@ Hallo Mike, vielen Danke, dass Du dir für dieses Interview Zeit genommen hast, 
 ### Könntest du dich kurz vorstellen?
 Ich bin ein Onkologe mit einer langen Geschichte in der Arbeit an Standards im Bereich Finanzdienstleistungen. Ich habe die Financial Industry Business Ontology (FIBO) entwickelt und entwickelt, eine gemeinsame Sprache oder Rosetta Stone für die Finanzbranche. Ich arbeite mit der IOTA Foundation als Verbindungsperson für ihre Standards zusammen. Ich biete auch Schulungen in Concept Ontology Engineering an.
 
-### elche Rolle hast Du in der OMG?
+### Welche Rolle hast Du in der OMG?
 Ich bin Co-Vorsitzender der Finance Domain Task Force und Co-Vorsitzender der Blockchain Platform Special Interest Group.
 
 ### Was arbeitest Du gerade? Was ist auf Deinem Schreibtisch?
