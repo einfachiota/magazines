@@ -6,7 +6,7 @@
     - [Erster Dezentraler Industrie Marktplatz](./01_iota/02_industriemarktplatz.md)
     - [TangleEE](./01_iota/03_tangleee.md)
     - [Machines-as-a-Service](./01_iota/04_maas.md)
-    - [Von MAM zu Steams](./01_iota/05_mam2streams.md)
+    - [Von MAM zu Streams](./01_iota/05_mam2streams.md)
 - [einfachIOTA](./02_einfachiota/README.md)
     - [Neues von uns](./02_einfachiota/01_news.md)
     - [Das Magazin](./02_einfachiota/02_magazin.md)
