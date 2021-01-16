@@ -1,99 +1,92 @@
 # Der neue Standard in der Industrie
 
 <div class="head_text">
-Wozu braucht man überhaupt einen Standard? Wie kommt man zum Standard und wie lange dauert das eigentlich?
+Wozu braucht man einen Standard? Wie kommt man zu einem Standard und wie lange dauert es, bis ein solcher etabliert ist?
 </div>
 
-Text SEBASTIAN HEUSSER
+IOTA ist auf dem besten Weg, zu einem Standard zu werden. Doch was bedeutet es, ein Standard zu werden?
 
-Auf Webseiten liest man immer wieder „IOTA wird zum Standard des Internet der Dinge”, welches noch viel mehr Nutzer haben soll, wie heute das Internet. Doch was ist eigentlich ein Standard?  
-
-Ein Standard ist eine vergleichsweise einheitliche oder vereinheitlichte, weithin anerkannte und meist angewandte (oder zumindest angestrebte) Art und Weise, etwas zu beschreiben, herzustellen oder durchzuführen, die sich gegenüber anderen Arten und Weisen durchgesetzt hat oder zumindest als Richtschnur gilt.
+Ein Standard ist eine vergleichsweise einheitliche oder vereinheitlichte, weithin anerkannte und meist angewandte (oder zumindest angestrebte) Art und Weise, etwas zu beschreiben, herzustellen oder durchzuführen, die sich gegenüber anderen Arten und Weisen durchgesetzt hat, oder zumindest als Richtschnur gilt.
 — Wikipedia
 
-Einfach gesagt beschreibt IOTA die Sprache der Maschinen, wie sie Werte und Daten auszutauschen haben. Heutzutage tauschen Maschinen zwar auch schon Daten und Werte aus, allerdings laufen diese über einen zentralen Server. Fällt dieser aus, kann man die Daten nicht mehr abrufen und meist können die Maschinen untereinander auch nicht mehr Kommunizieren. In einer Welt mit selbstfahrenden Autos und unzähliger Lieferdrohnen ist das unvorstellbar. Dies ist zwar noch ein Zukunftsbild, die Probleme treten aber heute auch schon auf. Wenn in der Industrie eine Maschine wegen eines Serverausfalls still steht, kann das einen sehr hohen Verlust mit sich bringen. DIe Aufgabe der IOTA Foundation besteht darin, ein Protokoll als Grundlage einer dezentralen Maschinen Kommunikation bereitzustellen, auf dem Maschinen Werte und Daten sicher untereinander austauschen können. Da Maschinen, wie Autos, Drohnen und Industrieroboter von ganz vielen verschiedenen Unternehmen entwickelt und produziert werden, muss ein Protokoll gewählt werden, mit dem alle miteinander kommunizieren können - ein Standard. 
-Andere Standards kann man schön am Beispiel des Handyladekabel sehen. Würde es hier keinen Standard geben, hätte jeder Anbieter sein eigenes Kabel. Es gibt natürlich auch immer Unternehmen, die sich nicht an Standards halten. Damit ein etwas zum Standard wird, muss es also von beginn an mit in ein Produkt eingebaut oder beachtet werden. Damit dies gelingt, gibt es extra Unternehmen, die helfen, etwas zu einem Standard zu machen. Darunter gehören die Object Management Group und eCl@ass, ein Verein aus Deutschland. 
+Einfach gesagt, bezieht sich der Standard bei IOTA auf die Sprache für Maschinen; d.h., wie sie Werte und Daten miteinander auszutauschen haben. Aktuell tauschen Maschinen zwar auch schon Werte und Daten miteinander aus, allerdings laufen diese zumeist über einen zentralen Server. Fällt dieser aus, kann man die Daten weder abrufen, noch können Maschinen untereinander kommunizieren. In einer Welt mit selbstfahrenden Autos, Lieferdrohnen und autonomen Robotern wäre ein Ausfall der Kommunikation natürlich verheerend. Das mag sich vielleicht noch wie ein Zukunftsbild anhören, aber diese Probleme sind vor allem in der Industrie bereits heute präsent. Wenn eine Maschine wegen eines Serverausfalls stillsteht, kann das zu hohen finanziellen Verlusten führen. Die Aufgabe der IOTA Foundation besteht darin, ein Protokoll als Grundlage einer dezentralen Maschinenkommunikation bereitzustellen, auf der Maschinen Werte und Daten zu jeder Zeit sicher untereinander austauschen können. Da Maschinen, wie Autos, Drohnen und Industrieroboter von vielen verschiedenen Unternehmen entwickelt und produziert werden, muss ein Protokoll gewählt werden, auf das alle uneingeschränkt zugreifen können und mit dem alle in einheitlicher Weise untereinander kommunizieren können – also ein Standard. 
 
-## eCl@ss - STANDARD FÜR STAMMDATEN UND SEMANTIK FÜR DIE DIGITALISIERUNG
-eCl@ss hat sich als einziger ISO/IEC-normenkonformer Industriestandard international durchgesetzt und ist somit der weltweite Referenz-Datenstandard für die Klassifizierung und eindeutige Beschreibung von Produkten und Dienstleistungen.
-Wir haben ein Interview mit dem Geschäftsstellenleiter, Thorsten Kroke über den IOTA Standardisierungsprozess gehalten und ihm einige Interessante Frage gestellt.
+Am Beispiel des Handy-Ladegeräts wird deutlich, worum es geht. Früher gab es hier keine einheitlichen Regeln, sodass jeder Anbieter sein eigenes Kabel und seinen eigenen Stecker entwickeln konnte. Erst als man sich auf einen gemeinsamen Standard geeinigt hatte, haben alle davon profitiert. Es gibt natürlich immer auch Unternehmen (wie z.B. Apple), die weiterhin auf ihre eigenen Standards setzen, weil sie sich davon andere Vorteile versprechen. Zumeist ist es aber langfristig sinnvoller, sich auf einen gemeinsamen Standard zu einigen und so kann es auch mal sein, dass die Politik einen gemeinsamen Standard vorschreibt, was sie im Fall des Handy-Ladekabels ja getan hat, um unnötigen Müll zu vermeiden. Damit etwas zum Standard wird, muss es von Beginn an strategisch geplant werden. Um so etwas umzusetzen und die Unternehmen bei der Entwicklung eines standardisierten Produktes zu unterstützen, gibt es spezialisierte Unternehmen, die dabei helfen, Innovationen zu einem Standard zu machen. Dazu gehören unter anderem die Object Management Group (OMG) und der Verein ECLASS, der in Deutschland ansässig ist. Beide haben schon vor einiger Zeit damit begonnen, die IOTA Technologie als zukünftigen Standard zu definieren.
+ECLASS
+Wir haben ein Interview mit dem ECLASS Geschäftsstellenleiter, Thorsten Kroke, über den IOTA Standardisierungsprozess geführt und ihm einige interessante Fragen gestellt.  
 
+Was ist ECLASS?
+ECLASS (vorher bekannt als eCl@ss) ist ein branchenunabhängiger und ISO/IEC-konformer Standard für die Produktklassifizierung und Produktbeschreibung. Eindeutig und ohne Informationsverluste lassen sich Produkte und Dienstleistungen klar und vor allem maschinenlesbar beschreiben.
+Der ECLASS Standard wird unter der Regie der gleichnamigen Non-Profit-Organisation direkt von der Industrie entwickelt. Durch diese enge Zusammenarbeit kann der Standard direkt und praxistauglich eingesetzt werden.
 
-### Warum Standards?
+Warum Standards?
 Standards definieren Regeln zur Herstellung, zu Prozessen oder – in unserem Fall – zur Kommunikation. Durch Standards wird die Komplexität gesenkt und die Zusammenarbeit von zwei Akteuren erst möglich. Dies gilt insbesondere für den Datenaustausch im Kontext von Industrie 4.0.
 
-### Warum Standards für die Industrie 4.0?
+Warum Standards für die Industrie 4.0?
 Standards ermöglichen eine gemeinsame Sprache in der Kommunikation und Interaktion. 
-Smart Manufacturing und Industrie 4.0-Anwendungen basieren auf vollautomatisierter M2M-Kommunikation und kontinuierlichem Datenaustausch im Internet der Dinge (IoT). Jeder Beteiligte (also jedes Asset) muss erkennen, wer und worüber kommuniziert.
+Smart Manufacturing und Industrie 4.0-Anwendungen basieren auf vollautomatisierter M2M-Kommunikation und kontinuierlichem Datenaustausch im Internet der Dinge (IoT). Jeder Beteiligte (also jedes Asset) muss erkennen, wer und worüber kommuniziert wird.
 Ohne Standards müssten Daten und deren Bedeutung zunächst aufwändig interpretiert werden. Mithilfe von Standards für die Beschreibung und Bedeutung von Daten werden diese aber zu echten Informationen, die einen Mehrwert generieren.
 
-### Was ist eCl@ss?
-eCl@ss ist ein branchenunabhängiger und ISO/IEC-konformer Standard für die Produktklassifizierung und Produktbeschreibung. Eindeutig und ohne Informationsverluste lassen sich Produkte und Dienstleistungen klar und vor allem maschinenlesbar beschreiben.
-Der eCl@ss Standard wird unter der Regie der gleichnamigen Non-Profit-Organisation direkt von der Industrie entwickelt. Durch diese enge Zusammenarbeit kann der Standard direkt und praxistauglich eingesetzt werden.
 
-### Welche Standards wurden vom eCl@ss e.V. schon umgesetzt?
-Der eCl@ss e.V. entwickelt den eCl@ss Standard. Diese Entwicklung erfolgt im Übrigen auch nach Standards (z.B. ISO). Außerdem integriert der eCl@ss Standard bereits bestehende Standards, wie zum Beispiel IEC. 
-Im nächsten Schritt kann eCl@ss dann wiederum in andere Standards, zum Beispiel Austauschformaten zur Kommunikation wie BMEcat und AutomationML, integriert werden. 
-Der eCl@ss Standard ist also in einer Kette von Informationen der Standard, mithilfe dessen Produkte auf der Basis von Merkmalen eindeutig beschrieben werden. 
-Darüber hinaus kooperiert der Verein mit anderen Standardisierungsgremien, Branchenverbänden, Vereinen und Stiftungen, wie z.B. IOTA.
+Welche Standards wurden vom ECLASS e.V. schon umgesetzt?
+Der ECLASS e.V. entwickelt den ECLASS Standard. Diese Entwicklung erfolgt im Übrigen auch nach Standards (z.B. ISO). Außerdem integriert der ECLASS Standard bereits bestehende Standards, wie zum Beispiel IEC. Im nächsten Schritt kann ECLASS dann wiederum in andere Standards, zum Beispiel Austauschformaten zur Kommunikation wie BMEcat und AutomationML, integriert werden. Der ECLASS Standard ist also in einer Kette von Informationen der Standard, mithilfe dessen Produkte auf der Basis von Merkmalen eindeutig beschrieben werden. Darüber hinaus kooperiert der Verein mit anderen Standardisierungsgremien, Branchenverbänden, Vereinen und Stiftungen, wie z.B. IOTA.
 
-### Wie lange dauert ein Standardisierungsverfahren im Durchschnitt?
-Grundsätzlich veröffentlicht eCl@ss ein Update pro Jahr. Mit dem für Ende 2020 geplanten Verfahren „eCl@ss Accelerated“ wird ein Fast Track angeboten, der standardisierte Strukturelemente zur Produktbeschreibung maschinenlesbar in wenigen Minuten per eCl@ss Webservice anbietet. Wir versprechen uns davon einen großen Innovationsvorteil insbesondere für Anwendungen aus dem Bereich der Industrie 4.0.
+Wie lange dauert ein Standardisierungsverfahren im Durchschnitt?
+Grundsätzlich veröffentlicht ECLASS ein Update pro Jahr. Mit dem für Ende 2020 geplanten Verfahren „ECLASS Accelerated“ wird ein Fast Track angeboten, der standardisierte Strukturelemente zur Produktbeschreibung maschinenlesbar in wenigen Minuten per ECLASS Webservice anbietet. Wir versprechen uns davon einen großen Innovationsvorteil, insbesondere für Anwendungen aus dem Bereich der Industrie 4.0.
 
-### Wie funktioniert eCl@ss?
-Der eCl@ss Standard enthält standardisierte und maschinenlesbare Strukturelemente nach ISO- und IEC Standards. Diese Strukturelemente wie Länge, Höhe, Breite, Farbe, Spannung, Druck, Drehmoment etc. geben die genaue Struktur die Produktbeschreibung in allen Systemen und Datenbanken ganz genau vor. In eCl@ss BASIC existieren dazu bereits mehr als 44.000 Klassen und 17.000 Merkmale. Sie können fast alles beschreiben. Fehlt einmal etwas, ergänzen wir gemeinsam mit der Industrie kontinuierlich den Standard.
+Wie funktioniert ECLASS?
+Der ECLASS Standard enthält standardisierte und maschinenlesbare Strukturelemente nach ISO- und IEC Standards. Diese Strukturelemente wie Länge, Höhe, Breite, Farbe, Spannung, Druck, Drehmoment etc. geben die genaue Struktur die Produktbeschreibung in allen Systemen und Datenbanken ganz genau vor. In ECLASS BASIC existieren dazu bereits mehr als 44.000 Klassen und 17.000 Merkmale. Sie können fast alles beschreiben. Fehlt einmal etwas, ergänzen wir gemeinsam mit der Industrie kontinuierlich den Standard.
 
-### Die Bedeutung von eCl@ss für Industrie I4.0?
-Durch eCl@ss wird die semantische Interoperabilität unterstützt. Daten erhalten eine Bedeutung. Diese Bedeutung unterstützt das Verständnis der Daten und das ist wiederum essentiell für den Datenaustausch.
+Die Bedeutung von ECLASS für Industrie 4.0?
+Durch ECLASS wird die semantische Interoperabilität unterstützt. Daten erhalten eine Bedeutung. Diese Bedeutung unterstützt das Verständnis der Daten und das ist wiederum essentiell für den Datenaustausch.
 
-### Wie ist eCl@ss auf IOTA aufmerksam geworden?
-BSH Hausgeräte ist langjähriges eCl@ss Mitglied und mit seiner WeWash Initiative sowohl bei IOTA als auch als innovatives und global erfolgreiches Unternehmen sehr aktiv. Nach dem ersten Treffen wussten alle Beteiligten, dass wir für die Industrie eine Erfolgsgeschichte schreiben können.
+Wie ist ECLASS auf IOTA aufmerksam geworden?
+BSH Hausgeräte ist langjähriges ECLASS Mitglied und mit seiner WeWash Initiative sowohl bei IOTA, als auch als innovatives und global erfolgreiches Unternehmen, sehr aktiv. Nach dem ersten Treffen wussten alle Beteiligten, dass wir für die Industrie eine Erfolgsgeschichte schreiben können.
 
-### Warum eine Kooperation mit IOTA?
+Warum eine Kooperation mit IOTA?
 Aus meiner Sicht bietet IOTA die beste Distributed Ledger Technologie für Smart Contracts und Cryptocurrencies für die Industrie. IOTA ist Blockchain-Technologien weit überlegen. Mich freut die gegenseitige Zusammenarbeit sehr. Weiterhin versteht es IOTA, Use Cases im B2B und B2C sehr smart zu entwickeln.
 
-### Welche Rolle spielt eCl@ss im Industrie Marktplatz?
-Der Industry Marketplace zeigt die gemeinsame Stärke von IOTA und eCl@ss. Statt theoretischer Konzepte wurde direkt eine Lösung zum Anfassen gemeinsam mit führenden Universitäten wie der OVGU und der HSU und den IT-Experten von Neoception aus der Industrie entwickelt. eCl@ss bietet hier die eindeutige Sprache im M2M zur Produktbeschreibung, falls beispielsweise ein Tendering stattfindet. Endlich einmal eine Lösung zum Anfassen.
 
-### Wie wichtig ist der Coordicide für eCl@ss?
-Dezentralisierung ist ein Kern von I4.0. Der Coordicide zielt genau darauf ab: Jeder zentrale Knoten weniger, bringt uns näher an diese Vision. Der IOTA Tangle funktioniert autark und wohldefiniert. Ein wichtiger Meilenstein, IOTA als die innovative und zukunftsfähige Technologie im Business zu nutzen. Wir sind stolz, dabei sein zu dürfen.
+Welche Rolle spielt ECLASS im Industrie-Marktplatz?
+Der Industry Marketplace zeigt die gemeinsame Stärke von IOTA und ECLASS. Statt theoretischer Konzepte wurde direkt eine Lösung zum Anfassen gemeinsam mit führenden Universitäten wie der OVGU und der HSU und den IT-Experten von Neoception aus der Industrie entwickelt. ECLASS bietet hier die eindeutige Sprache im M2M zur Produktbeschreibung, falls beispielsweise ein Tendering stattfindet. Endlich einmal eine Lösung zum Anfassen.
 
-## OMG - Die Object Management Group
+Wie wichtig ist der Coordicide für ECLASS?
+Dezentralisierung ist ein Kern von Industrie 4.0. Der Coordicide zielt genau darauf ab: Jeder zentrale Knoten weniger bringt uns näher an diese Vision. Der IOTA Tangle funktioniert autark und wohldefiniert. Ein wichtiger Meilenstein, IOTA als die innovative und zukunftsfähige Technologie im Business zu nutzen. Wir sind stolz, dabei sein zu dürfen.
 
-Die Object Management Group wurde 1989 von elf Unternehmen, darunter Hewlett-Packard, IBM, Sun Microsystems, Apple Computer, American Airlines, iGrafx und Data General gegründet.  Die derzeitige Führung umfasst den Vorsitzenden und CEO Richard Soley, welcher seit xxx auf im Beirat der IOTA Foundation sitzt. 
+Wir haben auch ein Interview mit einem Mitarbeiter der Object Management Group (OMG) gehalten, Mike Bennett. Ein weiteres kleineres Interview mit dem Vorsitzenden der OMG, Richard Soley findet ihr in dem Artikel 5x5 - fünf Fragen an fünf Personen.
 
-Wir haben auch ein Interview mit einem MItarbeiter der OMG gehalten, Mike Bennett. Ein weiteres kleineres Interview mit dem Vorsitzenden der OMG,  Richard Soley findet ihr in dem Artikel 5x5 - Fünf Fragen an fünf Personen. 
 
-Hallo Mike, vielen Danke, dass Du dir für dieses Interview Zeit genommen hast, wir haben einige Fragen an dich!
+Die Object Management Group wurde 1989 von elf Unternehmen, darunter Hewlett-Packard, IBM, Sun Microsystems, Apple Computer, American Airlines, iGrafx und Data General gegründet. Die derzeitige Führung umfasst den Vorsitzenden und CEO Richard Soley, welcher seit Mai 2018 im Beirat der IOTA Foundation sitzt. 
 
-### Könntest du dich kurz vorstellen?
-Ich bin ein Onkologe mit einer langen Geschichte in der Arbeit an Standards im Bereich Finanzdienstleistungen. Ich habe die Financial Industry Business Ontology (FIBO) entwickelt und entwickelt, eine gemeinsame Sprache oder Rosetta Stone für die Finanzbranche. Ich arbeite mit der IOTA Foundation als Verbindungsperson für ihre Standards zusammen. Ich biete auch Schulungen in Concept Ontology Engineering an.
+Hallo Mike, vielen Dank, dass du dir für dieses Interview Zeit genommen hast, wir haben einige Fragen an dich! (Die Antworten wurden aus dem Englischen übersetzt.)
 
-### Welche Rolle hast Du in der OMG?
+Könntest du dich kurz vorstellen?
+Ich arbeite schon lange in der Entwicklung von Standards im Bereich Finanzdienstleistungen. Ich habe die Financial Industry Business Ontology (FIBO) entwickelt, eine gemeinsame Sprache für die Finanzbranche. Ich arbeite mit der IOTA Foundation an der Standardisierung und biete Schulungen in Concept Ontology Engineering an.
+
+Welche Rolle hast Du in der OMG?
 Ich bin Co-Vorsitzender der Finance Domain Task Force und Co-Vorsitzender der Blockchain Platform Special Interest Group.
 
-### Was arbeitest Du gerade? Was ist auf Deinem Schreibtisch?
-Ich arbeite an der Standardisierung des IOTA-Protokolls sowie an anderen Funktionen des IOTA-Angebots, die zu verschiedenen Zeitpunkten in die OMG-Standardprozesse integriert werden, beispielsweise an einem Standard für verknüpfte verschlüsselte Transaktion Ströme, von denen das IOTA MAM-Angebot wird eine beispielhafte Implementierung sein. Auf meinem Schreibtisch befindet sich auch eine Schulung zu Konzept Ontologien für die Medienbranche, an der ich arbeite.
+An was arbeitest du gerade? Was liegt auf deinem Schreibtisch?
+Ich arbeite zur Zeit an der Standardisierung des IOTA-Protokolls. Außerdem an weiteren Funktionen des IOTA Angebots, die zu verschiedenen Zeitpunkten in die OMG-Standardprozesse integriert werden, beispielsweise an einem Standard für verknüpfte, verschlüsselte Transaktion-Ströme, von denen das IOTA MAM-Angebot eine beispielhafte Implementierung sein wird. Auf meinem Schreibtisch befindet sich auch eine Schulung zu Ontologien für die Medienbranche, an der ich arbeite.
 
-### An welchen Standardisierungsprozessen hast Du zuvor gearbeitet?
-Ich habe an FIBO (Financial Industry Business Ontology), der Market Data Definition Language (MDDL), einem Treasury-Standard namens TWIST, gearbeitet und war hauptsächlich in verschiedenen Arbeitsgruppen der ISO unter dem Technical Committee 68 (Financial Services) vertreten im Zusammenhang mit dem ISO 20022-Messaging-Standard. Ich habe gute Beziehungen zu anderen Finanz Standards (z. B. FIX, FpML und ACTUS), habe aber nicht direkt daran gearbeitet.
+An welchen Standardisierungsprozessen hast du zuvor gearbeitet?
+Ich habe an FIBO (Financial Industry Business Ontology), der Market Data Definition Language (MDDL) sowie einem Treasury-Standard namens TWIST gearbeitet und war hauptsächlich in verschiedenen Arbeitsgruppen der ISO im Rahmen des Technical Committee 68 (Financial Services) vertreten, das im Zusammenhang mit dem ISO 20022-Messaging-Standard gearbeitet hat. Ich habe gute Erfahrungen mit anderen Finanzstandards (z.B. FIX, FpML und ACTUS), habe aber nicht direkt an diesen gearbeitet.
 
-### Wie lange dauert ein Standardisierungsverfahren durchschnittlich?
-Dies ist sehr unterschiedlich und unterscheidet sich auch zwischen verschiedenen Organisationen (ISO, W3C, OMG, andere) sowie dem Weg innerhalb dieser Organisation. Es dauert auch länger, wenn sich herausstellt, dass im vorgeschlagenen Standard noch verschiedene Teile im Flug sind, wenn Sie mit dem Prozess beginnen. Ein Jahr bis zwei Jahre sind ganz normal, manche dauern länger. Viele Arten von Standards werden nie „fertiggestellt“, sondern müssen über das Normungsgremium fortlaufend gewartet werden. Daher ist es ideal, einen stabilen Ausgangspunkt zu erreichen, der den Kern des vorgeschlagenen Standards bildet, und dann künftige Schritte vierteljährlich oder halbjährlich durchzuarbeiten den Standardwartungsprozess.
+Wie lange dauert ein Standardisierungsverfahren durchschnittlich?
+Das ist sehr individuell und unterscheidet sich auch je nach Organisation (ISO, W3C, OMG, andere) sowie dem Weg innerhalb der jeweiligen Organisation. Es dauert auch länger, wenn sich herausstellt, dass sich im vorgeschlagenen Standard noch verschiedene Teile in einem Entwicklungsprozess befinden. Ein bis zwei Jahre sind ganz normal, manche dauern auch länger. Viele Arten von Standards werden nie „fertiggestellt“, sondern müssen über das Normungsgremium fortlaufend gewartet werden. Daher ist es ideal, einen stabilen Ausgangspunkt zu erreichen, der den Kern des vorgeschlagenen Standards bildet, und dann für künftige Schritte vierteljährlich oder halbjährlich den Standard-Wartungsprozess durchzuarbeiten.
 
-### Wie lange wird der iota-Standardisierungsprozess Deiner Meinung nach dauern?
-Ich denke, der Haupt Standard des IOTA-Protokolls (Tangle) wird Mitte dieses Jahres eingereicht und es wird 6 bis 9 Monate dauern, bis der formale Teil des Prozesses abgeschlossen ist. Wir haben bereits einige Zyklen damit verbracht, frühe Entwürfe zu präsentieren und zu sozialisieren sowie mit OMG-Experten zu entpacken und zu diskutieren, wie die verschiedenen Teile des IOTA-Angebots als unterschiedliche Standards verpackt werden können, von denen einige unterschiedlichen Prozessen folgen. Dies ist tatsächlich ein wichtiger Teil des Standardisierungsprozesses, der Kontaktaufnahme mit den Personen, die die formellen Einreichungen später überprüfen und genehmigen werden. Sie tauchen nicht einfach in einer Standardgruppe auf und werfen eine Spezifikation über die Wand, sodass hier wirklich die Arbeit stattfindet.
+Wie lange wird der IOTA Standardisierungsprozess deiner Meinung nach noch dauern?
+Ich denke, dass der Haupt-Standard des IOTA-Protokolls (der Tangle) Mitte des Jahres 2020 eingereicht und es 6 bis 9 Monate dauern wird, bis der formale Teil des Prozesses abgeschlossen sein wird. Wir haben bereits einige Zyklen damit verbracht, frühe Entwürfe zu präsentieren, zu sozialisieren, sowie mit OMG-Experten zu diskutieren, wie die verschiedenen Teile des IOTA-Angebots als unterschiedliche Standards verpackt werden können, die jeweils unterschiedlichen Prozessen folgen. Dies ist tatsächlich ein wichtiger Teil des Standardisierungsprozesses, also die Kontaktaufnahme mit den Personen, die die formellen Einreichungen später überprüfen und genehmigen werden. Man taucht nicht einfach in einer Standardisierungsgruppe auf und legt eine Spezifikation auf den Tisch, hier findet wirklich Arbeit statt.
 
-### Wie bist Du auf IOTA aufmerksam geworden?
-Durch Leute, mit denen ich bei der OMG in anderen Task Forces und Gruppen zusammengearbeitet habe. Wir haben als neue Arbeitsgruppe der Finanzdomäne bei OMG angefangen, alles über Blockchain zu erforschen und zu recherchieren, Leute dazu zu bringen, mit der Gruppe zu sprechen und so weiter. Wir hatten im Dezember 2018 eine besonders gute Reihe von Präsentationen in Seattle, bei denen einige der besten Branchenexperten und Kommentatoren anwesend waren, und das Bewusstsein für IOTA wuchs von da an. Wir haben auch Mitarbeiter der OMG in unserer Task Force, die Einfluss auf Blockchain, KI und andere neue Technologien haben. Daher waren wir uns IOTA schon früh bewusst. Auch Richard Soley, der die OMG leitet, ist im Vorstand der IOTA Foundation.
+Wie bist du auf IOTA aufmerksam geworden?
+Durch Leute, mit denen ich bei der OMG in anderen Task Forces und Gruppen zusammengearbeitet habe. Wir haben als Finance Domain Task Force bei OMG angefangen alles rund um das Thema Blockchain zu erforschen, zu recherchieren und Leute dazu zu bringen, mit der Gruppe zu sprechen usw. Wir hatten im Dezember 2018 eine besonders gute Reihe von Präsentationen in Seattle, bei denen einige der besten Branchenexperten und -kommentatoren anwesend waren. Von da an wuchs das Bewusstsein für IOTA. Wir haben auch Mitarbeiter der OMG in unserer Task Force, die Einfluss auf Blockchain, KI und andere neue Technologien haben. Daher war uns IOTA schon früh bewusst. Auch Richard Soley, der die OMG leitet, ist im Vorstand der IOTA Foundation.
 
-### Warum eine Zusammenarbeit mit IOTA?
-Als wir in der Blockchain-Arbeitsgruppe der OMG Finance Domain anfingen, Blockchain-Themen zu untersuchen, waren wir besonders aufgeregt darüber, wie viele der offensichtlichen Einschränkungen mit typischeren "Blockchains" bei IOTA nicht zutrafen. Ein Großteil des Potenzials, das unsere Gruppe für DLTs als Ganzes in Bezug auf datenzentrierte Anwendungen, IoT usw. sah, war eine natürliche Passform. Auch das Engagement der IOTA Foundation für Standards und ihre Haltung zu guter Regierungsführung haben wirklich Anklang gefunden.
+Warum eine Zusammenarbeit mit IOTA?
+Als wir in der Blockchain-Arbeitsgruppe der OMG Finance Domain anfingen, Blockchain-Themen zu untersuchen, waren wir besonders darüber verblüfft, wie viele der offensichtlichen Einschränkungen der typischen "Blockchains" bei IOTA nicht zutreffend sind. Ein großes Potenzial, das unsere Gruppe für DLTs in Bezug auf datenzentrierte Anwendungen im IoT usw. sah, war eine natürliche Passform. Auch das Engagement der IOTA Foundation für Standards und ihre Haltung zu guter Führung haben bei uns wirklich Anklang gefunden.
 
-## Wie wichtig ist Coordicide für Dich und den  Standardisierungsprozess?
-In Bezug auf den Standardisierungsprozess mussten wir darüber nachdenken, ob wir versuchen sollten, Aspekte des IOTA-Protokolls aufzunehmen, die nur Präkoordizid anwenden, oder die Postkoordizidaspekte von IOTA zu standardisieren. Ursprünglich ging es bei Coordicide darum, dass das Netzwerk groß genug wird, um den Koordinator nicht mehr zu benötigen, aber tatsächlich enthält das Projekt eine Reihe aufregender neuer Protokolle. Die neue Version von „Chrysalis“ spiegelt dies wider und stellt den De-facto-Standard dar, den wir standardisieren möchten. Zukünftige Verbesserungen werden in späteren Iterationen hinzugefügt. Eine weitere Verwendung eines Standards besteht darin, dass Menschen ihre eigenen privaten Ökosysteme aufbauen, und diese benötigen möglicherweise noch einen Koordinator, aber die Chrysalis-Funktionen bleiben für diese privaten Verwicklungen relevant.
+Wie wichtig ist der Coordicide für dich und den Standardisierungsprozess?
+In Bezug auf den Standardisierungsprozess mussten wir darüber nachdenken, ob wir versuchen sollten, auch Aspekte des IOTA-Protokolls aufzunehmen, die nur “Pre- Coordicide” angewendet werden, oder ob wir nur die “Post-Coordicide” Aspekte von IOTA standardisieren wollen. Ursprünglich ging es beim Coordicide darum, dass das Netzwerk groß genug wird, um den Coordinator nicht mehr zu benötigen, aber tatsächlich enthält das Projekt eine Reihe aufregender, neuer Protokolle. Die neue Version von „Chrysalis“ spiegelt dies gut wider und stellt den De-facto-Standard dar, den wir standardisieren möchten. Zukünftige Verbesserungen werden in späteren Iterationen hinzugefügt. Eine weitere Verwendung eines Standards besteht darin, dass Menschen ihre eigenen, privaten Ökosysteme aufbauen. Und diese benötigen möglicherweise noch einen Coordinator, aber die Chrysalis-Funktionen bleiben für diese privaten Vorgänge relevant.
 
-Vielen Dank Mike, für das spannende Interview! 
-
-## Also, wie lange dauert es bis IOTA ein Standard wird?
-Auf diese Frage kann uns leider niemals jemand eine genaue Antwort geben. Selbst wenn es geschafft wurde, und IOTA ein Offizieller Standard ist, heißt es nicht, das er von jedem genutzt werden muss. Die IOTA Foundation und ihre Partner haben noch lange die Aufgabe, bestehende und neue Unternehmen zu begleiten und sie zu unterstützen, ihren Standard umzusetzen. 
+Mike, Vielen Dank für das spannende Interview! 
+Fazit
+Also, wie lange dauert es, bis IOTA ein Standard wird? Auf diese Frage kann uns leider niemals jemand eine genaue Antwort geben. Selbst wenn es soweit sein wird, dass IOTA ein offizieller Standard ist, heißt das nicht, dass er auch von jedem genutzt werden muss. Die IOTA Foundation und ihre Partner haben noch lange die Aufgabe, bestehende und neue Partnerunternehmen zu begleiten und sie zu unterstützen, den entwickelten Standard umzusetzen. 
